@@ -1,0 +1,14 @@
+cbis manager:
+  user name: cbis-admin
+  password: password
+  hypervisor ip: localhost
+restart rules:
+  status check interval seconds: 2
+  iteration count until up: 30
+  restart retrying count: 2
+plugins installation timeout seconds:
+  default timeout: 60
+  specific timeout:
+    filetracker: 65
+
+

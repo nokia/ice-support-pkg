@@ -1,0 +1,105 @@
+{
+  "name": "filetracker",
+  "display": "filetracker",
+  "description": "",
+  "sections": [
+    {
+      "name": "section_1",
+      "display": "FileTracker",
+      "subSections": [
+        {
+          "name": "subsection_1",
+          "display": "Actions",
+          "fields": [
+            {
+              "data": "The file tracker plugin has been deprecated. DO NOT RUN THIS SCRIPT! the new version is enabled by default and can be set / stop vi CLI commands",
+              "display": "Deprecated",
+              "name": "info_msg_about_deprecated",
+              "severity": "warning",
+              "type": "message"
+            },
+            {
+              "type": "boolean",
+              "name": "operation",
+              "display": "Take Config Files Snapshot or Track Config Files ",
+              "help": "By Default Config Files Snapshot will be taken .Enable the button to check for Config File changes  . Note :Config Files Snapshot should be executed atleast once before choosing Track Config file changes",
+              "required": true,
+              "default": false
+            },
+            {
+              "showIf": {
+                "parentValue": false,
+                "parentName": "operation"
+              },
+              "name": "field_name",
+              "display": "Snapshot Name",
+              "type": "text",
+              "required": true,
+              "help": "Enter the Config Files Snapshot name .Example names: Installation/SecurityHardened/ScaleOut/ScaleIn/CBIS18.5PriorityPack2",
+              "default": "Day1",
+              "validation": ".*"
+            }
+
+          ]
+        }
+      ]
+    },
+    {
+      "display": "Deploy",
+      "name": "deploy",
+      "subSections": [
+        {
+          "display": "Fields Completion",
+          "exclude": [],
+          "name": "validation",
+          "type": "validation"
+        },
+        {
+          "buttons": [
+            {
+              "beforeSend": {
+                "confirm": "Are you sure you want to start the filetracker execution? \nThe file tracker plugin has been deprecated. DO NOT RUN THIS SCRIPT! the new version is enabled by default and can be set / stop vi CLI commands"
+              },
+              "disabled": "hasErrors",
+              "onSuccess": {
+                "message": "filetracker execution Started!"
+              },
+              "role": "submit",
+              "text": "Deploy",
+              "url": {
+                "method": "POST",
+                "url": "api/filetracker/deploy"
+              }
+            }
+          ],
+          "name": "actions",
+          "showWarning": {
+            "expectedReturnValue": true,
+            "message": "Warning: filetracker process is already running, a new process will override the existing one.",
+            "url": {
+              "extract": "active",
+              "method": "GET",
+              "url": "api/filetracker/isActive"
+            }
+          },
+          "type": "actions"
+        }
+      ],
+      "type": "deploy"
+    },
+    {
+      "display": "Log",
+      "name": "installation-log",
+      "subSections": [
+        {
+          "display": "FileTracker Logs",
+          "name": "installation-log",
+          "url": {
+            "url": "api/filetracker/getLog"
+          }
+        }
+      ],
+      "type": "log"
+    }
+  ]
+}
