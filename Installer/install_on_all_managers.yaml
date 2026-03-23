@@ -1,0 +1,150 @@
+---
+- name: Copy ice-support-package and install it on management nodes
+  hosts: Manage
+  remote_user: cbis-admin
+  become: yes
+  vars:
+    ansible_ssh_common_args: '-o StrictHostKeyChecking=no -o ServerAliveInterval=30'
+
+  tasks:
+    - name: Initialize ip_connected_port_22 to False
+      set_fact:
+        ip_connected_port_22: false
+
+    - name: Check if both ansible_default_ipv4 and ansible_default_ipv6 are not defined
+      fail:
+        msg: "Both ansible_default_ipv4 and ansible_default_ipv6 are not defined"
+      when: hostvars[inventory_hostname]['ansible_default_ipv4']['address'] is not defined and hostvars[inventory_hostname]['ansible_default_ipv6']['address'] is not defined
+
+    - name: Set address fact based on IPv4 availability
+      set_fact:
+        address: "{{ hostvars[inventory_hostname]['ansible_default_ipv4']['address'] }}"
+      when: hostvars[inventory_hostname]['ansible_default_ipv4']['address'] is defined
+
+    - name: Check if port 22 is open and bound to the IPv4 address
+      shell: "ss -tunlp4 | awk '$5 ~ /{{ address | regex_escape() }}:22/'"
+      register: check_port_result_ipv4
+      ignore_errors: true
+      when: address is defined
+
+    - name: Update ip_connected_port_22 to True as port 22 is bound to the IPv4 address
+      set_fact:
+        ip_connected_port_22: true
+      when: check_port_result_ipv4.rc is defined and (check_port_result_ipv4.stdout | length > 0)
+
+    - name: Skip setting IPv6 address if port 22 is bound to IPv4 address
+      set_fact:
+        skip_ipv6: true
+      when: check_port_result_ipv4.rc is defined and (check_port_result_ipv4.stdout | length > 0)
+
+    - name: Set address fact based on IPv6 availability
+      set_fact:
+        address: "[{{ hostvars[inventory_hostname]['ansible_default_ipv6']['address'] }}]"
+      when:
+        - hostvars[inventory_hostname]['ansible_default_ipv6']['address'] is defined
+        - skip_ipv6 is not defined
+
+    - name: Check if port 22 is open and bound to the IPv6 address
+      shell: "ss -tunlp6 | awk '$5 ~ /{{ address | regex_escape() }}:22/'"
+      register: check_port_result_ipv6
+      ignore_errors: true
+      when: skip_ipv6 is not defined and address is defined
+
+    - name: Update ip_connected_port_22 to True as port 22 is bound to the IPv6 address
+      set_fact:
+        ip_connected_port_22: true
+      when: check_port_result_ipv6.rc is defined and (check_port_result_ipv6.stdout | length > 0)
+
+    - name: Fail installation as there's no connection to port 22 on either IPv4 or IPv6
+      fail:
+        msg: "Port 22 is not open or bound to any IP address (IPv4 or IPv6)."
+      when: ip_connected_port_22 is not defined or ip_connected_port_22 == false
+
+    - name: Initialize install_package_version to False
+      set_fact:
+        install_package_version: false
+      delegate_to: localhost
+      run_once: true
+
+    - name: Get package_version
+      command: awk -F "b" '{print $2}' "{{ playbook_dir }}/.."/ice/ice_version
+      register: package_version
+      delegate_to: localhost
+
+    - name: Get ice_local_version
+      command: awk -F "b" '{print $2}' /home/cbis-admin/ice-install-on-local/ice/ice_version
+      register: command_output
+      ignore_errors: yes
+
+    - name: Extract ice_local_version
+      set_fact:
+        ice_local_version: "{{ (command_output.stdout | int) if (command_output is defined and command_output.stdout | default('') != '') else -1 }}"
+
+    - name: Set max_ice_version_hostname based on ice_local_version
+      set_fact:
+        max_ice_version_hostname: >-
+          {{ hostvars | to_json | from_json | dict2items
+             | selectattr('value.ice_local_version', 'defined')
+             | sort(attribute='value.ice_local_version', reverse=true)
+             | first
+             | json_query('key') }}
+      delegate_to: localhost
+      run_once: true
+
+    - name: Update max_ice_version_hostname and install_package_version
+      set_fact:
+        max_ice_version_hostname: "{{ inventory_hostname }}"
+        install_package_version: true
+      when: ((package_version.stdout | int) >= (hostvars[max_ice_version_hostname].ice_local_version | int)) or (is_tty | bool)
+      delegate_to: localhost
+      run_once: true
+
+    - name: Ensure the destination folder exists
+      file:
+        path: /home/cbis-admin/ice-install-on-local
+        state: directory
+        owner: cbis-admin
+        group: cbis-admin
+
+    - name: Remove existing directory if it exists
+      file:
+        path: /home/cbis-admin/ice-install-on-local
+        state: absent
+      ignore_errors: yes
+      when: inventory_hostname != max_ice_version_hostname or install_package_version
+
+    - name: Recreate the destination folder
+      file:
+        path: /home/cbis-admin/ice-install-on-local
+        state: directory
+        owner: cbis-admin
+        group: cbis-admin
+      when: inventory_hostname != max_ice_version_hostname or install_package_version
+
+    - name: Rsync locally from ice-support-package to ice-install-on-local
+      shell: rsync -av --timeout=120 --chown=cbis-admin:cbis-admin --ignore-errors --rsh='ssh -o StrictHostKeyChecking=no -i {{ ansible_ssh_private_key_file }}' "{{ playbook_dir }}/.." /home/cbis-admin/ice-install-on-local/
+      delegate_to: localhost
+      when: install_package_version
+      run_once: true
+
+    # we use rsync with --timeout to prevent rsync close session. Alternative option is to use 'synchronize' ansible option
+    - name: Rsync ice-install-on-local from local to remote by IP
+      shell: rsync -av --timeout=120 --chown=cbis-admin:cbis-admin --ignore-errors --rsh='ssh -o StrictHostKeyChecking=no -i {{ ansible_ssh_private_key_file }}' /home/cbis-admin/ice-install-on-local/ cbis-admin@{{ address }}:/home/cbis-admin/ice-install-on-local/
+      when: inventory_hostname != max_ice_version_hostname
+      delegate_to: "{{ max_ice_version_hostname }}"
+
+    - name: Run the installer
+      become_user: cbis-admin
+      args:
+        chdir: /home/cbis-admin/ice-install-on-local/Installer
+      shell: "python manager_local_installer.py {{ hc_args }}"
+      register: installer_out
+
+    - name: Display installer stderr
+      debug:
+        var: installer_out.stderr_lines
+      when: installer_out and installer_out.stderr_lines
+
+    - name: Display installer out
+      debug:
+        var: installer_out.stdout_lines

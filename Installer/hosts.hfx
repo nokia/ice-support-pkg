@@ -1,0 +1,12 @@
+#!/bin/bash
+postconfig_file="postconfig-inv.json"
+primary_path="/opt/management/manager/cbis-clusters"
+fallback_path="/opt/install/data/cbis-clusters"
+
+file_path=$(sudo find "$primary_path" -type f -name "$postconfig_file" -printf '%h/%f\n' | head -n 1)
+
+# If not found in primary path, search in the fallback path
+if [ -z "$file_path" ]; then
+    file_path=$(sudo find "$fallback_path" -type f -name "$postconfig_file" -printf '%h/%f\n' | head -n 1)
+fi
+sudo cat "$file_path"
