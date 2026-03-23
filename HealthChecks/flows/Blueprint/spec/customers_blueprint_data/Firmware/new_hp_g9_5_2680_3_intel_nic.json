@@ -1,0 +1,144 @@
+{
+  "controllers": {
+    "Kernel": {
+      "version": "3.10.0-957.27.2.el7.x86_64"
+    }, 
+    "Operating System": {
+      "version": "CentOS Linux release 7.6.1810 (Core)"
+    }, 
+    "Bios": {
+      "firmware": "2.30", 
+      "version": "I36"
+    }, 
+    "IPMI": {
+      "controller_manager_firmware": "2.30", 
+      "controller_manager_version": "1.8.18"
+    }, 
+    "Network Interface": [
+      {
+        "firmware": "0x80000812, 1.1067.0", 
+        "driver": "ixgbe", 
+        "version": "5.1.0-k-rh7.6"
+      }, 
+      {
+        "firmware": "0x80000815, 1.1067.0", 
+        "driver": "ixgbe", 
+        "version": "5.1.0-k-rh7.6"
+      }
+    ]
+  }, 
+  "computes": {
+    "Kernel": {
+      "version": "3.10.0-957.27.2.el7.x86_64"
+    }, 
+    "Operating System": {
+      "version": "CentOS Linux release 7.6.1810 (Core)"
+    }, 
+    "Bios": {
+      "firmware": [
+        "2.40", 
+        "2.30"
+      ], 
+      "version": "I36"
+    }, 
+    "IPMI": {
+      "controller_manager_firmware": [
+        "2.40", 
+        "2.30"
+      ], 
+      "controller_manager_version": "1.8.18"
+    }, 
+    "Network Interface": [
+      {
+        "firmware": [
+          "0x80000815, 1.1067.0"
+        ], 
+        "driver": [
+          "ixgbe"
+        ], 
+        "version": [
+          "5.1.0-k-rh7.6"
+        ]
+      }, 
+      {
+        "firmware": [
+          "0x80000812, 1.1067.0"
+        ], 
+        "driver": [
+          "ixgbe"
+        ], 
+        "version": [
+          "5.1.0-k-rh7.6"
+        ]
+      }, 
+      {
+        "firmware": [
+          "0x80000815, 1.1067.0"
+        ], 
+        "driver": [
+          "ixgbe"
+        ], 
+        "version": [
+          "5.1.0-k-rh7.6"
+        ]
+      }
+    ]
+  }, 
+  "storages": {
+    "Kernel": {
+      "version": "3.10.0-957.27.2.el7.x86_64"
+    }, 
+    "Operating System": {
+      "version": "CentOS Linux release 7.6.1810 (Core)"
+    }, 
+    "Bios": {
+      "firmware": [
+        "2.40", 
+        "2.30"
+      ], 
+      "version": "I36"
+    }, 
+    "IPMI": {
+      "controller_manager_firmware": [
+        "2.40", 
+        "2.30"
+      ], 
+      "controller_manager_version": "1.8.18"
+    }, 
+    "Network Interface": [
+      {
+        "firmware": [
+          "0x80000815, 1.1067.0"
+        ], 
+        "driver": [
+          "ixgbe"
+        ], 
+        "version": [
+          "5.1.0-k-rh7.6"
+        ]
+      }, 
+      {
+        "firmware": [
+          "0x80000812, 1.1067.0"
+        ], 
+        "driver": [
+          "ixgbe"
+        ], 
+        "version": [
+          "5.1.0-k-rh7.6"
+        ]
+      }, 
+      {
+        "firmware": [
+          "0x80000815, 1.1067.0"
+        ], 
+        "driver": [
+          "ixgbe"
+        ], 
+        "version": [
+          "5.1.0-k-rh7.6"
+        ]
+      }
+    ]
+  }
+}

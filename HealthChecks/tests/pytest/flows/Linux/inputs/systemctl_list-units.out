@@ -1,0 +1,2 @@
+sys-devices-pci0000:00-0000:00:06.0-virtio2-virtio\x2dports-vport2p1.device                           loaded failed failed    /sys/devices/pci0000:00/0000:00:06.0/virtio2/virtio-ports/vport2p1
+● {}                                                                  loaded failed failed    Network Manager Wait Online

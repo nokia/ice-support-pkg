@@ -1,0 +1,564 @@
+CBIS:
+  __import_network_config: hw_common/Default_Linux/network_config:as:hw_common_network_config
+  cluster_deployment:
+    app:
+      chart_enabled: false
+      chart_repo_url: []
+    cluster_config:
+      advanced_auditing: false
+      aide_enable: false
+      default_seccomp_profile: false
+      dns_domain: cluster.local
+      dns_servers: []
+      domain_path: local/cluster
+      enable_ipv6: ''
+      env: ''
+      firewall_enabled: false
+      firewall_whitelist: []
+      internal_ntpservers: ''
+      k8s_shared_storage: false
+      k8s_use_danm: false
+      k8s_use_multus: false
+      labels: ''
+      log_driver: json-file
+      max_file: ''
+      max_size: ''
+      network_mode: ''
+      ntp_servers: []
+      overlay_network: ''
+      overlay_network_ipv6: ''
+      selinux_docker: true
+      selinux_enforcing: true
+      system_id: ''
+      system_name: ''
+      update_kernel: false
+      yum_repo_policy: ''
+    docker_network_settings:
+      bridge: ''
+      fixed_cidr: ''
+      fixed_cidr_v6: ''
+    k8s_settings:
+      kube_api_config: '{}'
+      kube_controller_manager_config: '{}'
+      kube_scheduler_config: '{}'
+      kubelet_config: '{}'
+    root_ca:
+      ca_certificate: ''
+      ca_private_key: ''
+  common:
+    cloud_name: s208
+    delay_modules: []
+    dns_servers:
+    - 135.248.16.241
+    enable_dscp_inherit: false
+    enable_gnocchi_and_ceilometer: true
+    enable_horizon_additional_logging: true
+    enable_ovs_native_firewall: false
+    enable_tls: true
+    enable_vlan_transparent: false
+    guests_mtu: 9000
+    host_underlay_mtu: 9000
+    hw_model_type: dell-730
+    keyboard: us
+    ntp_servers:
+    - 135.248.16.241
+    time_zone: Asia/Jerusalem
+  common_network_config:
+    __inline_bond: hw_common/Bond-LnxAB/bond
+    __inline_bridges: hw_common/Default_Linux/virtual_switch
+    __inline_qos: hw_common/qos
+    __inline_vlan: hw_common/Default_Linux/vlan
+    configure_pcp_tags: true
+    configure_pcp_weights: false
+    nic_1_port_1:
+      ethtool_opts: --config-ntuple $DEVICE rx-flow-hash udp4 sdfn; -G $DEVICE rx
+        2048 tx 2048
+      mtu: ref:common.host_underlay_mtu
+      name: em1
+      type: interface
+      use_dhcp: false
+    nic_1_port_2:
+      ethtool_opts: --config-ntuple $DEVICE rx-flow-hash udp4 sdfn; -G $DEVICE rx
+        2048 tx 2048
+      mtu: ref:common.host_underlay_mtu
+      name: em2
+      type: interface
+      use_dhcp: false
+    nic_2_port_1:
+      ethtool_opts: --config-ntuple $DEVICE rx-flow-hash udp4 sdfn; -G $DEVICE rx
+        2048 tx 2048
+      mtu: ref:common.host_underlay_mtu
+      name: p5p1
+      type: interface
+      use_dhcp: false
+    nic_2_port_2:
+      ethtool_opts: --config-ntuple $DEVICE rx-flow-hash udp4 sdfn; -G $DEVICE rx
+        2048 tx 2048
+      mtu: ref:common.host_underlay_mtu
+      name: p5p2
+      type: interface
+      use_dhcp: false
+    physnets:
+      none:
+        name: none
+      ovs_physnet1:
+        bridge_map: br-ovs-phys-1
+        flat: false
+        name: ovs-physnet-1
+        new_active: false
+        no_overlap: physnet0
+        ovs: true
+        vlan_range: 1:4094
+      physnet0:
+        bridge_map: br-phys-0
+        flat: false
+        name: physnet0
+        ovs: true
+        vlan_range: 1:4094
+      physnet1:
+        bridge_map: br-phys-1
+        flat: false
+        name: physnet1
+        vlan_range: 1:4094
+      physnet2:
+        bridge_map: br-phys-2
+        flat: false
+        name: physnet2
+        vlan_range: 1:4094
+      physnet3:
+        bridge_map: br-phys-3
+        flat: false
+        name: physnet3
+        vlan_range: 1:4094
+      physnet4:
+        bridge_map: br-phys-4
+        flat: false
+        name: physnet4
+        vlan_range: 1:4094
+      physnet5:
+        bridge_map: br-phys-5
+        flat: true
+        name: physnet5
+        vlan_range: 1:4094
+      physnet6:
+        bridge_map: br-phys-6
+        flat: true
+        name: physnet6
+        vlan_range: 1:4094
+      physnet7:
+        bridge_map: br-phys-7
+        flat: true
+        name: physnet7
+        vlan_range: 1:4094
+      physnet8:
+        bridge_map: br-phys-8
+        flat: true
+        name: physnet8
+        vlan_range: 1:4094
+  common_network_config_caas:
+    caas_physnets:
+      none:
+        name: none
+    caas_subnets:
+      none:
+        name: none
+  host_group_config:
+    AvrsCompute:
+      bond_mode: active-backup
+      cpu_allocation_ratio: 1.0
+      cpu_isolation_numa_0: 6
+      cpu_isolation_numa_1: 0
+      cpu_isolation_scheme: 1
+      dpdk_dedicated_cpus_per_nic: 2
+      dpdk_nic_names:
+      - ref:optional:common_network_config.nic_2_port_1.name
+      - ref:optional:common_network_config.nic_2_port_2.name
+      enable_realtime: false
+      hugepages_size: 1G
+      hypervisor_dedicated_cpus: 6
+      memory_ratio_for_hugepages_numa_0: -1
+      memory_ratio_for_hugepages_numa_1: -1
+      network_config: ref:hw_common_network_config.lacp_tenant_compute_network_config
+      partition_layout_path: /usr/share/cbis/cbis-config/cbis_config/resources/dell-730-partition.yaml
+      ram_allocation_ratio: 0.85
+      role:
+      - AvrsCompute
+      - CephStorage
+      root_device: null
+      storage_config:
+        ceph:
+          profile:
+            params:
+              osds:
+                dedicated_devices:
+                - /dev/sdj
+                - /dev/sdj
+                - /dev/sdj
+                - /dev/sdj
+                - /dev/sdj
+                - /dev/sdj
+                - /dev/sdg
+                - /dev/sdh
+                - /dev/sdi
+                devices:
+                - /dev/sda2
+                - /dev/sdb
+                - /dev/sdc
+                - /dev/sdd
+                - /dev/sde
+                - /dev/sdf
+                - /dev/sdg
+                - /dev/sdh
+                - /dev/sdi
+                osd_scenario: non-collocated
+                root_ceph_block_size: 138636
+        enable_ceph_storage: true
+        enable_local_storage: false
+        local_storage_devices: []
+    Controller:
+      network_config: ref:hw_common_network_config.controller_network_config
+      role:
+      - Control
+      root_device: ''
+    DpdkPerformanceCompute:
+      arp_responder: true
+      bond_mode: active-backup
+      cpu_allocation_ratio: 1
+      cpu_isolation_numa_0: -1
+      cpu_isolation_numa_1: -1
+      cpu_isolation_scheme: 1
+      dpdk_dedicated_cpus_per_nic: 4
+      dpdk_dedicated_cpus_per_nic_default_numa: 2
+      dpdk_nic_names:
+      - ref:optional:common_network_config.nic_2_port_1.name
+      - ref:optional:common_network_config.nic_2_port_2.name
+      dpdk_queue_number: 2
+      dpdk_reserved_memory: 10240,10240
+      enable_pmd_rx_rebalance: true
+      enable_qnq: false
+      enable_realtime: false
+      hugepages_size: 1G
+      hypervisor_dedicated_cpus: 4
+      memory_ratio_for_hugepages_numa_0: -1
+      memory_ratio_for_hugepages_numa_1: -1
+      network_config: ref:hw_common_network_config.dpdk_performance_compute_network_config
+      partition_layout_path: /usr/share/cbis/cbis-config/cbis_config/resources/dell-730-partition.yaml
+      ram_allocation_ratio: 0.85
+      role:
+      - DpdkCompute
+      - CephStorage
+      root_device: ''
+      storage_config:
+        ceph:
+          profile:
+            params:
+              osds:
+                dedicated_devices:
+                - /dev/sdj
+                - /dev/sdj
+                - /dev/sdj
+                - /dev/sdj
+                - /dev/sdj
+                - /dev/sdj
+                devices:
+                - /dev/sda2
+                - /dev/sdb
+                - /dev/sdc
+                - /dev/sdd
+                - /dev/sde
+                - /dev/sdf
+                osd_scenario: non-collocated
+                root_ceph_block_size: 138636
+        enable_ceph_storage: true
+        enable_local_storage: false
+        local_storage_devices: []
+      tx_flush_interval: 1000
+    Monitoring:
+      network_config: ref:hw_common_network_config.monitoring_controller_network_config
+      role:
+      - Monitoring
+      root_device: ''
+    OvsCompute:
+      arp_responder: true
+      cpu_allocation_ratio: 1
+      cpu_isolation_numa_0: -1
+      cpu_isolation_numa_1: -1
+      cpu_isolation_scheme: 1
+      enable_hypervisor_rps: false
+      enable_irq_pinning: false
+      enable_qnq: false
+      enable_realtime: false
+      hugepages_size: None
+      hypervisor_dedicated_cpus: 6
+      memory_ratio_for_hugepages: 0.2
+      memory_ratio_for_hugepages_numa_0: -1
+      memory_ratio_for_hugepages_numa_1: -1
+      network_config: ref:hw_common_network_config.ovs_compute_network_config
+      partition_layout_path: /usr/share/cbis/cbis-config/cbis_config/resources/dell-730-partition.yaml
+      ram_allocation_ratio: 0.85
+      role:
+      - Compute
+      - CephStorage
+      root_device: ''
+      storage_config:
+        ceph:
+          profile:
+            params:
+              osds:
+                dedicated_devices:
+                - /dev/sdj
+                - /dev/sdj
+                - /dev/sdj
+                - /dev/sdj
+                - /dev/sdj
+                - /dev/sdj
+                devices:
+                - /dev/sda2
+                - /dev/sdb
+                - /dev/sdc
+                - /dev/sdd
+                - /dev/sde
+                - /dev/sdf
+                osd_scenario: non-collocated
+                root_ceph_block_size: 138636
+        enable_ceph_storage: true
+        enable_local_storage: false
+        local_storage_devices: []
+      tap_txqueuelen: 10000
+    SriovPerformanceCompute:
+      arp_responder: true
+      cpu_allocation_ratio: 1
+      cpu_isolation_numa_0: -1
+      cpu_isolation_numa_1: -1
+      cpu_isolation_scheme: 1
+      enable_qnq: false
+      enable_realtime: false
+      hugepages_size: None
+      hypervisor_dedicated_cpus: 6
+      lldp: true
+      memory_ratio_for_hugepages: 0.2
+      memory_ratio_for_hugepages_numa_0: -1
+      memory_ratio_for_hugepages_numa_1: -1
+      network_config: ref:hw_common_network_config.sriov_performance_compute_network_config
+      partition_layout_path: /usr/share/cbis/cbis-config/cbis_config/resources/dell-730-partition.yaml
+      ram_allocation_ratio: 0.85
+      role:
+      - Compute
+      - Sriov
+      - CephStorage
+      root_device: ''
+      sriov_mapping:
+      - allow_vgt_infra: false
+        allow_vgt_untagged: false
+        num_of_vfs: 63
+        physnet: ref:common_network_config.physnets.physnet1
+        port: ref:optional:common_network_config.nic_2_port_1.name
+        sriov_num_of_vfs: 63
+        trust: false
+        vgt_range: 0:4095
+      - allow_vgt_infra: false
+        allow_vgt_untagged: false
+        num_of_vfs: 63
+        physnet: ref:common_network_config.physnets.physnet2
+        port: ref:optional:common_network_config.nic_2_port_2.name
+        sriov_num_of_vfs: 63
+        trust: false
+        vgt_range: 0:4095
+      sriov_num_of_vfs: 63
+      storage_config:
+        ceph:
+          profile:
+            params:
+              osds:
+                dedicated_devices:
+                - /dev/sdj
+                - /dev/sdj
+                - /dev/sdj
+                - /dev/sdj
+                - /dev/sdj
+                - /dev/sdj
+                devices:
+                - /dev/sda2
+                - /dev/sdb
+                - /dev/sdc
+                - /dev/sdd
+                - /dev/sde
+                - /dev/sdf
+                osd_scenario: non-collocated
+                root_ceph_block_size: 138636
+        enable_ceph_storage: true
+        enable_local_storage: false
+        local_storage_devices: []
+      tap_txqueuelen: 10000
+    Storage:
+      network_config: ref:hw_common_network_config.storage_network_config
+      partition_layout_path: /usr/share/cbis/cbis-config/cbis_config/resources/dell-730-partition.yaml
+      role:
+      - CephStorage
+      root_device: ''
+      storage_config:
+        ceph:
+          profile:
+            params:
+              osds:
+                dedicated_devices:
+                - /dev/sdj
+                - /dev/sdj
+                - /dev/sdj
+                - /dev/sdj
+                - /dev/sdj
+                - /dev/sdj
+                - /dev/sdg
+                - /dev/sdh
+                - /dev/sdi
+                devices:
+                - /dev/sda2
+                - /dev/sdb
+                - /dev/sdc
+                - /dev/sdd
+                - /dev/sde
+                - /dev/sdf
+                - /dev/sdg
+                - /dev/sdh
+                - /dev/sdi
+                osd_scenario: non-collocated
+                root_ceph_block_size: 138636
+        enable_ceph_storage: true
+      storage_separation_network: false
+  openstack_deployment:
+    admin_password: Mc10vin!!
+    backup_hour: 2
+    backup_minute: 0
+    backup_nfs_mountpoint: /root/backup
+    backup_password: b4cK1tup!!
+    configure_alarm_manager: false
+    configure_zabbix_host_ipmi: false
+    configure_zabbix_host_snmp: false
+    configure_zabbix_switches: false
+    deploy_elk: true
+    deploy_zabbix: true
+    elk_deployment_type: local
+    elk_disk: sdb
+    elk_keep_data: 5
+    elk_redis_password: 3lkr3d1s
+    kibana_password: Mc10vin!!
+    kibana_username: kibana
+    linux_cbisadmin_password: Mc10vin!!
+    message_of_the_day: Welcome to CBIS!
+    novl_password: Mc10vin!!
+    novl_username: novl
+    rsyslog_servers:
+    - 10.5.224.106
+    tenant_network_tunnel_type: vxlan,vlan
+    zabbix_password: Mc10vin!!
+    zabbix_username: cbis-admin
+  storage:
+    additional_external_storage: []
+    ceph_backend_enabled: true
+    ceph_block_db_size: 1024
+    ceph_disks: []
+    ceph_hci: true
+    ceph_journal_size: 10240
+    ceph_pgs_auto_adjust: true
+    ceph_pgs_pool_conf:
+      ceph_pgs_pool_weights:
+      - volumes:30
+      - vms:20
+      - images:12
+      - metrics:10
+      - backups:4
+      - cephfs_data:3
+      - cephfs_metadata:3
+      - default.rgw.buckets.data:3
+      - default.rgw.control:3
+      - default.rgw.meta:3
+      - .rgw.root:3
+      - default.rgw.log:3
+      - default.rgw.buckets.index:3
+      target_pgs_per_osd_common: 160
+      target_pgs_per_osd_fast: 160
+    ceph_pool_pg_num: 300
+    ceph_pool_size: 3
+    ceph_rados_gw: true
+    cephfs_share_point_size: 50
+    cinder_default_volume_type: tripleo-ceph
+    external_default_timeout: 10
+    external_storage_controller_ips: []
+    external_storage_enable_multi_attach: false
+    external_storage_enabled: false
+    external_storage_family: eseries
+    external_storage_io_port_list: []
+    external_storage_iscsi_ip: null
+    external_storage_login: rw
+    external_storage_max_luns_per_storage_group: 256
+    external_storage_password: rw
+    external_storage_protocol: null
+    external_storage_sa_password: null
+    external_storage_san_ip: null
+    external_storage_secondary_san_ip: null
+    external_storage_server_hostname: []
+    external_storage_server_port: 8082
+    external_storage_storage_pools: []
+    external_storage_system: null
+    external_storage_volume_backend_name: null
+    external_storage_volume_driver_name: null
+  subnets:
+    aux:
+      mtu: ref:common.host_underlay_mtu
+    external:
+      gateway: 10.5.208.1
+      ip_range_end: 10.5.208.150
+      ip_range_start: 10.5.208.100
+      mtu: ref:common.host_underlay_mtu
+      network_address: 10.5.208.0/24
+      pcp: ref:common_network_config.pcp.external
+      vip: ref:optional:undercloud.hypervisor_cidr:default {ref:ip_range_start}
+      vlan: 4090
+    internal_api:
+      mtu: ref:common.host_underlay_mtu
+      network_address: 172.17.1.0/24
+      pcp: ref:common_network_config.pcp.internal_api
+      vlan: 41
+    nuage_tenant:
+      mtu: ref:common.host_underlay_mtu
+    nuage_tenant_2:
+      mtu: ref:common.host_underlay_mtu
+    provisioning:
+      gateway: 127.0.0.1
+      mtu: ref:common.host_underlay_mtu
+      network_address:
+        list_join:
+        - /
+        - - '{get_param: ControlPlaneIp}'
+          - '{get_param: ControlPlaneSubnetCidr}'
+    storage:
+      mtu: ref:common.host_underlay_mtu
+      network_address: 172.17.3.0/24
+      pcp: ref:common_network_config.pcp.storage
+      vlan: 43
+    storage_mgmt:
+      mtu: ref:common.host_underlay_mtu
+      network_address: 172.17.4.0/24
+      pcp: ref:common_network_config.pcp.storage_mgmt
+      vlan: 44
+    tenant:
+      mtu: ref:common.host_underlay_mtu
+      network_address: 172.17.2.0/24
+      pcp: ref:common_network_config.pcp.tenant
+      vlan: 42
+    tenant_2:
+      mtu: ref:common.host_underlay_mtu
+  undercloud:
+    __inline_undercloud: hw_common/Default_Linux/undercloud
+    cert: util/undercloud.pem
+    configure_hypervisor_network: true
+    enable_ipv6: IPv4
+    hypervisor_cidr: 10.5.208.11/24
+    hypervisor_provisioning_cidr: 172.31.7.254/21
+    introspect_lldp: false
+    overcloud_kernel_type: default
+    server_cert: util/server-cert.pem
+    undercloud_cidr: 10.5.208.10/24
+    undercloud_vm_cpu_cores: auto
+    undercloud_vm_mem_mb: auto
+version: 20.100.1-843

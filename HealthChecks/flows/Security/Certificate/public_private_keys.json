@@ -1,0 +1,279 @@
+{
+  "Deployment_type.NCS_OVER_BM": {
+    "nginx": {
+      "ALL_VERSIONS": {
+        "cert": "/etc/nginx/certs/nginx.crt",
+        "key": "/etc/nginx/certs/nginx.key",
+        "role": "[Objectives.MANAGERS]"
+      }
+    },
+    "pki": {
+      "[Version.V22-unlimited]": {
+        "cert": "/etc/pki/ca-trust/source/general-cert/ca.crt.pem",
+        "key": "/etc/pki/ca-trust/source/general-cert/ca.key.pem",
+        "role": "[Objectives.MANAGERS]"
+      }
+    },
+    "general_cert": {
+      "ALL_VERSIONS": {
+        "cert": "/etc/pki/tls/private/general-cert/server.crt.pem",
+        "key": "/etc/pki/tls/private/general-cert/server.key.pem",
+        "role": "[Objectives.MANAGERS]"
+      }
+    },
+    "openssl": {
+      "ALL_VERSIONS": {
+        "cert": "/etc/openssl/ca.pem",
+        "key": "/etc/openssl/ca-key.pem",
+        "role": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "rabbitmq": {
+      "ALL_VERSIONS": {
+        "cert": "/etc/rabbitmq/rabbitmq.pem",
+        "key": "/etc/rabbitmq/rabbitmq.key",
+        "role": "[Objectives.MANAGERS]"
+      }
+    },
+    "k8_aggregator_proxy": {
+      "ALL_VERSIONS": {
+        "cert": "/etc/kubernetes/ssl/aggregator-proxy.pem",
+        "key": "/etc/kubernetes/ssl/aggregator-proxy-key.pem",
+        "role": "[Objectives.MASTERS]"
+      }
+    },
+    "etcd": {
+      "ALL_VERSIONS": {
+        "cert": "/etc/etcd/ssl/etcd.pem",
+        "key": "/etc/etcd/ssl/etcd-key.pem",
+        "role": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "etcd_client": {
+      "ALL_VERSIONS": {
+        "cert": "/etc/etcd/ssl/etcd-client.pem",
+        "key": "/etc/etcd/ssl/etcd-client-key.pem",
+        "role": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "bcmt_api": {
+      "ALL_VERSIONS": {
+        "cert": "/opt/bcmt/config/bcmt-api/certs/bcmt-api.pem",
+        "key": "/opt/bcmt/config/bcmt-api/certs/bcmt-api-key.pem",
+        "role": "[Objectives.MASTERS]"
+      }
+    },
+    "snapshot_validation": {
+      "ALL_VERSIONS": {
+        "cert": "/opt/bcmt/config/snapshot-controller/certs/snapshot-validation.pem",
+        "key": "/opt/bcmt/config/snapshot-controller/certs/snapshot-validation-key.pem",
+        "role": "[Objectives.MASTERS]"
+      }
+    },
+    "cmdb_server": {
+      "ALL_VERSIONS": {
+        "cert": "/opt/bcmt/config/bcmt-cmdb/certs/cmdb-server.pem",
+        "key": "/opt/bcmt/config/bcmt-cmdb/certs/cmdb-server-key.pem",
+        "role": "[Objectives.MASTERS]"
+      }
+    },
+    "cmdb_client": {
+      "ALL_VERSIONS": {
+        "cert": "/opt/bcmt/config/bcmt-cmdb/certs/cmdb-client.pem",
+        "key": "/opt/bcmt/config/bcmt-cmdb/certs/cmdb-client-key.pem",
+        "role": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_ckey": {
+      "ALL_VERSIONS": {
+        "cert": "/opt/bcmt/config/bcmt-ckey/certs/ckey.pem",
+        "key": "/opt/bcmt/config/bcmt-ckey/certs/ckey-key.pem",
+        "role": "[Objectives.ONE_MASTER]"
+      }
+    },
+    "bcmt_ip_man": {
+      "ALL_VERSIONS": {
+        "cert": "/opt/bcmt/config/bcmt-ip-man/certs/bcmt-ip-man.pem",
+        "key": "/opt/bcmt/config/bcmt-ip-man/certs/bcmt-ip-man-key.pem",
+        "role": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_registry": {
+      "ALL_VERSIONS": {
+        "cert": "/opt/bcmt/config/bcmt-registry/certs/bcmt-registry.pem",
+        "key": "/opt/bcmt/config/bcmt-registry/certs/bcmt-registry-key.pem",
+        "role": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "bcmt_nginx": {
+      "ALL_VERSIONS": {
+        "cert": "/opt/bcmt/config/bcmt-nginx/certs/bcmt-nginx.pem",
+        "key": "/opt/bcmt/config/bcmt-nginx/certs/bcmt-nginx-key.pem",
+        "role": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "apiserver_proxy": {
+      "ALL_VERSIONS": {
+        "cert": "/etc/kubernetes/ssl/apiserver.pem",
+        "key": "/etc/kubernetes/ssl/apiserver-key.pem",
+        "role": "[Objectives.MASTERS]"
+      }
+    },
+    "k8_cluster-admin": {
+      "ALL_VERSIONS": {
+        "cert": "/etc/kubernetes/ssl/cluster-admin.pem",
+        "key": "/etc/kubernetes/ssl/cluster-admin-key.pem",
+        "role": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "k8_default-ns-admin": {
+      "ALL_VERSIONS": {
+        "cert": "/etc/kubernetes/ssl/default-ns-admin.pem",
+        "key": "/etc/kubernetes/ssl/default-ns-admin-key.pem",
+        "role": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "k8_kube-controller-manager": {
+      "ALL_VERSIONS": {
+        "cert": "/etc/kubernetes/ssl/kube-controller-manager.pem",
+        "key": "/etc/kubernetes/ssl/kube-controller-manager-key.pem",
+        "role": "[Objectives.MASTERS]"
+      }
+    },
+    "k8_kubelet": {
+      "ALL_VERSIONS": {
+        "cert": "/etc/kubernetes/ssl/kubelet.pem",
+        "key": "/etc/kubernetes/ssl/kubelet-key.pem",
+        "role": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "k8_kube-proxy": {
+      "ALL_VERSIONS": {
+        "cert": "/etc/kubernetes/ssl/kube-proxy.pem",
+        "key": "/etc/kubernetes/ssl/kube-proxy-key.pem",
+        "role": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "k8_kube-scheduler": {
+      "ALL_VERSIONS": {
+        "cert": "/etc/kubernetes/ssl/kube-scheduler.pem",
+        "key": "/etc/kubernetes/ssl/kube-scheduler-key.pem",
+        "role": "[Objectives.MASTERS]"
+      }
+    },
+    "registry_docker": {
+      "[Version.V20-Version.V20_FP2]": {
+        "cert": "/var/lib/registry/certs/docker.crt",
+        "key": "/var/lib/registry/certs/docker.key",
+        "role": "[Objectives.MANAGERS]"
+      }
+    },
+    "registry_podman": {
+      "[Version.V22-unlimited]": {
+        "cert": "/var/lib/registry/certs/podman.crt",
+        "key": "/var/lib/registry/certs/podman.key",
+        "role": "[Objectives.MANAGERS]"
+      }
+    },
+    "dm_registry_cert": {
+      "[Version.V20-Version.V20_FP2]": {
+        "cert": "/opt/bcmt/registry_certs/registry.pem",
+        "key": "/opt/bcmt/registry_certs/registry-key.pem",
+        "role": "[Objectives.MANAGERS]"
+      }
+    },
+    "bcmt_cbur_client": {
+      "ALL_VERSIONS": {
+        "cert": "/opt/bcmt/config/cbur/client.pem",
+        "key": "/opt/bcmt/config/cbur/client-key.pem",
+        "role": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_cbur_server": {
+      "ALL_VERSIONS": {
+        "cert": "/opt/bcmt/config/cbur/server.pem",
+        "key": "/opt/bcmt/config/cbur/server-key.pem",
+        "role": "[Objectives.MASTERS]"
+      }
+    },
+    "galera_client": {
+      "[Version.V24_7-unlimited]": {
+        "cert": "/opt/bcmt/config/bcmt-galera/certs/galera-client.pem",
+        "key": "/opt/bcmt/config/bcmt-galera/certs/galera-client-key.pem",
+        "role": "[Objectives.MASTERS]"
+      }
+    },
+    "galera_server": {
+      "[Version.V24_7-unlimited]": {
+        "cert": "/opt/bcmt/config/bcmt-galera/certs/galera-server.pem",
+        "key": "/opt/bcmt/config/bcmt-galera/certs/galera-server-key.pem",
+        "role": "[Objectives.MASTERS]"
+      }
+    }
+  },
+  "Deployment_type.CBIS": {
+    "server": {
+      "ALL_VERSIONS": {
+        "cert": "/home/stack/server.crt.pem",
+        "key": "/home/stack/server.key.pem",
+        "role": "[Objectives.UC]"
+      }
+    },
+    "nginx": {
+      "[Version.V20-unlimited]": {
+        "cert": "/etc/nginx/certs/nginx.crt",
+        "key": "/etc/nginx/certs/nginx.key",
+        "role": "[Objectives.HYP]"
+      }
+    },
+    "ca_cert": {
+      "ALL_VERSIONS": {
+        "cert": "/home/stack/ca.crt.pem",
+        "key": "/home/stack/ca.key.pem",
+        "role": "[Objectives.UC]"
+      }
+    },
+    "cbis_registry": {
+      "[Version.V22-unlimited]": {
+        "cert": "/var/lib/registry/certs/cbis_docker_registry.crt",
+        "key": "/var/lib/registry/certs/cbis_docker_registry.key",
+        "role": "[Objectives.UC]"
+      }
+    },
+    "ca_internal": {
+      "[Version.V22-unlimited]": {
+        "cert": "/home/stack/ca-internal.crt.pem",
+        "key": "/home/stack/ca-internal.key.pem",
+        "role": "[Objectives.UC]"
+      }
+    },
+    "babican": {
+      "[Version.V22-unlimited]": {
+        "cert": "/var/lib/config-data/puppet-generated/barbican/etc/barbican/barbican-server.pem",
+        "key": "/var/lib/config-data/puppet-generated/barbican/etc/barbican/barbican-server.key",
+        "role": "[Objectives.CONTROLLERS]"
+      }
+    },
+    "security_admin": {
+      "[Version.V22-unlimited]": {
+        "cert": "/home/cbis-admin/secadmin.pem",
+        "key": "/home/cbis-admin/secadmin.key",
+        "role": "[Objectives.CONTROLLERS, Objectives.COMPUTES]"
+      }
+    },
+    "cinder": {
+      "[Version.V22-unlimited]": {
+        "cert": "/var/lib/config-data/puppet-generated/cinder/etc/cinder/cinder-server.pem",
+        "key": "/var/lib/config-data/puppet-generated/cinder/etc/cinder/cinder-server.key",
+        "role": "[Objectives.CONTROLLERS]"
+      }
+    },
+    "nova": {
+      "[Version.V22-unlimited]": {
+        "cert": "/var/lib/config-data/puppet-generated/nova_libvirt/etc/nova/nova-server.pem",
+        "key": "/var/lib/config-data/puppet-generated/nova_libvirt/etc/nova/nova-server.key",
+        "role": "[Objectives.COMPUTES]"
+      }
+    }
+  }
+}

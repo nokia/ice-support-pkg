@@ -1,0 +1,101 @@
+{
+  "20-nproc.conf": {
+    "/etc/security/limits.d/": "[Objectives.MASTERS]"
+  },
+
+  "audit-policy.yaml": {
+    "/etc/kubernetes/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES, Objectives.MONITOR]"
+  },
+
+  "chrony.conf": {
+    "/etc/": "[Objectives.MANAGERS, Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES, Objectives.MONITOR]"
+  },
+
+  "cluster-admin.kubeconfig": {
+    "/etc/kubernetes/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES, Objectives.MONITOR]"
+  },
+  "config": {
+        "/root/.kube/": "[Objectives.MASTERS]"
+    },
+
+  "config.toml": {
+    "/etc/containerd/": "[Objectives.MANAGERS, Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES, Objectives.MONITOR]"
+  },
+
+  "kube-controller-manager-config": {
+    "/etc/kubernetes/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES, Objectives.MONITOR]"
+  },
+
+  "kube-controller-manager.kubeconfig": {
+    "/etc/kubernetes/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES, Objectives.MONITOR]"
+  },
+
+  "kube-proxy-config.yml": {
+    "/etc/kubernetes/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES, Objectives.MONITOR]"
+  },
+
+  "kube-scheduler-config": {
+    "/etc/kubernetes/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES, Objectives.MONITOR]"
+  },
+
+  "kube-scheduler-extender-condition.yml": {
+    "/etc/kubernetes/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES, Objectives.MONITOR]"
+  },
+
+  "kube-scheduler-extender-config.yml": {
+    "/etc/kubernetes/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES, Objectives.MONITOR]"
+  },
+
+  "kube-scheduler.kubeconfig": {
+    "/etc/kubernetes/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES, Objectives.MONITOR]"
+  },
+
+  "kube-proxy.kubeconfig": {
+    "/etc/kubernetes/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES, Objectives.MONITOR]"
+  },
+
+  "kubelet-config.yml": {
+    "/etc/kubernetes/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES, Objectives.MONITOR]"
+  },
+
+  "kubelet.kubeconfig": {
+    "/etc/kubernetes/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES, Objectives.MONITOR]"
+  },
+
+  "limits.conf": {
+    "/etc/security/": "[Objectives.MANAGERS, Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES, Objectives.MONITOR]"
+  },
+
+  "logrotate.conf": {
+    "/etc/": "[Objectives.MANAGERS, Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES, Objectives.MONITOR]"
+  },
+
+  "ntp.conf": {
+    "/etc/": "[Objectives.MANAGERS, Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES, Objectives.MONITOR]"
+  },
+
+  "repositories.yaml": {
+    "/opt/bcmt/storage/helm_home/helm3/.config/": "[Objectives.MASTERS]"
+  },
+
+  "resolv.conf": {
+    "/etc/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES, Objectives.MANAGERS]"
+  },
+
+  "rsyslog.conf": {
+    "/etc/": "[Objectives.MANAGERS, Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES, Objectives.MONITOR]"
+  },
+
+  "sysctl.conf": {
+    "/etc/systemd/": "[Objectives.MANAGERS, Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES, Objectives.MONITOR]"
+  },
+
+  "system.conf": {
+    "/etc/systemd/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES, Objectives.MONITOR]"
+  },
+
+  "yum.conf": {
+    "/etc/": "[Objectives.MANAGERS, Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES, Objectives.MONITOR]"
+  }
+
+}

@@ -1,0 +1,11 @@
+gnocchi_statsd
+elk-curator
+ceilometer_agent_notification
+aodh_listener
+aodh_notifier
+openstack-cinder-volume-docker-0
+openstack-manila-share-docker-0
+cbis-vitrage-graph
+nova_wait_for_placement_service
+ssc-isplugins
+ssc-dboplugins

@@ -1,0 +1,21 @@
+{
+  "csi-cephfs-provisioner": {
+    "deployment": "ncms"
+  },
+
+  "csi-cephrbd-provisioner": {
+    "deployment": "ncms"
+  },
+
+  "csi-cephfs-nodeplugin": {
+    "daemonset": "ncms"
+  },
+
+  "csi-cephrbd-nodeplugin": {
+    "daemonset": "ncms"
+  },
+
+  "csi-s3-nodeplugin": {
+    "daemonset": "kube-system"
+  }
+}

@@ -1,0 +1,727 @@
+{
+  "NCS_OVER_BM": {
+    "nginx_cert": {
+      "ALL_VERSIONS": {
+        "/etc/nginx/certs/nginx.crt": "[Objectives.MANAGERS]"
+      }
+    },
+    "etcd_ca": {
+      "ALL_VERSIONS": {
+        "/etc/etcd/ssl/ca.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "etcd": {
+      "ALL_VERSIONS": {
+        "/etc/etcd/ssl/etcd.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "etcd_client": {
+      "ALL_VERSIONS": {
+        "/etc/etcd/ssl/etcd-client.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "ca_pki": {
+      "ALL_VERSIONS": {
+        "/etc/pki/ca-trust/source/general-cert/ca.crt.pem": "[Objectives.MANAGERS]"
+      }
+    },
+    "anchor_ca": {
+      "ALL_VERSIONS": {
+        "/etc/pki/ca-trust/source/anchors/ca.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "anchor_ca_crt": {
+      "ALL_VERSIONS": {
+        "/etc/pki/ca-trust/source/anchors/ca.crt.pem": "[Objectives.MANAGERS, Objectives.MONITOR, Objectives.ALL_NODES]"
+      }
+    },
+    "anchor_ca_cbcs_crt": {
+      "ALL_VERSIONS": {
+        "/etc/pki/ca-trust/source/anchors/ca.cbcs.crt.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "general_cert_crt": {
+      "ALL_VERSIONS": {
+        "/etc/pki/tls/private/general-cert/server.crt.pem": "[Objectives.MANAGERS]"
+      }
+    },
+    "ca_trust": {
+      "ALL_VERSIONS": {
+        "/etc/pki/ca-trust/source/masters/ca.crt.pem": "[Objectives.MANAGERS]"
+      }
+    },
+    "overcloud_endpoint": {
+      "ALL_VERSIONS": {
+        "/etc/pki/tls/private/overcloud_endpoint.pem": "[Objectives.MANAGERS, Objectives.MASTERS, Objectives.MONITOR]"
+      }
+    },
+    "openssl": {
+      "ALL_VERSIONS": {
+        "/etc/openssl/ca.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "rabbitmq": {
+      "[Version.V20-Version.V23_10]": {
+        "/etc/rabbitmq/rabbitmq.pem": "[Objectives.MANAGERS]"
+      }
+    },
+    "registry_certs": {
+      "[Version.V22-Version.V22_12]": {
+        "/opt/management/bcmt/{cluster_name}/registry_certs/registry.pem": "[Objectives.MANAGERS]"
+      }
+    },
+    "registry_podman": {
+      "[Version.V22-unlimited]": {
+        "/var/lib/registry/certs/podman.crt": "[Objectives.MANAGERS]"
+      }
+    },
+    "registry_docker": {
+      "[Version.V20-Version.V20_FP2]": {
+        "/var/lib/registry/certs/docker.crt": "[Objectives.MANAGERS]"
+      }
+    },
+    "registry_docker_bcmt": {
+      "[Version.V20-Version.V20_FP2]": {
+        "/etc/docker/certs.d/bcmt-registry:5000/ca.crt": "[Objectives.MANAGERS, Objectives.MASTERS, Objectives.EDGES, Objectives.WORKERS]"
+      }
+    },
+    "registry_docker_proxy": {
+      "[Version.V20-Version.V20_FP2]": {
+        "/etc/docker/certs.d/registry-proxy:5000/ca.crt": "[Objectives.MANAGERS, Objectives.MASTERS, Objectives.EDGES, Objectives.WORKERS]"
+      }
+    },
+    "registry_podman_bcmt": {
+      "[Version.V22-unlimited]": {
+        "/etc/containers/certs.d/bcmt-registry:5000/ca.crt": "[Objectives.MASTERS, Objectives.EDGES, Objectives.WORKERS]"
+      }
+    },
+    "registry_podman_proxy": {
+      "[Version.V22-unlimited]": {
+        "/etc/containers/certs.d/registry-proxy:5000/ca.crt": "[Objectives.MASTERS, Objectives.EDGES, Objectives.WORKERS]"
+      }
+    },
+    "registry_podman_ca": {
+      "[Version.V22-unlimited]": {
+        "/etc/containers/certs.d/127.0.0.1:8787/ca.crt": "[Objectives.MANAGERS, Objectives.MASTERS, Objectives.EDGES, Objectives.WORKERS, Objectives.MONITOR, Objectives.STORAGE]"
+      }
+    },
+    "registry_podman_dockerepo": {
+      "[Version.V22-unlimited]": {
+        "/etc/containers/certs.d/dockerepo-ipv6:8787/ca.crt": "[Objectives.MANAGERS, Objectives.MASTERS, Objectives.EDGES, Objectives.WORKERS, Objectives.MONITOR, Objectives.STORAGE]"
+      }
+    },
+    "bcmt_snapshot_controller_ca": {
+      "[Version.V17-Version.V25]": {
+        "/opt/bcmt/config/snapshot-controller/certs/ca.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_snapshot_controller": {
+      "[Version.V17-Version.V25]": {
+        "/opt/bcmt/config/snapshot-controller/certs/snapshot-validation.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_api": {
+      "ALL_VERSIONS": {
+        "/opt/bcmt/config/bcmt-api/certs/bcmt-api.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_api_ca": {
+      "ALL_VERSIONS": {
+        "/opt/bcmt/config/bcmt-api/certs/ca.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "k8_kube_scheduler": {
+      "ALL_VERSIONS": {
+        "/etc/kubernetes/ssl/kube-scheduler.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "k8_kube_proxy": {
+      "ALL_VERSIONS": {
+        "/etc/kubernetes/ssl/kube-proxy.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "k8_kubelet": {
+      "ALL_VERSIONS": {
+        "/etc/kubernetes/ssl/kubelet.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "k8_kube_controller_manager": {
+      "ALL_VERSIONS": {
+        "/etc/kubernetes/ssl/kube-controller-manager.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "k8_cluster_admin": {
+      "ALL_VERSIONS": {
+        "/etc/kubernetes/ssl/cluster-admin.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "k8_root_certificate": {
+      "ALL_VERSIONS": {
+        "/etc/kubernetes/ssl/ca.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "k8_apiserver": {
+      "ALL_VERSIONS": {
+        "/etc/kubernetes/ssl/apiserver.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "k8_aggregator_proxy": {
+      "ALL_VERSIONS": {
+        "/etc/kubernetes/ssl/aggregator-proxy.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "k8_default_ns_admin": {
+      "ALL_VERSIONS": {
+        "/etc/kubernetes/ssl/default-ns-admin.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "bcmt_cmdb_ca": {
+      "[Version.V20-Version.V23_10]": {
+        "/opt/bcmt/config/bcmt-cmdb/certs/ca.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_cmdb_server": {
+      "[Version.V20-Version.V23_10]": {
+        "/opt/bcmt/config/bcmt-cmdb/certs/cmdb-server.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_cmdb_client": {
+      "[Version.V20-Version.V23_10]": {
+        "/opt/bcmt/config/bcmt-cmdb/certs/cmdb-client.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "galera_ca": {
+      "[Version.V24_7-unlimited]": {
+        "/opt/bcmt/config/bcmt-galera/certs/ca.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "galera_client": {
+      "[Version.V24_7-unlimited]": {
+        "/opt/bcmt/config/bcmt-galera/certs/galera-client.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "galera_server": {
+      "[Version.V24_7-unlimited]": {
+        "/opt/bcmt/config/bcmt-galera/certs/galera-server.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_ip_man_ca": {
+      "ALL_VERSIONS": {
+        "/opt/bcmt/config/bcmt-ip-man/certs/ca.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_ip_man": {
+      "ALL_VERSIONS": {
+        "/opt/bcmt/config/bcmt-ip-man/certs/bcmt-ip-man.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_registry_ca": {
+      "ALL_VERSIONS": {
+        "/opt/bcmt/config/bcmt-registry/certs/ca.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "bcmt_registry": {
+      "ALL_VERSIONS": {
+        "/opt/bcmt/config/bcmt-registry/certs/bcmt-registry.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "bcmt_nginx_ca": {
+      "ALL_VERSIONS": {
+        "/opt/bcmt/config/bcmt-nginx/certs/ca.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "bcmt_nginx": {
+      "ALL_VERSIONS": {
+        "/opt/bcmt/config/bcmt-nginx/certs/bcmt-nginx.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "bcmt_cbur_ca": {
+      "ALL_VERSIONS": {
+        "/opt/bcmt/config/cbur/ca.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_cbur_client": {
+      "ALL_VERSIONS": {
+        "/opt/bcmt/config/cbur/client.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_cbur_server": {
+      "ALL_VERSIONS": {
+        "/opt/bcmt/config/cbur/server.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "dm_registry_cert": {
+      "[Version.V20-Version.V20_FP2]": {
+        "/opt/bcmt/registry_certs/registry.pem": "[Objectives.MANAGERS]"
+      }
+    },
+    "prometheus": {
+      "[Version.V24_7-unlimited]": {
+        "/etc/pki/tls/certs/ca-bundle.crt": "[Objectives.EDGES]"
+      }
+    },
+    "gatekeeper": {
+      "[Version.V24_7-unlimited]": {
+        "/opt/bcmt/config/csf-charts/gatekeeper/certs/gatekeeper.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "gatekeeper_ca": {
+      "[Version.V24_7-unlimited]": {
+        "/opt/bcmt/config/csf-charts/gatekeeper/certs/ca.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "cert_manager": {
+      "[Version.V24_7-unlimited]": {
+        "/opt/bcmt/config/csf-charts/cert-manager/certs/cert-manager-webhook.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "cert_manager_ca": {
+      "[Version.V24_7-unlimited]": {
+        "/opt/bcmt/config/csf-charts/cert-manager/certs/ca.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "keda_ca": {
+      "[Version.V24_7-unlimited]": {
+        "/opt/bcmt/config/bcmt-keda/ca.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "keda": {
+      "[Version.V24_7-unlimited]": {
+        "/opt/bcmt/config/bcmt-keda/keda.pem": "[Objectives.MASTERS]"
+      }
+    }
+  },
+  "NCS_OVER_OS": {
+    "etcd_ca": {
+      "ALL_VERSIONS": {
+        "/etc/etcd/ssl/ca.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "etcd": {
+      "ALL_VERSIONS": {
+        "/etc/etcd/ssl/etcd.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "etcd_client": {
+      "ALL_VERSIONS": {
+        "/etc/etcd/ssl/etcd-client.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "k8_kube_scheduler": {
+      "ALL_VERSIONS": {
+        "/etc/kubernetes/ssl/kube-scheduler.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "k8_kube_proxy": {
+      "ALL_VERSIONS": {
+        "/etc/kubernetes/ssl/kube-proxy.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "k8_kubelet": {
+      "ALL_VERSIONS": {
+        "/etc/kubernetes/ssl/kubelet.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "k8_kube_controller_manager": {
+      "ALL_VERSIONS": {
+        "/etc/kubernetes/ssl/kube-controller-manager.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "k8_cluster_admin": {
+      "ALL_VERSIONS": {
+        "/etc/kubernetes/ssl/cluster-admin.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "k8_root_ca": {
+      "ALL_VERSIONS": {
+        "/etc/kubernetes/ssl/ca.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "k8_apiserver": {
+      "ALL_VERSIONS": {
+        "/etc/kubernetes/ssl/apiserver.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "k8_aggregator_proxy": {
+      "ALL_VERSIONS": {
+        "/etc/kubernetes/ssl/aggregator-proxy.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "k8_default_ns_admin": {
+      "ALL_VERSIONS": {
+        "/etc/kubernetes/ssl/default-ns-admin.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "openstack_ca_crt": {
+      "[Version.V20-Version.V22_12]": {
+        "/opt/clcm/ca.crt.pem": "[Objectives.DEPLOYER]"
+      },
+      "[Version.V23_10-unlimited]": {
+        "/opt/clcm/Openstack.pem": "[Objectives.DEPLOYER]"
+      }
+    },
+    "bcmt_api": {
+      "ALL_VERSIONS": {
+        "/opt/bcmt/config/bcmt-api/certs/bcmt-api.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_api_ca": {
+      "ALL_VERSIONS": {
+        "/opt/bcmt/config/bcmt-api/certs/ca.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_cbur_ca": {
+      "ALL_VERSIONS": {
+        "/opt/bcmt/config/cbur/ca.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_cbur_client": {
+      "ALL_VERSIONS": {
+        "/opt/bcmt/config/cbur/client.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_cbur_server": {
+      "ALL_VERSIONS": {
+        "/opt/bcmt/config/cbur/server.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_ip_man_ca": {
+      "ALL_VERSIONS": {
+        "/opt/bcmt/config/bcmt-ip-man/certs/ca.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_cmdb_ca": {
+      "[Version.V20-Version.V23_10]": {
+        "/opt/bcmt/config/bcmt-cmdb/certs/ca.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_cmdb_server": {
+      "[Version.V20-Version.V23_10]": {
+        "/opt/bcmt/config/bcmt-cmdb/certs/cmdb-server.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_snapshot_controller_ca": {
+      "[Version.V17-Version.V25]": {
+        "/opt/bcmt/config/snapshot-controller/certs/ca.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_snapshot_controller": {
+      "[Version.V17-Version.V25]": {
+        "/opt/bcmt/config/snapshot-controller/certs/snapshot-validation.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_cmdb_client": {
+      "[Version.V20-Version.V23_10]": {
+        "/opt/bcmt/config/bcmt-cmdb/certs/cmdb-client.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "galera_ca": {
+      "[Version.V24_7-unlimited]": {
+        "/opt/bcmt/config/bcmt-galera/certs/ca.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "galera_client": {
+      "[Version.V24_7-unlimited]": {
+        "/opt/bcmt/config/bcmt-galera/certs/galera-client.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "galera_server": {
+      "[Version.V24_7-unlimited]": {
+        "/opt/bcmt/config/bcmt-galera/certs/galera-server.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_ip_man": {
+      "ALL_VERSIONS": {
+        "/opt/bcmt/config/bcmt-ip-man/certs/bcmt-ip-man.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_registry_ca": {
+      "ALL_VERSIONS": {
+        "/opt/bcmt/config/bcmt-registry/certs/ca.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "bcmt_registry": {
+      "ALL_VERSIONS": {
+        "/opt/bcmt/config/bcmt-registry/certs/bcmt-registry.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "bcmt_nginx_ca": {
+      "ALL_VERSIONS": {
+        "/opt/bcmt/config/bcmt-nginx/certs/ca.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "bcmt_nginx": {
+      "ALL_VERSIONS": {
+        "/opt/bcmt/config/bcmt-nginx/certs/bcmt-nginx.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "dm_registry_cert": {
+      "[Version.V20-Version.V20_FP2]": {
+        "/opt/bcmt/registry_certs/registry.pem": "[Objectives.DEPLOYER]"
+      }
+    },
+    "prometheus": {
+      "[Version.V24_7-unlimited]": {
+        "/etc/pki/tls/certs/ca-bundle.crt": "[Objectives.EDGES]"
+      }
+    },
+    "gatekeeper": {
+      "[Version.V24_7-unlimited]": {
+        "/opt/bcmt/config/csf-charts/gatekeeper/certs/gatekeeper.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "gatekeeper_ca": {
+      "[Version.V24_7-unlimited]": {
+        "/opt/bcmt/config/csf-charts/gatekeeper/certs/ca.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "cert_manager": {
+      "[Version.V24_7-unlimited]": {
+        "/opt/bcmt/config/csf-charts/cert-manager/certs/cert-manager-webhook.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "cert_manager_ca": {
+      "[Version.V24_7-unlimited]": {
+        "/opt/bcmt/config/csf-charts/cert-manager/certs/ca.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "monitoring_ca": {
+      "[Version.V24_7-unlimited]": {
+        "/opt/bcmt/config/monitoring/ssl/ca.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "monitoring_server": {
+      "[Version.V24_7-unlimited]": {
+        "/opt/bcmt/config/monitoring/ssl/monitoring-server.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "monitoring_client": {
+      "[Version.V24_7-unlimited]": {
+        "/opt/bcmt/config/monitoring/ssl/monitoring-client.pem": "[Objectives.MASTERS]"
+      }
+    }
+  },
+  "NCS_OVER_VMWARE": {
+    "etcd_ca": {
+      "ALL_VERSIONS": {
+        "/etc/etcd/ssl/ca.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "etcd": {
+      "ALL_VERSIONS": {
+        "/etc/etcd/ssl/etcd.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "etcd_client": {
+      "ALL_VERSIONS": {
+        "/etc/etcd/ssl/etcd-client.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "k8_kube_scheduler": {
+      "ALL_VERSIONS": {
+        "/etc/kubernetes/ssl/kube-scheduler.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "k8_kube_proxy": {
+      "ALL_VERSIONS": {
+        "/etc/kubernetes/ssl/kube-proxy.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "k8_kubelet": {
+      "ALL_VERSIONS": {
+        "/etc/kubernetes/ssl/kubelet.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "k8_kube_controller_manager": {
+      "ALL_VERSIONS": {
+        "/etc/kubernetes/ssl/kube-controller-manager.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "k8_cluster_admin": {
+      "ALL_VERSIONS": {
+        "/etc/kubernetes/ssl/cluster-admin.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "k8_root_ca": {
+      "ALL_VERSIONS": {
+        "/etc/kubernetes/ssl/ca.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "k8_apiserver": {
+      "ALL_VERSIONS": {
+        "/etc/kubernetes/ssl/apiserver.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "k8_aggregator_proxy": {
+      "ALL_VERSIONS": {
+        "/etc/kubernetes/ssl/aggregator-proxy.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "k8_default_ns_admin": {
+      "ALL_VERSIONS": {
+        "/etc/kubernetes/ssl/default-ns-admin.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "bcmt_api": {
+      "ALL_VERSIONS": {
+        "/opt/bcmt/config/bcmt-api/certs/bcmt-api.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_api_ca": {
+      "ALL_VERSIONS": {
+        "/opt/bcmt/config/bcmt-api/certs/ca.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_cbur_ca": {
+      "ALL_VERSIONS": {
+        "/opt/bcmt/config/cbur/ca.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_cbur_client": {
+      "ALL_VERSIONS": {
+        "/opt/bcmt/config/cbur/client.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_cbur_server": {
+      "ALL_VERSIONS": {
+        "/opt/bcmt/config/cbur/server.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_ip_man_ca": {
+      "ALL_VERSIONS": {
+        "/opt/bcmt/config/bcmt-ip-man/certs/ca.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_cmdb_ca": {
+      "[Version.V20-Version.V23_10]": {
+        "/opt/bcmt/config/bcmt-cmdb/certs/ca.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_cmdb_server": {
+      "[Version.V20-Version.V23_10]": {
+        "/opt/bcmt/config/bcmt-cmdb/certs/cmdb-server.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_snapshot_controller_ca": {
+      "[Version.V17-Version.V25]": {
+        "/opt/bcmt/config/snapshot-controller/certs/ca.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_snapshot_controller": {
+      "[Version.V17-Version.V25]": {
+        "/opt/bcmt/config/snapshot-controller/certs/snapshot-validation.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_cmdb_client": {
+      "[Version.V20-Version.V23_10]": {
+        "/opt/bcmt/config/bcmt-cmdb/certs/cmdb-client.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "galera_ca": {
+      "[Version.V24_7-unlimited]": {
+        "/opt/bcmt/config/bcmt-galera/certs/ca.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "galera_client": {
+      "[Version.V24_7-unlimited]": {
+        "/opt/bcmt/config/bcmt-galera/certs/galera-client.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "galera_server": {
+      "[Version.V24_7-unlimited]": {
+        "/opt/bcmt/config/bcmt-galera/certs/galera-server.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_ip_man": {
+      "ALL_VERSIONS": {
+        "/opt/bcmt/config/bcmt-ip-man/certs/bcmt-ip-man.pem": "[Objectives.MASTERS]"
+      }
+    },
+    "bcmt_registry_ca": {
+      "ALL_VERSIONS": {
+        "/opt/bcmt/config/bcmt-registry/certs/ca.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "bcmt_registry": {
+      "ALL_VERSIONS": {
+        "/opt/bcmt/config/bcmt-registry/certs/bcmt-registry.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "bcmt_nginx_ca": {
+      "ALL_VERSIONS": {
+        "/opt/bcmt/config/bcmt-nginx/certs/ca.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "bcmt_nginx": {
+      "ALL_VERSIONS": {
+        "/opt/bcmt/config/bcmt-nginx/certs/bcmt-nginx.pem": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.EDGES]"
+      }
+    },
+    "dm_registry_cert": {
+      "[Version.V20-Version.V20_FP2]": {
+        "/opt/bcmt/registry_certs/registry.pem": "[Objectives.DEPLOYER]"
+      }
+    },
+    "prometheus": {
+      "[Version.V24_7-unlimited]": {
+        "/etc/pki/tls/certs/ca-bundle.crt": "[Objectives.EDGES]"
+      }
+    }
+  },
+  "CBIS": {
+    "nginx_cert": {
+      "[Version.V18-Version.V19]": {
+        "/etc/nginx/certs/nginx-selfsigned.crt": "[Objectives.HYP]"
+      },
+      "[Version.V20-unlimited]": {
+        "/etc/nginx/certs/nginx.crt": "[Objectives.HYP]"
+      }
+    },
+    "ca_cert": {
+      "ALL_VERSIONS": {
+        "/home/stack/ca.crt.pem": "[Objectives.UC]"
+      }
+    },
+    "server_cert": {
+      "ALL_VERSIONS": {
+        "/home/stack/server.crt.pem": "[Objectives.UC]"
+      }
+    },
+    "anchor_ca_crt": {
+      "[Version.V20-unlimited]": {
+        "/etc/pki/ca-trust/source/anchors/ca.crt.pem": "[Objectives.UC,Objectives.CONTROLLERS,Objectives.COMPUTES,Objectives.STORAGE]"
+      }
+    },
+    "barbican": {
+      "[Version.V20-Version.V20]": {
+        "/var/lib/config-data/puppet-generated/barbican/etc/barbican/barbican-server.pem": "[Objectives.CONTROLLERS]"
+      }
+    },
+    "cinder": {
+      "[Version.V20-Version.V20]": {
+        "/var/lib/config-data/puppet-generated/cinder/etc/cinder/cinder-server.pem": "[Objectives.CONTROLLERS]"
+      }
+    },
+    "nova": {
+      "[Version.V20-Version.V20]": {
+        "/var/lib/config-data/puppet-generated/nova_libvirt/etc/nova/nova-server.pem": "[Objectives.COMPUTES]"
+      }
+    },
+    "haproxy": {
+      "[Version.V20-unlimited]": {
+        "/etc/pki/tls/private/overcloud_endpoint.pem": "[Objectives.CONTROLLERS]"
+      }
+    },
+    "cbis_registry": {
+      "[Version.V22-unlimited]": {
+        "/var/lib/registry/certs/cbis_docker_registry.crt": "[Objectives.UC]"
+      }
+    },
+    "cbis_registry_ca_cert": {
+      "[Version.V22-unlimited]": {
+        "/etc/containers/certs.d/127.0.0.1:5001/ca.crt": "[Objectives.UC]",
+        "/etc/containers/certs.d/172.31.0.1:5001/ca.crt": "[Objectives.UC]"
+      }
+    }
+  }
+}

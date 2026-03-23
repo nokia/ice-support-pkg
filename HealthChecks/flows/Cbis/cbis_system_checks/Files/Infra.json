@@ -1,0 +1,129 @@
+{
+"CBIS18":{
+	"AR-(D)CMN2-SB":{
+		"BIOS-version": "S2BP3A11, S2BP3A05, S2BP3B11, 3C12",
+		"NIC-version": "13.29, 13.47"
+		},
+	"AR-(D)COMN2-SB":{
+		"BIOS-version": "S2B_3B12",
+		"NIC-version": "13.65"
+		},
+	"AR-STOR2-SB":{
+		"BIOS-version": "S2B_3B12",
+		"NIC-version": "13.65"
+		},
+	"AR-S5001A-2A":{
+		"BIOS-version": "3A17",
+		"NIC-version": "14.20.1010"
+		},
+	"AR-S5002A-GA":{
+		"BIOS-version": "3A17",
+		"NIC-version": "14.20.1010"
+		},
+	"AO-SER2U-AS":{
+		"BIOS-version": "2.05.10",
+		"NIC-version": "14.22.1002"
+		}
+	},
+"CBIS19":{
+	"AR-BAREB1-BA":{
+		"BIOS-version": "S2BP3A11, S2BP3A11",
+		"NIC-version": "13.80.00, 13.47"
+		},
+	"AR-BAREB1-CA":{
+		"BIOS-version": "S2BP3A11, S2BP3A11",
+		"NIC-version": "13.80.00, 13.47"
+		},
+	"AR-(D)COMN2-SB":{
+		"BIOS-version": "S2B_3B11, S2B_3B12, S2B_3B18",
+		"NIC-version": "13.65, 13.53, 13.54, 13.89"
+		},
+	"AR-STOR2-SB":{
+		"BIOS-version": "S2B_3B11, S2B_3B12, S2B_3B18",
+		"NIC-version": "13.65, 13.53, 13.54, 13.89"
+		},
+	"AO-COMN2-AS":{
+		"BIOS-version": "13.24.00, 13.88.00",
+		"NIC-version": "13.24.00, 13.88.00"
+		},
+	"AO-STORC2-AS":{
+		"BIOS-version": "13.24.00, 13.88.00",
+		"NIC-version": "13.24.00, 13.88.00"
+		},
+	"AR-S5001A-2A":{
+		"BIOS-version": "3B12",
+		"NIC-version": "2.9.0"
+		},
+	"AR-S5002A-GA":{
+		"BIOS-version": "3B12",
+		"NIC-version": "2.9.0"
+		},
+	"AO-SER2U-AS":{
+		"BIOS-version": "3.05.10",
+		"NIC-version": "14.23.1000"
+		}
+	},
+"CBIS19A":{
+	"ProLiant BL460c Gen9":{
+		"BIOS-version": "I36",
+		"NIC-version": "13.80.00, 13.47"
+		},
+	"AR-BAREB1-BA":{
+		"BIOS-version": "S2BP3A11, S2BP3A11",
+		"NIC-version": "13.80.00, 13.47"
+		},
+	"AR-BAREB1-CA":{
+		"BIOS-version": "S2BP3A11, S2BP3A11",
+		"NIC-version": "13.80.00, 13.47"
+		},
+	"AR-BAREB2-AA":{
+		"BIOS-version": "S2BP3A11, S2BP3A11",
+		"NIC-version": "13.80.00, 13.47"
+		},
+	"AR-(D)COMN2-SB":{
+		"BIOS-version": " S2B_3B11, S2B_3B12, S2B_3B18",
+		"NIC-version": "13.65, 13.53, 13.54, 13.89"
+		},
+	"AR-STOR2-SB":{
+		"BIOS-version": " S2B_3B11, S2B_3B12, S2B_3B18",
+		"NIC-version": "13.65, 13.53, 13.54, 13.89"
+		},
+	"AO-COMN2-AS":{
+		"BIOS-version": "3C12, 3C21",
+		"NIC-version": "13.24.00, 13.88.00"
+		},
+	"AO-STORC2-AS":{
+		"BIOS-version": "3C12, 3C21",
+		"NIC-version": "13.24.00, 13.88.00"
+		},
+	"AR-S5001A-2A":{
+		"BIOS-version": "3B17"
+		},
+	"AR-S5002A-GA":{
+		"BIOS-version": "3B17"
+		},
+	"AO-SER2U-AS":{
+		"BIOS-version": "4.09.10"
+		},
+	},
+"CBIS20":{
+	"AR-D52BQ1-A":{
+		"BIOS-version": "3B21"
+		},
+	"AR-D52B1-B":{
+		"BIOS-version": "3B21"
+		},
+	"AR-D52B1-C":{
+		"BIOS-version": "3B21"
+		},
+	"AR-D52B1-D":{
+		"BIOS-version": "3B21"
+		},
+	"AR-D52BV1-B":{
+		"BIOS-version": "3B21"
+		},
+	"AO-SER2U-AS":{
+		"BIOS-version": "4.18.10"
+		},
+	}
+}

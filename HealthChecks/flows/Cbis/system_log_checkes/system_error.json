@@ -1,0 +1,14 @@
+{
+  "messages": [
+     {
+       "id": "Too_many_open_files",
+       "log_cmd": "/var/log/messages",
+       "log_cmd_type": "file",
+       "patterns": ["Too many open files" ],
+       "issue": "Too many open files in the system",
+       "versions": ["18","18.5","19","19A","20","21"],
+       "host_roles": ["all-hosts"],
+       "deployment_types": "cbis"
+     }
+    ]
+}

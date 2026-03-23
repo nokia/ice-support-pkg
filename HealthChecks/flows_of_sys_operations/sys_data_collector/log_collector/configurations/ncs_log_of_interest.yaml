@@ -1,0 +1,46 @@
+---
+Objectives.STORAGE:
+  - /var/log/messages*
+  - /var/log/cbis/cbis.post_deploy*
+  - /var/log/cbis/cbis.pre_deploy*
+  - /var/log/containers/*_ncms_*.log*
+  - /var/log/containers/*_kube-system_*.log*
+  - /var/log/ceph/*.log*
+Objectives.MONITOR:
+  - /var/log/messages*
+  - /var/log/cbis/cbis.post_deploy*
+  - /var/log/cbis/cbis.pre_deploy*
+  - /var/log/containers/*_ncms_*.log*
+  - /var/log/containers/*_kube-system_*.log*
+  - /var/log/zabbix/zabbix_cbis.log*
+Objectives.MANAGERS:
+  - /var/log/messages*
+  - /var/log/cbis/cbis.post_deploy*
+  - /var/log/cbis/cbis.pre_deploy*
+  - /var/log/containers/*_ncms_*.log*
+  - /var/log/containers/*_kube-system_*.log*
+  - /var/log/cbis/
+  - /var/log/ironic/
+  - /opt/management/bcmt/*/log/
+  - /opt/bcmt/log/
+Objectives.MASTERS:
+  - /var/log/messages*
+  - /var/log/cbis/cbis.post_deploy*
+  - /var/log/cbis/cbis.pre_deploy*
+  - /var/log/containers/*_ncms_*.log*
+  - /var/log/containers/*_kube-system_*.log*
+  - /var/log/ceph/*
+  - /var/log/containers/
+  - /var/log/zabbix/zabbix_cbis.log*
+Objectives.WORKERS:
+  - /var/log/messages*
+  - /var/log/cbis/cbis.post_deploy*
+  - /var/log/cbis/cbis.pre_deploy*
+  - /var/log/containers/*_ncms_*.log*
+  - /var/log/containers/*_kube-system_*.log*
+Objectives.EDGES:
+  - /var/log/messages*
+  - /var/log/cbis/cbis.post_deploy*
+  - /var/log/cbis/cbis.pre_deploy*
+  - /var/log/containers/*_ncms_*.log*
+  - /var/log/containers/*_kube-system_*.log*

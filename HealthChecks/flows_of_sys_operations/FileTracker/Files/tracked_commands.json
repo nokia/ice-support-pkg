@@ -1,0 +1,3 @@
+{
+  "sudo ceph config dump": "[Objectives.ONE_STORAGE]"
+}

@@ -1,0 +1,161 @@
+{{
+  "auth_dump": [
+    {{
+      "entity": "{}",
+      "key": "AQBTeY9ii9IwExAAO70fNSs2tnTWoAN8gnsrEA==",
+      "caps": {{
+        "mds": "allow",
+        "mon": "allow profile mds",
+        "osd": "allow rwx"
+      }}
+    }},
+    {{
+      "entity": "osd.0",
+      "key": "AQD6eI9iPRQ/OhAAxncnDtVFVBrG/QCj+P5jxw==",
+      "caps": {{
+        "mgr": "allow profile osd",
+        "mon": "allow profile osd",
+        "osd": "allow *"
+      }}
+    }},
+    {{
+      "entity": "osd.1",
+      "key": "AQD7eI9i7T2XAhAA5E1DzxM7ndE15afmT4uOyQ==",
+      "caps": {{
+        "mgr": "allow profile osd",
+        "mon": "allow profile osd",
+        "osd": "allow *"
+      }}
+    }},
+    {{
+      "entity": "osd.2",
+      "key": "AQD7eI9ihVBrEBAAcLZHxgojC+dNz3wsjjFeZw==",
+      "caps": {{
+        "mgr": "allow profile osd",
+        "mon": "allow profile osd",
+        "osd": "allow *"
+      }}
+    }},
+    {{
+      "entity": "osd.3",
+      "key": "AQD8eI9iWFiKDxAAM/ELahueegOljBVroh6ZfA==",
+      "caps": {{
+        "mgr": "allow profile osd",
+        "mon": "allow profile osd",
+        "osd": "allow *"
+      }}
+    }},
+    {{
+      "entity": "osd.4",
+      "key": "AQAAeY9i7Sf6KxAAsanZxuTxw7AbjemBVnC8hQ==",
+      "caps": {{
+        "mgr": "allow profile osd",
+        "mon": "allow profile osd",
+        "osd": "allow *"
+      }}
+    }},
+    {{
+      "entity": "osd.5",
+      "key": "AQAAeY9iYJf/NRAAKPC8IkTWhy2PPnp5UMN6DA==",
+      "caps": {{
+        "mgr": "allow profile osd",
+        "mon": "allow profile osd",
+        "osd": "allow *"
+      }}
+    }},
+    {{
+      "entity": "osd.6",
+      "key": "AQAAeY9iD7ewOhAA0MnlUDOOuleHtwrn+MQgJA==",
+      "caps": {{
+        "mgr": "allow profile osd",
+        "mon": "allow profile osd",
+        "osd": "allow *"
+      }}
+    }},
+    {{
+      "entity": "osd.7",
+      "key": "AQACeY9iG4XJIRAA6tULP6m7UUaPXj0ddVLtoQ==",
+      "caps": {{
+        "mgr": "allow profile osd",
+        "mon": "allow profile osd",
+        "osd": "allow *"
+      }}
+    }},
+    {{
+      "entity": "client.admin",
+      "key": "AQDwd49i0OrxMBAAyciy/b0M4ixRxTxn92E8vw==",
+      "auid": 0,
+      "caps": {{
+        "mds": "allow",
+        "mgr": "allow *",
+        "mon": "allow *",
+        "osd": "allow *"
+      }}
+    }},
+    {{
+      "entity": "client.bootstrap-mds",
+      "key": "AQDwd49ikG+DOBAA1QvDPSgyAGCNNUU65dRpcQ==",
+      "caps": {{
+        "mon": "allow profile bootstrap-mds"
+      }}
+    }},
+    {{
+      "entity": "client.bootstrap-osd",
+      "key": "AQDwd49iKboWNhAAMpRK8Da+NAKPTRu5rGe12g==",
+      "caps": {{
+        "mon": "allow profile bootstrap-osd"
+      }}
+    }},
+    {{
+      "entity": "client.bootstrap-rbd",
+      "key": "AQDxd49imvCBARAAm99Uz+liBHG1epjU+K76MA==",
+      "caps": {{
+        "mon": "allow profile bootstrap-rbd"
+      }}
+    }},
+    {{
+      "entity": "client.bootstrap-rgw",
+      "key": "AQDwd49isEDIOhAAu6G5K4zW5k7D1s/zriMMGg==",
+      "caps": {{
+        "mon": "allow profile bootstrap-rgw"
+      }}
+    }},
+    {{
+      "entity": "client.manila",
+      "key": "AQAYVo9iAAAAABAAVD/XQdX0IVyil1+kl3KHUA==",
+      "caps": {{
+        "mds": "allow *",
+        "mgr": "allow *",
+        "mon": "allow r, allow command 'auth del', allow command 'auth caps', allow command 'auth get', allow command 'auth get-or-create'",
+        "osd": "allow rw"
+      }}
+    }},
+    {{
+      "entity": "client.openstack",
+      "key": "AQC+a49iTFD0HhAA/Umd1Cb18lNCbogO7imaeA==",
+      "caps": {{
+        "mgr": "allow *",
+        "mon": "profile rbd",
+        "osd": "profile rbd pool=volumes, profile rbd pool=backups, profile rbd pool=vms, profile rbd pool=images, profile rbd pool=metrics"
+      }}
+    }},
+    {{
+      "entity": "client.radosgw",
+      "key": "AQAYVo9iAAAAABAA/j4aEf5lpaYjSltiIGV2iQ==",
+      "caps": {{
+        "mgr": "allow *",
+        "mon": "allow rw",
+        "osd": "allow rwx"
+      }}
+    }},
+    {{
+      "entity": "mgr.overcloud-controller-0",
+      "key": "AQD2d49i46OxKxAApHpXj+JkBrq64+ucubsryg==",
+      "caps": {{
+        "mds": "allow *",
+        "mon": "allow profile mgr",
+        "osd": "allow *"
+      }}
+    }}
+  ]
+}}

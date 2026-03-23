@@ -1,0 +1,2026 @@
+{"[Version.V17-Version.V19A]": {
+  "workers": {
+    "Numa": [
+      {
+        "nic_per_numa": [
+          "eno5",
+          "eno6",
+          "eno7",
+          "eno8",
+          "ens1f0",
+          "ens1f1"
+        ],
+        "total_allocated_memory_in_mb": "range(192925-unlimited)"
+      },
+      {
+        "nic_per_numa": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "total_allocated_memory_in_mb": "range(192925-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": "range(2933-3200)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": "range(2933-3200)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": "range(2933-3200)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": "range(2933-3200)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": "range(2933-3200)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": "range(2933-3200)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": "range(2933-3200)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": "range(2933-3200)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": "range(2933-3200)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": "range(2933-3200)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": "range(2933-3200)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": "range(2933-3200)"
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(360448-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "HPE or ATA",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH or LOGICAL VOLUME",
+        "size_in_mb": "range(915683-unlimited)"
+      },
+      {
+        "vendor": "HPE or ATA",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH or LOGICAL VOLUME",
+        "size_in_mb": "range(915683-unlimited)"
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens1f0",
+          "ens1f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "all_k8s_master": {
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(393216-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "HPE or ATA",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH or LOGICAL VOLUME",
+        "size_in_mb": "range(915683-unlimited)"
+      },
+      {
+        "vendor": "HPE or ATA",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH or LOGICAL VOLUME",
+        "size_in_mb": "range(915683-unlimited)"
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens1f0",
+          "ens1f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "monitoring": {
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(393216-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "HPE or ATA",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH or LOGICAL VOLUME",
+        "size_in_mb": "range(915683-unlimited)"
+      },
+      {
+        "vendor": "HPE or ATA",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH or LOGICAL VOLUME",
+        "size_in_mb": "range(915683-unlimited)"
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens1f0",
+          "ens1f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "storages": {
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(393216-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "MR000480GXBGH",
+        "size_in_mb": 457862
+      },
+      {
+        "type": "NVMe",
+        "model": "MO001600KWVNB",
+        "size_in_mb": 1526185
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": "range(1831388-3662830)"
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": "range(1831388-3662830)"
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": "range(1831388-3662830)"
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": "range(1831388-3662830)"
+      },
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "MR000480GXBGH",
+        "size_in_mb": 457862
+      },
+      {
+        "type": "NVMe",
+        "model": "MO001600KWVNB",
+        "size_in_mb": 1526185
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": "range(1831388-3662830)"
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": "range(1831388-3662830)"
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": "range(1831388-3662830)"
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": "range(1831388-3662830)"
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": "range(1831388-3662830)"
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": "range(1831388-3662830)"
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": "range(1831388-3662830)"
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": "range(1831388-3662830)"
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens2f0",
+          "ens2f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens5f0",
+          "ens5f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "edges": {
+    "Numa": [
+      {
+        "nic_per_numa": [
+          "eno5",
+          "eno6",
+          "eno7",
+          "eno8",
+          "ens1f0",
+          "ens1f1"
+        ],
+        "total_allocated_memory_in_mb": "range(192925-unlimited)"
+      },
+      {
+        "nic_per_numa": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "total_allocated_memory_in_mb": "range(192925-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(360448-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH",
+        "size_in_mb": 915715
+      },
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH",
+        "size_in_mb": 915715
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens1f0",
+          "ens1f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "computes": {
+    "Numa": [
+      {
+        "nic_per_numa": [
+          "eno5",
+          "eno6",
+          "eno7",
+          "eno8",
+          "ens1f0",
+          "ens1f1"
+        ],
+        "total_allocated_memory_in_mb": "range(192925-unlimited)"
+      },
+      {
+        "nic_per_numa": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "total_allocated_memory_in_mb": "range(192925-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": [
+          2933,
+          3200
+        ]
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": [
+          2933,
+          3200
+        ]
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": [
+          2933,
+          3200
+        ]
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": [
+          2933,
+          3200
+        ]
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": [
+          2933,
+          3200
+        ]
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": [
+          2933,
+          3200
+        ]
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": [
+          2933,
+          3200
+        ]
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": [
+          2933,
+          3200
+        ]
+      },
+      {
+        "size_in_mb": [
+          32768
+        ],
+        "type": "DDR4",
+        "speed_in_mhz": [
+          2933,
+          3200
+        ]
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": [
+          2933,
+          3200
+        ]
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": [
+          2933,
+          3200
+        ]
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": [
+          2933,
+          3200
+        ]
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(393216-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "HPE or ATA",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH or LOGICAL VOLUME",
+        "size_in_mb": "range(915715-unlimited)"
+      },
+      {
+        "vendor": "HPE or ATA",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH or LOGICAL VOLUME",
+        "size_in_mb": "range(915715-unlimited)"
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens1f0",
+          "ens1f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "controllers": {
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(393216-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "HPE or ATA",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH or LOGICAL VOLUME",
+        "size_in_mb": "range(915683-unlimited)"
+      },
+      {
+        "vendor": "HPE or ATA",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH or LOGICAL VOLUME",
+        "size_in_mb": "range(915683-unlimited)"
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens1f0",
+          "ens1f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  }
+},
+"[Version.V20-unlimited]":  {
+  "workers": {
+    "Numa": [
+      {
+        "nic_per_numa": [
+          "eno5",
+          "eno6",
+          "eno7",
+          "eno8",
+          "ens1f0",
+          "ens1f1"
+        ],
+        "total_allocated_memory_in_mb": "range(192925-unlimited)"
+      },
+      {
+        "nic_per_numa": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "total_allocated_memory_in_mb": "range(192925-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": "range(2933-3200)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": "range(2933-3200)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": "range(2933-3200)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": "range(2933-3200)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": "range(2933-3200)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": "range(2933-3200)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": "range(2933-3200)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": "range(2933-3200)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": "range(2933-3200)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": "range(2933-3200)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": "range(2933-3200)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": "range(2933-3200)"
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(360448-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "HPE or ATA",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH or LOGICAL VOLUME",
+        "size_in_mb": "range(915683-unlimited)"
+      },
+      {
+        "vendor": "HPE or ATA",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH or LOGICAL VOLUME",
+        "size_in_mb": "range(915683-unlimited)"
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens1f0",
+          "ens1f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "all_k8s_master": {
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(393216-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "HPE or ATA",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH or LOGICAL VOLUME",
+        "size_in_mb": "range(915683-unlimited)"
+      },
+      {
+        "vendor": "HPE or ATA",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH or LOGICAL VOLUME",
+        "size_in_mb": "range(915683-unlimited)"
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens1f0",
+          "ens1f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "monitoring": {
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(393216-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "HPE or ATA",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH or LOGICAL VOLUME",
+        "size_in_mb": "range(915683-unlimited)"
+      },
+      {
+        "vendor": "HPE or ATA",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH or LOGICAL VOLUME",
+        "size_in_mb": "range(915683-unlimited)"
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens1f0",
+          "ens1f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "storages": {
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(393216-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "MR000480GXBGH",
+        "size_in_mb": 457862
+      },
+      {
+        "type": "NVMe",
+        "model": "MO001600KWVNB",
+        "size_in_mb": 1526185
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": "range(3662798-unlimited)"
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": "range(3662798-unlimited)"
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": "range(3662798-unlimited)"
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": "range(3662798-unlimited)"
+      },
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "MR000480GXBGH",
+        "size_in_mb": 457862
+      },
+      {
+        "type": "NVMe",
+        "model": "MO001600KWVNB",
+        "size_in_mb": 1526185
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": "range(3662798-unlimited)"
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": "range(3662798-unlimited)"
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": "range(3662798-unlimited)"
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": "range(3662798-unlimited)"
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": "range(3662798-unlimited)"
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": "range(3662798-unlimited)"
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": "range(3662798-unlimited)"
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": "range(3662798-unlimited)"
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens2f0",
+          "ens2f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens5f0",
+          "ens5f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "edges": {
+    "Numa": [
+      {
+        "nic_per_numa": [
+          "eno5",
+          "eno6",
+          "eno7",
+          "eno8",
+          "ens1f0",
+          "ens1f1"
+        ],
+        "total_allocated_memory_in_mb": "range(192925-unlimited)"
+      },
+      {
+        "nic_per_numa": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "total_allocated_memory_in_mb": "range(192925-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(360448-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH",
+        "size_in_mb": 915715
+      },
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH",
+        "size_in_mb": 915715
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens1f0",
+          "ens1f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "computes": {
+    "Numa": [
+      {
+        "nic_per_numa": [
+          "eno5",
+          "eno6",
+          "eno7",
+          "eno8",
+          "ens1f0",
+          "ens1f1"
+        ],
+        "total_allocated_memory_in_mb": "range(192925-unlimited)"
+      },
+      {
+        "nic_per_numa": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "total_allocated_memory_in_mb": "range(192925-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": [
+          2933,
+          3200
+        ]
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": [
+          2933,
+          3200
+        ]
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": [
+          2933,
+          3200
+        ]
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": [
+          2933,
+          3200
+        ]
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": [
+          2933,
+          3200
+        ]
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": [
+          2933,
+          3200
+        ]
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": [
+          2933,
+          3200
+        ]
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": [
+          2933,
+          3200
+        ]
+      },
+      {
+        "size_in_mb": [
+          32768
+        ],
+        "type": "DDR4",
+        "speed_in_mhz": [
+          2933,
+          3200
+        ]
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": [
+          2933,
+          3200
+        ]
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": [
+          2933,
+          3200
+        ]
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": [
+          2933,
+          3200
+        ]
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(393216-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "HPE or ATA",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH or LOGICAL VOLUME",
+        "size_in_mb": "range(915715-unlimited)"
+      },
+      {
+        "vendor": "HPE or ATA",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH or LOGICAL VOLUME",
+        "size_in_mb": "range(915715-unlimited)"
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens1f0",
+          "ens1f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "controllers": {
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(393216-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "HPE or ATA",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH or LOGICAL VOLUME",
+        "size_in_mb": "range(915683-unlimited)"
+      },
+      {
+        "vendor": "HPE or ATA",
+        "interface_type": "SCSI Disk or ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH or LOGICAL VOLUME",
+        "size_in_mb": "range(915683-unlimited)"
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens1f0",
+          "ens1f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  }
+}}

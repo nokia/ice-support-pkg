@@ -1,0 +1,502 @@
+{"ALL_VERSIONS": {
+  "controllers": {
+    "Raid Controller": {},
+    "Numa": {},
+    "Memory": [
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(262144-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "INTEL SSDSC2KG96",
+        "size_in_mb": 915715
+      },
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "INTEL SSDSC2KG96",
+        "size_in_mb": 915715
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 6338N CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 6338N CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT2894 Family [ConnectX-6 Lx]",
+        "ports_names": [
+          "ens34f0",
+          "ens34f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT2894 Family [ConnectX-6 Lx]",
+        "ports_names": [
+          "ens8f0",
+          "ens8f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT2894 Family [ConnectX-6 Lx]",
+        "ports_names": [
+          "ens33f0",
+          "ens33f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "computes": {
+    "Raid Controller": {},
+    "Numa": [
+      {
+        "nic_per_numa": [
+          "ens33f0",
+          "ens33f1",
+          "ens8f0",
+          "ens8f1"
+        ],
+        "total_allocated_memory_in_mb": "range(128969-unlimited)"
+      },
+      {
+        "nic_per_numa": [
+          "ens34f0",
+          "ens34f1"
+        ],
+        "total_allocated_memory_in_mb": "range(128969-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(262144-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "INTEL SSDSC2KG96",
+        "size_in_mb": 915715
+      },
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "INTEL SSDSC2KG96",
+        "size_in_mb": 915715
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 6338N CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 6338N CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT2894 Family [ConnectX-6 Lx]",
+        "ports_names": [
+          "ens34f0",
+          "ens34f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT2894 Family [ConnectX-6 Lx]",
+        "ports_names": [
+          "ens8f0",
+          "ens8f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT2894 Family [ConnectX-6 Lx]",
+        "ports_names": [
+          "ens33f0",
+          "ens33f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "storages": {
+    "Raid Controller": {},
+    "Numa": {},
+    "Memory": [
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(262144-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "",
+        "type": "NVMe",
+        "model": "Micron_9300_MTFDHAL3T8TDP",
+        "size_in_mb": 3662830
+      },
+      {
+        "vendor": "",
+        "type": "NVMe",
+        "model": "Micron_9300_MTFDHAL3T8TDP",
+        "size_in_mb": 3662830
+      },
+      {
+        "vendor": "",
+        "type": "NVMe",
+        "model": "Micron_9300_MTFDHAL3T8TDP",
+        "size_in_mb": 3662830
+      },
+      {
+        "vendor": "",
+        "type": "NVMe",
+        "model": "Micron_9300_MTFDHAL3T8TDP",
+        "size_in_mb": 3662830
+      },
+      {
+        "vendor": "",
+        "type": "NVMe",
+        "model": "Micron_9300_MTFDHAL3T8TDP",
+        "size_in_mb": 3662830
+      },
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "INTEL SSDSC2KG96",
+        "size_in_mb": 915715
+      },
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "INTEL SSDSC2KG96",
+        "size_in_mb": 915715
+      },
+      {
+        "vendor": "",
+        "type": "NVMe",
+        "model": "Micron_9300_MTFDHAL3T8TDP",
+        "size_in_mb": 3662830
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 6338N CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 6338N CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT2894 Family [ConnectX-6 Lx]",
+        "ports_names": [
+          "ens34f0",
+          "ens34f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT2894 Family [ConnectX-6 Lx]",
+        "ports_names": [
+          "ens8f0",
+          "ens8f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT2894 Family [ConnectX-6 Lx]",
+        "ports_names": [
+          "ens33f0",
+          "ens33f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  }
+}}

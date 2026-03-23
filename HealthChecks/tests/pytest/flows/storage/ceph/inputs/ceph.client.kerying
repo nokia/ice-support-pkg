@@ -1,0 +1,5 @@
+[client.{}]
+key = AQC+a49iTFD0HhAA/Umd1Cb18lNCbogO7imaeA==
+caps mgr = "allow *"
+caps mon = "profile rbd"
+caps osd = "profile rbd pool=volumes, profile rbd pool=backups, profile rbd pool=vms, profile rbd pool=images, profile rbd pool=metrics"

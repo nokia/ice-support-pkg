@@ -1,0 +1,20 @@
+{{
+    "nodes": [{{
+            "id": 3,
+            "device_class": "ssd",
+            "name": "osd.3",
+            "type": "osd",
+            "type_id": 0,
+            "crush_weight": 0.748291,
+            "depth": 2,
+            "pool_weights": {{}},
+            "reweight": 1.000000,
+            "kb": {kb},
+            "kb_used": 70599088,
+            "kb_avail": 732843600,
+            "utilization": 8.787072,
+            "var": 1.033664,
+            "pgs": 150
+        }}
+    ]
+}}

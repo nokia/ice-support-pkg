@@ -1,0 +1,173 @@
+{
+  "nodes": [
+    {
+      "id": -1,
+      "name": "default",
+      "type": "root",
+      "type_id": 10,
+      "children": [
+        -3,
+        -5,
+        -7,
+        -9
+      ]
+    },
+    {
+      "id": -9,
+      "name": "overcloud-ovscompute-0",
+      "type": "host",
+      "type_id": 1,
+      "pool_weights": {},
+      "children": [
+        7,
+        3
+      ]
+    },
+    {
+      "id": 3,
+      "device_class": "hdd",
+      "name": "osd.3",
+      "type": "osd",
+      "type_id": 0,
+      "crush_weight": 0.76933,
+      "depth": 2,
+      "pool_weights": {},
+      "exists": 1,
+      "status": "up",
+      "reweight": 1.000000,
+      "primary_affinity": 1.000000
+    },
+    {
+      "id": 7,
+      "device_class": "hdd",
+      "name": "osd.7",
+      "type": "osd",
+      "type_id": 0,
+      "crush_weight": 0.807785,
+      "depth": 2,
+      "pool_weights": {},
+      "exists": 1,
+      "status": "up",
+      "reweight": 1.000000,
+      "primary_affinity": 1.000000
+    },
+    {
+      "id": -7,
+      "name": "overcloud-ovscompute-1",
+      "type": "host",
+      "type_id": 1,
+      "pool_weights": {},
+      "children": [
+        6,
+        2
+      ]
+    },
+    {
+      "id": 2,
+      "device_class": "hdd",
+      "name": "osd.2",
+      "type": "osd",
+      "type_id": 0,
+      "crush_weight": 0.76933,
+      "depth": 2,
+      "pool_weights": {},
+      "exists": 1,
+      "status": "up",
+      "reweight": 1.000000,
+      "primary_affinity": 1.000000
+    },
+    {
+      "id": 6,
+      "device_class": "hdd",
+      "name": "osd.6",
+      "type": "osd",
+      "type_id": 0,
+      "crush_weight": 0.807785,
+      "depth": 2,
+      "pool_weights": {},
+      "exists": 1,
+      "status": "up",
+      "reweight": 1.000000,
+      "primary_affinity": 1.000000
+    },
+    {
+      "id": -5,
+      "name": "overcloud-sriovperformancecompute-0",
+      "type": "host",
+      "type_id": 1,
+      "pool_weights": {},
+      "children": [
+        5,
+        0
+      ]
+    },
+    {
+      "id": 0,
+      "device_class": "hdd",
+      "name": "osd.0",
+      "type": "osd",
+      "type_id": 0,
+      "crush_weight": 0.76933,
+      "depth": 2,
+      "pool_weights": {},
+      "exists": 1,
+      "status": "up",
+      "reweight": 1.000000,
+      "primary_affinity": 1.000000
+    },
+    {
+      "id": 5,
+      "device_class": "hdd",
+      "name": "osd.5",
+      "type": "osd",
+      "type_id": 0,
+      "crush_weight": 0.807785,
+      "depth": 2,
+      "pool_weights": {},
+      "exists": 1,
+      "status": "up",
+      "reweight": 1.000000,
+      "primary_affinity": 1.000000
+    },
+    {
+      "id": -3,
+      "name": "overcloud-sriovperformancecompute-1",
+      "type": "host",
+      "type_id": 1,
+      "pool_weights": {},
+      "children": [
+        4,
+        1
+      ]
+    },
+    {
+      "id": 1,
+      "device_class": "hdd",
+      "name": "osd.1",
+      "type": "osd",
+      "type_id": 0,
+      "crush_weight": 0.76933,
+      "depth": 2,
+      "pool_weights": {},
+      "exists": 1,
+      "status": "up",
+      "reweight": 1.000000,
+      "primary_affinity": 1.000000
+    },
+    {
+      "id": 4,
+      "device_class": "hdd",
+      "name": "osd.4",
+      "type": "osd",
+      "type_id": 0,
+      "crush_weight": 0.807785,
+      "depth": 2,
+      "pool_weights": {},
+      "exists": 1,
+      "status": "up",
+      "reweight": 1.000000,
+      "primary_affinity": 1.000000
+    }
+  ],
+  "stray": []
+}

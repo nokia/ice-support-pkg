@@ -1,0 +1,1082 @@
+{"ALL_VERSIONS": {
+  "workers": {
+    "numa": [
+      {
+        "nic_per_numa": [
+          "eno1",
+          "eno2",
+          "eno3",
+          "eno4",
+          "ens1f0",
+          "ens1f1"
+        ],
+        "total_allocated_memory_in_mb": "range(192925-unlimited)"
+      },
+      {
+        "nic_per_numa": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "total_allocated_memory_in_mb": "range(193501-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(393216-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWUGH",
+        "size_in_mb": "915715"
+      },
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWUGH",
+        "size_in_mb": "915715"
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 6230 CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 6230 CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Broadcom Inc. and subsidiaries",
+        "model": "NetXtreme BCM5719 Gigabit Ethernet PCIe",
+        "ports_names": [
+          "eno1",
+          "eno2",
+          "eno3",
+          "eno4"
+        ],
+        "ports_amount": 4
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens1f0",
+          "ens1f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "all_k8s_master": {
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(393216-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWUGH",
+        "size_in_mb": 915715
+      },
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWUGH",
+        "size_in_mb": 915715
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 6230 CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 6230 CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Broadcom Inc. and subsidiaries",
+        "model": "NetXtreme BCM5719 Gigabit Ethernet PCIe",
+        "ports_names": [
+          "eno1",
+          "eno2",
+          "eno3",
+          "eno4"
+        ],
+        "ports_amount": 4
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens1f0",
+          "ens1f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "monitoring": {
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(393216-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWUGH",
+        "size_in_mb": 915715
+      },
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWUGH",
+        "size_in_mb": 915715
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 6230 CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 6230 CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Broadcom Inc. and subsidiaries",
+        "model": "NetXtreme BCM5719 Gigabit Ethernet PCIe",
+        "ports_names": [
+          "eno1",
+          "eno2",
+          "eno3",
+          "eno4"
+        ],
+        "ports_amount": 4
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens1f0",
+          "ens1f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "storages": {
+    "Raid Controller": {
+      "product": "HPE Smart Array P816i-a SR Gen10 in Slot 0 (Embedded)"
+    },
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(393216-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "MR000480GWFLV",
+        "size_in_mb": 457862
+      },
+      {
+        "type": "NVMe",
+        "model": "MO001600KWVNB",
+        "size_in_mb": 1526185
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": 3662798
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": 3662798
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": 3662798
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": 3662798
+      },
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "MR000480GWFLV",
+        "size_in_mb": 457862
+      },
+      {
+        "type": "NVMe",
+        "model": "MO001600KWVNB",
+        "size_in_mb": 1526185
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": 3662798
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": 3662798
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": 3662798
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": 3662798
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": 3662798
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": 3662798
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": 3662798
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk",
+        "type": "SSD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": 3662798
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 6230 CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 6230 CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Broadcom Inc. and subsidiaries",
+        "model": "NetXtreme BCM5719 Gigabit Ethernet PCIe",
+        "ports_names": [
+          "eno1",
+          "eno2",
+          "eno3",
+          "eno4"
+        ],
+        "ports_amount": 4
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens2f0",
+          "ens2f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27710 Family [ConnectX-4 Lx]",
+        "ports_names": [
+          "eno5",
+          "eno6"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens5f0",
+          "ens5f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "edges": {
+    "numa": [
+      {
+        "total_allocated_memory_in_mb": "range(96763-unlimited)"
+      },
+      {
+        "nic_per_numa": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "total_allocated_memory_in_mb": "range(96763-unlimited)"
+      },
+      {
+        "nic_per_numa": [
+          "eno1",
+          "eno2",
+          "eno3",
+          "eno4",
+          "ens1f0",
+          "ens1f1"
+        ],
+        "total_allocated_memory_in_mb": "range(96763-unlimited)"
+      },
+      {
+        "nic_per_numa": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "total_allocated_memory_in_mb": "range(96763-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(393216-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWUGH",
+        "size_in_mb": 915715
+      },
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWUGH",
+        "size_in_mb": 915715
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 6230 CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 6230 CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Broadcom Inc. and subsidiaries",
+        "model": "NetXtreme BCM5719 Gigabit Ethernet PCIe",
+        "ports_names": [
+          "eno1",
+          "eno2",
+          "eno3",
+          "eno4"
+        ],
+        "ports_amount": 4
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens1f0",
+          "ens1f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "computes": {
+    "numa": [
+      {
+        "nic_per_numa": [
+          "eno1",
+          "eno2",
+          "eno3",
+          "eno4",
+          "ens1f0",
+          "ens1f1"
+        ],
+        "total_allocated_memory_in_mb": "range(192925-unlimited)"
+      },
+      {
+        "nic_per_numa": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "total_allocated_memory_in_mb": "range(96763-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(393216-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWUGH",
+        "size_in_mb": "915715"
+      },
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWUGH",
+        "size_in_mb": "915715"
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 6230 CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 6230 CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Broadcom Inc. and subsidiaries",
+        "model": "NetXtreme BCM5719 Gigabit Ethernet PCIe",
+        "ports_names": [
+          "eno1",
+          "eno2",
+          "eno3",
+          "eno4"
+        ],
+        "ports_amount": 4
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens1f0",
+          "ens1f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "controllers": {
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(393216-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWUGH",
+        "size_in_mb": 915715
+      },
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWUGH",
+        "size_in_mb": 915715
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 6230 CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 6230 CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Broadcom Inc. and subsidiaries",
+        "model": "NetXtreme BCM5719 Gigabit Ethernet PCIe",
+        "ports_names": [
+          "eno1",
+          "eno2",
+          "eno3",
+          "eno4"
+        ],
+        "ports_amount": 4
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens1f0",
+          "ens1f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  }
+}}

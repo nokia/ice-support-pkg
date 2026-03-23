@@ -1,0 +1,194 @@
+{
+  "10-barbican_wsgi_main.conf": {
+    "/var/lib/config-data/puppet-generated/barbican/etc/httpd/conf.d/": "[Objectives.CONTROLLERS]"
+  },
+
+  "20-nproc.conf": {
+    "/etc/security/limits.d/": "[Objectives.UC, Objectives.CONTROLLERS, Objectives.COMPUTES, Objectives.STORAGE, Objectives.MONITOR]"
+  },
+
+  "actions.yml": {
+    "/etc/elk/curator/": "[Objectives.CONTROLLERS]"
+  },
+
+  "aodh.conf": {
+    "/var/lib/config-data/puppet-generated/aodh/etc/aodh/": "[Objectives.CONTROLLERS]"
+  },
+
+  "cbis_openstack_deployment.yaml": {
+    "/usr/share/cbis/data/hieradata/": "[Objectives.CONTROLLERS, Objectives.COMPUTES, Objectives.STORAGE, Objectives.MONITOR]"
+  },
+
+  "CBIS.repo": {
+    "/etc/yum.repos.d/": "[Objectives.UC]"
+  },
+
+  "ceph.client.admin.keyring": {
+    "/etc/ceph/": "[Objectives.CONTROLLERS, Objectives.COMPUTES, Objectives.STORAGE]"
+  },
+
+  "ceph.client.manila.keyring": {
+    "/etc/ceph/": "[Objectives.CONTROLLERS, Objectives.COMPUTES]"
+  },
+
+  "ceph.client.openstack.keyring": {
+    "/etc/ceph/": "[Objectives.CONTROLLERS, Objectives.COMPUTES]"
+  },
+
+  "ceph.client.radosgw.keyring": {
+    "/etc/ceph/": "[Objectives.CONTROLLERS, Objectives.COMPUTES]"
+  },
+
+  "ceph.conf": {
+    "/etc/ceph/": "[Objectives.CONTROLLERS, Objectives.COMPUTES, Objectives.STORAGE]"
+  },
+
+  "ceph.mon.keyring": {
+    "/etc/ceph/": "[Objectives.CONTROLLERS]"
+  },
+
+  "chrony.conf": {
+    "/etc/": "[Objectives.HYP, Objectives.UC]"
+  },
+
+  "cinder.conf": {
+    "/var/lib/config-data/puppet-generated/cinder/etc/cinder/": "[Objectives.CONTROLLERS]"
+  },
+
+  "cloudname.yaml": {
+    "/home/stack/templates/": "[Objectives.UC]"
+  },
+
+  "glance-api.conf": {
+    "/var/lib/config-data/puppet-generated/glance_api/etc/glance/": "[Objectives.UC, Objectives.CONTROLLERS]",
+    "/etc/glance/": "[Objectives.UC]"
+  },
+
+  "glance-cache.conf": {
+    "/var/lib/config-data/puppet-generated/glance_api/etc/glance/": "[Objectives.UC, Objectives.CONTROLLERS]"
+  },
+
+  "glance-image-import.conf": {
+    "/var/lib/config-data/puppet-generated/glance_api/etc/glance/": "[Objectives.UC, Objectives.CONTROLLERS]"
+  },
+
+  "glance-swift.conf": {
+    "/var/lib/config-data/puppet-generated/glance_api/etc/glance/": "[Objectives.UC]"
+  },
+
+  "haproxy.cfg": {
+    "/var/lib/config-data/puppet-generated/haproxy/etc/haproxy/": "[Objectives.CONTROLLERS]"
+  },
+
+  "heat.conf": {
+    "/var/lib/config-data/puppet-generated/heat/etc/heat/": "[Objectives.UC, Objectives.CONTROLLERS]"
+  },
+
+  "hiera.yaml": {
+    "/etc/puppet/": "[Objectives.UC, Objectives.CONTROLLERS, Objectives.COMPUTES, Objectives.STORAGE, Objectives.MONITOR]"
+  },
+
+  "hosts": {
+    "/etc/ansible/": "[Objectives.UC]"
+  },
+
+  "hosts_config.yaml": {
+    "/home/stack/": "[Objectives.UC]"
+  },
+
+  "hosts.yaml": {
+    "/home/stack/": "[Objectives.UC]"
+  },
+
+  "keystone.conf": {
+    "/var/lib/config-data/puppet-generated/keystone/etc/keystone/": "[Objectives.UC, Objectives.CONTROLLERS]"
+  },
+
+  "limits.conf": {
+    "/etc/security/": "[Objectives.UC, Objectives.CONTROLLERS, Objectives.COMPUTES, Objectives.STORAGE, Objectives.MONITOR]"
+  },
+
+  "logrotate.conf": {
+    "/etc/": "[Objectives.UC, Objectives.CONTROLLERS, Objectives.COMPUTES, Objectives.STORAGE, Objectives.MONITOR]"
+  },
+
+  "logrotate-crond.conf": {
+    "/var/lib/config-data/puppet-generated/crond/etc/": "[Objectives.UC, Objectives.CONTROLLERS, Objectives.COMPUTES, Objectives.STORAGE, Objectives.MONITOR]"
+  },
+
+  "mistral.conf": {
+    "/var/lib/config-data/puppet-generated/mistral/etc/mistral/": "[Objectives.UC]"
+  },
+
+  "neutron.conf": {
+    "/etc/neutron/": "[Objectives.UC, Objectives.CONTROLLERS, Objectives.COMPUTES, Objectives.MONITOR]",
+    "/var/lib/config-data/puppet-generated/neutron/etc/neutron/": "[Objectives.UC, Objectives.CONTROLLERS, Objectives.COMPUTES]"
+  },
+
+  "nova.conf": {
+    "/etc/nova/": "[Objectives.UC]",
+    "/var/lib/config-data/puppet-generated/nova/etc/nova/": "[Objectives.UC, Objectives.CONTROLLERS]",
+    "/var/lib/config-data/puppet-generated/nova_libvirt/etc/nova/": "[Objectives.COMPUTES]"
+  },
+
+  "ntp.conf": {
+    "/etc/": "[Objectives.UC, Objectives.CONTROLLERS, Objectives.COMPUTES, Objectives.STORAGE, Objectives.MONITOR]"
+  },
+
+  "overcloudrc": {
+    "/home/stack/": "[Objectives.UC]"
+  },
+
+  "overcloudrc_locked": {
+    "/home/stack/": "[Objectives.UC]"
+  },
+
+  "policy.json": {
+    "/etc/nova/": "[Objectives.CONTROLLERS, Objectives.MONITOR]"
+  },
+
+  "rabbitmq.config": {
+    "/etc/rabbitmq/": "[Objectives.UC, Objectives.CONTROLLERS, Objectives.COMPUTES, Objectives.STORAGE]"
+  },
+
+  "resolv.conf": {
+    "/etc/": "[Objectives.UC, Objectives.CONTROLLERS, Objectives.COMPUTES, Objectives.STORAGE, Objectives.MONITOR]"
+  },
+
+  "repo.conf": {
+    "/etc/httpd/conf.d/": "[Objectives.UC]"
+  },
+
+  "rsyslog.conf": {
+    "/etc/": "[Objectives.UC, Objectives.CONTROLLERS, Objectives.COMPUTES, Objectives.STORAGE, Objectives.MONITOR]"
+  },
+
+  "scale-info.yaml": {
+    "/home/stack/templates/": "[Objectives.UC]"
+  },
+
+  "stackrc": {
+    "/home/stack/": "[Objectives.UC]"
+  },
+
+  "stackrc_locked": {
+    "/home/stack/": "[Objectives.UC]"
+  },
+
+  "system.conf": {
+    "/etc/systemd/": "[Objectives.UC, Objectives.CONTROLLERS, Objectives.COMPUTES, Objectives.STORAGE, Objectives.MONITOR]"
+  },
+
+  "user_config.yaml": {
+    "/root/cbis-installer/": "[Objectives.HYP]",
+    "/home/stack/": "[Objectives.UC]"
+  },
+
+  "yum.conf": {
+    "/etc/": "[Objectives.UC, Objectives.CONTROLLERS, Objectives.COMPUTES, Objectives.STORAGE, Objectives.MONITOR]"
+  },
+
+  "zabbix_agentd.conf": {
+    "/etc/zabbix/": "[Objectives.UC, Objectives.CONTROLLERS, Objectives.COMPUTES, Objectives.STORAGE, Objectives.MONITOR]"
+  }
+}

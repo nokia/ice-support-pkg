@@ -1,0 +1,4 @@
+{
+  "/etc/sysconfig/network-scripts/": "[Objectives.DEPLOYER, Objectives.MANAGERS, Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES, Objectives.MONITOR, Objectives.UC, Objectives.HYP, Objectives.COMPUTES, Objectives.CONTROLLERS]",
+  "/etc/sysctl.d/": "[Objectives.MANAGERS, Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES, Objectives.MONITOR]"
+}

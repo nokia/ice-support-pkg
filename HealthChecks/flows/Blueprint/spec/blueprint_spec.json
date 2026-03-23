@@ -1,0 +1,4161 @@
+{
+  "airframe_rm20_ICK_cx6": {"ALL_VERSIONS": {
+  "computes": {
+    "Processor": [
+      {
+        "type": "Intel Xeon Gold 6338N CPU",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "type": "Intel Xeon Gold 6338N CPU",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      }
+    ],
+    "Network Interface": [
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-6 Lx",
+        "speed_in_mb": 25600
+      },
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-6 Lx",
+        "speed_in_mb": 25600
+      },
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-6 Lx",
+        "speed_in_mb": 25600
+      }
+    ],
+    "Disk": [
+      {
+        "interface_type": "ATA Disk or M.2",
+        "type": "SSD or NVMe or HDD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "ATA",
+        "model": ""
+      },
+      {
+        "interface_type": "ATA Disk or M.2",
+        "type": "SSD or NVMe or HDD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "ATA",
+        "model": ""
+      }
+    ],
+    "Numa": [
+      {
+        "total_allocated_memory": 125,
+        "nic_per_numa": 2
+      },
+      {
+        "total_allocated_memory": 125,
+        "nic_per_numa": 2
+      }
+    ]
+  },
+  "controllers": {
+    "Processor": [
+      {
+        "type": "Intel Xeon Gold 6338N CPU",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "type": "Intel Xeon Gold 6338N CPU",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      }
+    ],
+    "Network Interface": [
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-6 Lx",
+        "speed_in_mb": 25600
+      },
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-6 Lx",
+        "speed_in_mb": 25600
+      },
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-6 Lx",
+        "speed_in_mb": 25600
+      }
+    ],
+    "Disk": [
+      {
+        "interface_type": "ATA Disk or M.2",
+        "type": "SSD or NVMe or HDD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "ATA",
+        "model": ""
+      },
+      {
+        "interface_type": "ATA Disk or M.2",
+        "type": "SSD or NVMe or HDD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "ATA",
+        "model": ""
+      }
+    ]
+  },
+  "storages": {
+    "Processor": [
+      {
+        "type": "Intel Xeon Gold 6338N CPU",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "type": "Intel Xeon Gold 6338N CPU",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      }
+    ],
+    "Network Interface": [
+      {
+        "model": "ConnectX-6 Lx",
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "speed_in_mb": 25600
+      },
+      {
+        "model": "ConnectX-6 Lx",
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "speed_in_mb": 25600
+      },
+      {
+        "model": "ConnectX-6 Lx",
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "speed_in_mb": 25600
+      }
+    ],
+    "Disk": [
+      {
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "ATA",
+        "model": ""
+      },
+      {
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "ATA",
+        "model": ""
+      },
+      {
+        "interface_type": "NVMe",
+        "type": "",
+        "size_in_mb": "range(4026532-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "NVMe",
+        "type": "",
+        "size_in_mb": "range(4026532-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "NVMe",
+        "type": "",
+        "size_in_mb": "range(4026532-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "NVMe",
+        "type": "",
+        "size_in_mb": "range(4026532-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "NVMe",
+        "type": "",
+        "size_in_mb": "range(4026532-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "NVMe",
+        "type": "",
+        "size_in_mb": "range(4026532-unlimited)",
+        "vendor": "",
+        "model": ""
+      }
+    ]
+  },
+  "all_k8s_master": {
+    "Processor": [
+      {
+        "type": "Intel Xeon Gold 6338N CPU",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "type": "Intel Xeon Gold 6338N CPU",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      }
+    ],
+    "Network Interface": [
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-6 Lx",
+        "speed_in_mb": 25600
+      },
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-6 Lx",
+        "speed_in_mb": 25600
+      },
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-6 Lx",
+        "speed_in_mb": 25600
+      }
+    ],
+    "Disk": [
+      {
+        "interface_type": "ATA Disk or M.2",
+        "type": "SSD or NVMe or HDD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "ATA",
+        "model": ""
+      },
+      {
+        "interface_type": "ATA Disk or M.2",
+        "type": "SSD or NVMe or HDD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "ATA",
+        "model": ""
+      }
+    ]
+  },
+  "workers": {
+    "Processor": [
+      {
+        "type": "Intel Xeon Gold 6338N CPU",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "type": "Intel Xeon Gold 6338N CPU",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      }
+    ],
+    "Network Interface": [
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-6 Lx",
+        "speed_in_mb": 25600
+      },
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-6 Lx",
+        "speed_in_mb": 25600
+      },
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-6 Lx",
+        "speed_in_mb": 25600
+      }
+    ],
+    "Disk": [
+      {
+        "interface_type": "ATA Disk or M.2",
+        "type": "SSD or NVMe or HDD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "ATA",
+        "model": ""
+      },
+      {
+        "interface_type": "ATA Disk or M.2",
+        "type": "SSD or NVMe or HDD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "ATA",
+        "model": ""
+      }
+    ],
+    "Numa": [
+      {
+        "total_allocated_memory": 125,
+        "nic_per_numa": 2
+      },
+      {
+        "total_allocated_memory": 125,
+        "nic_per_numa": 2
+      }
+    ]
+  },
+  "edges": {
+    "Processor": [
+      {
+        "type": "Intel Xeon Gold 6338N CPU",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "type": "Intel Xeon Gold 6338N CPU",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      }
+    ],
+    "Network Interface": [
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-6 Lx",
+        "speed_in_mb": 25600
+      },
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-6 Lx",
+        "speed_in_mb": 25600
+      },
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-6 Lx",
+        "speed_in_mb": 25600
+      }
+    ],
+    "Disk": [
+      {
+        "interface_type": "ATA Disk or M.2",
+        "type": "SSD or NVMe or HDD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "ATA",
+        "model": ""
+      },
+      {
+        "interface_type": "ATA Disk or M.2",
+        "type": "SSD or NVMe or HDD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "ATA",
+        "model": ""
+      }
+    ],
+    "Numa": [
+      {
+        "total_allocated_memory": 125,
+        "nic_per_numa": 2
+      },
+      {
+        "total_allocated_memory": 125,
+        "nic_per_numa": 2
+      }
+    ]
+  },
+  "monitoring": {
+    "Processor": [
+      {
+        "type": "Intel Xeon Gold 6338N CPU",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "type": "Intel Xeon Gold 6338N CPU",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(262144-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      }
+    ],
+    "Network Interface": [
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-6 Lx",
+        "speed_in_mb": 25600
+      },
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-6 Lx",
+        "speed_in_mb": 25600
+      },
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-6 Lx",
+        "speed_in_mb": 25600
+      }
+    ],
+    "Disk": [
+      {
+        "interface_type": "ATA Disk or M.2",
+        "type": "SSD or NVMe or HDD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "ATA",
+        "model": ""
+      },
+      {
+        "interface_type": "ATA Disk or M.2",
+        "type": "SSD or NVMe or HDD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "ATA",
+        "model": ""
+      }
+    ]
+  },
+  "general": {
+    "nuage": {
+      "installed": "yes",
+      "version": "1.4.5"
+    },
+    "ceph": {
+      "installed": "no",
+      "replication_factor": 2
+    }
+  }
+}},
+  "airframe_rm19_CLK_cx5": {"ALL_VERSIONS": {
+  "computes": {
+    "Processor": [
+      {
+        "type": "Intel Xeon Gold 5218R CPU",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "type": "Intel Xeon Gold 5218R CPU",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      }
+    ],
+    "Network Interface": [
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-5",
+        "speed_in_mb": 25000
+      },
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-5",
+        "speed_in_mb": 25000
+      },
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-5",
+        "speed_in_mb": 25000
+      },
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-5",
+        "speed_in_mb": 25000
+      }
+    ],
+    "Disk": [
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      }
+    ],
+    "Numa": [
+      {
+        "total_allocated_memory_in_mb": 125,
+        "nic_per_numa": 2
+      },
+      {
+        "total_allocated_memory": 125,
+        "nic_per_numa": 2
+      }
+    ]
+  },
+  "controllers": {
+    "Processor": [
+      {
+        "type": "Intel Xeon Gold 5218R CPU",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "type": "Intel Xeon Gold 5218R CPU",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      }
+    ],
+    "Network Interface": [
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-5",
+        "speed_in_mb": 25000
+      },
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-5",
+        "speed_in_mb": 25000
+      },
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-5",
+        "speed_in_mb": 25000
+      },
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-5",
+        "speed_in_mb": 25000
+      }
+    ],
+    "Disk": [
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      }
+    ]
+  },
+  "storages": {
+    "Processor": [
+      {
+        "type": "Intel Xeon Gold 5218R CPU",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "type": "Intel Xeon Gold 5218R CPU",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      }
+    ],
+    "Network Interface": [
+      {
+        "model": "ConnectX-5",
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "speed_in_mb": 25000
+      },
+      {
+        "model": "ConnectX-5",
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "speed_in_mb": 25000
+      },
+      {
+        "model": "ConnectX-5",
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "speed_in_mb": 25000
+      },
+      {
+        "model": "ConnectX-5",
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "speed_in_mb": 25000
+      }
+    ],
+    "Disk": [
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(491520-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(491520-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(2013266-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(2013266-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(2013266-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(2013266-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(2013266-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(2013266-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(2013266-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(2013266-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(2013266-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(2013266-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(2013266-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(2013266-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "",
+        "type": "NVMe",
+        "size_in_mb": "range(1677722-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "",
+        "type": "NVMe",
+        "size_in_mb": "range(1677722-unlimited)",
+        "vendor": "",
+        "model": ""
+      }
+    ],
+    "Raid Controller": {
+      "product": "MegaRAID Tri-Mode SAS3516"
+    }
+  },
+  "all_k8s_master": {
+    "Processor": [
+      {
+        "type": "Intel Xeon Gold 5218R CPU",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "type": "Intel Xeon Gold 5218R CPU",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      }
+    ],
+    "Network Interface": [
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-5",
+        "speed_in_mb": 25000
+      },
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-5",
+        "speed_in_mb": 25000
+      },
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-5",
+        "speed_in_mb": 25000
+      },
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-5",
+        "speed_in_mb": 25000
+      }
+    ],
+    "Disk": [
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      }
+    ]
+  },
+  "workers": {
+    "Processor": [
+      {
+        "type": "Intel Xeon Gold 5218R CPU",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "type": "Intel Xeon Gold 5218R CPU",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      }
+    ],
+    "Network Interface": [
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-5",
+        "speed_in_mb": 25000
+      },
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-5",
+        "speed_in_mb": 25000
+      },
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-5",
+        "speed_in_mb": 25000
+      },
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-5",
+        "speed_in_mb": 25000
+      }
+    ],
+    "Disk": [
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      }
+    ],
+    "Numa": [
+      {
+        "total_allocated_memory_in_mb": 125,
+        "nic_per_numa": 2
+      },
+      {
+        "total_allocated_memory": 125,
+        "nic_per_numa": 2
+      }
+    ]
+  },
+  "edges": {
+    "Processor": [
+      {
+        "type": "Intel Xeon Gold 5218R CPU",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "type": "Intel Xeon Gold 5218R CPU",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      }
+    ],
+    "Network Interface": [
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-5",
+        "speed_in_mb": 25000
+      },
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-5",
+        "speed_in_mb": 25000
+      },
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-5",
+        "speed_in_mb": 25000
+      },
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-5",
+        "speed_in_mb": 25000
+      }
+    ],
+    "Disk": [
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      }
+    ],
+    "Numa": [
+      {
+        "total_allocated_memory_in_mb": 125,
+        "nic_per_numa": 2
+      },
+      {
+        "total_allocated_memory": 125,
+        "nic_per_numa": 2
+      }
+    ]
+  },
+  "monitoring": {
+    "Processor": [
+      {
+        "type": "Intel Xeon Gold 5218R CPU",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "type": "Intel Xeon Gold 5218R CPU",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2100-unlimited)"
+      }
+    ],
+    "Network Interface": [
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-5",
+        "speed_in_mb": 25000
+      },
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-5",
+        "speed_in_mb": 25000
+      },
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-5",
+        "speed_in_mb": 25000
+      },
+      {
+        "vendor": "Mellanox Technologies",
+        "ports_amount": 2,
+        "model": "ConnectX-5",
+        "speed_in_mb": 25000
+      }
+    ],
+    "Disk": [
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      }
+    ]
+  },
+  "general": {
+    "nuage": {
+      "installed": "yes",
+      "version": "1.4.5"
+    },
+    "ceph": {
+      "installed": "no",
+      "replication_factor": 2
+    }
+  }
+}},
+  "airframe_or19__CLK_cx5": {"ALL_VERSIONS": {
+  "computes": {
+    "Processor": [
+      {
+        "type": "Intel Xenon Gold 6230",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "type": "Intel Xenon Gold 6230",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      }
+    ],
+    "Network Interface": [
+      {
+        "vendor": "Mellanox",
+        "ports_amount": 2,
+        "model": "ConnectX-5 EN",
+        "speed_in_mb": 25600,
+        "is_ocp": "yes"
+      },
+      {
+        "vendor": "Mellanox",
+        "ports_amount": 2,
+        "model": "ConnectX-5 EN",
+        "speed_in_mb": 25600,
+        "is_ocp": "no"
+      }
+    ],
+    "Disk": [
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      }
+    ],
+    "Numa": [
+      {
+        "total_allocated_memory_in_mb": 125,
+        "nic_per_numa": 2
+      },
+      {
+        "total_allocated_memory": 125,
+        "nic_per_numa": 2
+      }
+    ]
+  },
+  "controllers": {
+    "Processor": [
+      {
+        "type": "Intel Xenon Gold 6230",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "type": "Intel Xenon Gold 6230",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      }
+    ],
+    "Network Interface": [
+      {
+        "vendor": "Mellanox",
+        "ports_amount": 2,
+        "model": "ConnectX-5 EN",
+        "speed_in_mb": 25600,
+        "is_ocp": "yes"
+      },
+      {
+        "vendor": "Mellanox",
+        "ports_amount": 2,
+        "model": "ConnectX-5 EN",
+        "speed_in_mb": 25600,
+        "is_ocp": "no"
+      }
+    ],
+    "Disk": [
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      }
+    ]
+  },
+  "storages": {
+    "Processor": [
+      {
+        "type": "Intel Xenon Gold 5218",
+        "frequency_in_mhz": "range(2300-unlimited)"
+      },
+      {
+        "type": "Intel Xenon Gold 5218",
+        "frequency_in_mhz": "range(2300-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2933-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2933-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2933-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2933-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2933-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2933-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2933-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2933-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2933-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2933-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2933-unlimited)"
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": "range(2933-unlimited)"
+      }
+    ],
+    "Network Interface": [
+      {
+        "model": "ConnectX-5 EN",
+        "vendor": "Mellanox",
+        "ports_amount": 2,
+        "speed_in_mb": 25600,
+        "is_ocp": "yes"
+      },
+      {
+        "model": "ConnectX-5 EN",
+        "vendor": "Mellanox",
+        "ports_amount": 2,
+        "speed_in_mb": 25600,
+        "is_ocp": "no"
+      }
+    ],
+    "Disk": [
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size": 480,
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size": 480,
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(2013266-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(2013266-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(2013266-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(2013266-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(2013266-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(2013266-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(2013266-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(2013266-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(2013266-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(2013266-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(2013266-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(2013266-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(2013266-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(2013266-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(2013266-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "PCI-E",
+        "type": "NVMe",
+        "size_in_mb": "range(1677722-unlimited)",
+        "vendor": "",
+        "model": ""
+      }
+    ]
+  },
+  "all_k8s_master": {
+    "Processor": [
+      {
+        "type": "Intel Xenon Gold 6230",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "type": "Intel Xenon Gold 6230",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      }
+    ],
+    "Network Interface": [
+      {
+        "vendor": "Mellanox",
+        "ports_amount": 2,
+        "model": "ConnectX-5 EN",
+        "speed_in_mb": 25600,
+        "is_ocp": "yes"
+      },
+      {
+        "vendor": "Mellanox",
+        "ports_amount": 2,
+        "model": "ConnectX-5 EN",
+        "speed_in_mb": 25600,
+        "is_ocp": "no"
+      }
+    ],
+    "Disk": [
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      }
+    ]
+  },
+  "workers": {
+    "Processor": [
+      {
+        "type": "Intel Xenon Gold 6230",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "type": "Intel Xenon Gold 6230",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      }
+    ],
+    "Network Interface": [
+      {
+        "vendor": "Mellanox",
+        "ports_amount": 2,
+        "model": "ConnectX-5 EN",
+        "speed_in_mb": 25600,
+        "is_ocp": "yes"
+      },
+      {
+        "vendor": "Mellanox",
+        "ports_amount": 2,
+        "model": "ConnectX-5 EN",
+        "speed_in_mb": 25600,
+        "is_ocp": "no"
+      }
+    ],
+    "Disk": [
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      }
+    ],
+    "Numa": [
+      {
+        "total_allocated_memory_in_mb": 125,
+        "nic_per_numa": 2
+      },
+      {
+        "total_allocated_memory": 125,
+        "nic_per_numa": 2
+      }
+    ]
+  },
+  "edges": {
+    "Processor": [
+      {
+        "type": "Intel Xenon Gold 6230",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "type": "Intel Xenon Gold 6230",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      }
+    ],
+    "Network Interface": [
+      {
+        "vendor": "Mellanox",
+        "ports_amount": 2,
+        "model": "ConnectX-5 EN",
+        "speed_in_mb": 25600,
+        "is_ocp": "yes"
+      },
+      {
+        "vendor": "Mellanox",
+        "ports_amount": 2,
+        "model": "ConnectX-5 EN",
+        "speed_in_mb": 25600,
+        "is_ocp": "no"
+      }
+    ],
+    "Disk": [
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      }
+    ],
+    "Numa": [
+      {
+        "total_allocated_memory_in_mb": 125,
+        "nic_per_numa": 2
+      },
+      {
+        "total_allocated_memory": 125,
+        "nic_per_numa": 2
+      }
+    ]
+  },
+  "monitoring": {
+    "Processor": [
+      {
+        "type": "Intel Xenon Gold 6230",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "type": "Intel Xenon Gold 6230",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "total_size_in_mb": "range(196608-unlimited)",
+        "speed_in_mhz": 2100
+      }
+    ],
+    "Network Interface": [
+      {
+        "vendor": "Mellanox",
+        "ports_amount": 2,
+        "model": "ConnectX-5 EN",
+        "speed_in_mb": 25600,
+        "is_ocp": "yes"
+      },
+      {
+        "vendor": "Mellanox",
+        "ports_amount": 2,
+        "model": "ConnectX-5 EN",
+        "speed_in_mb": 25600,
+        "is_ocp": "no"
+      }
+    ],
+    "Disk": [
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      }
+    ]
+  },
+  "general": {
+    "nuage": {
+      "installed": "yes",
+      "version": "1.4.5"
+    },
+    "ceph": {
+      "installed": "no",
+      "replication_factor": 2
+    }
+  }
+}},
+  "dell-650_ICK_cx5": {"ALL_VERSIONS": {
+  "computes": {
+    "Processor": [
+      {
+        "type": "Intel Xenon Gold 6338N",
+        "frequency_in_mhz": "range(2200-unlimited)"
+      },
+      {
+        "type": "Intel Xenon Gold 6338N",
+        "frequency_in_mhz": "range(2200-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 262144,
+        "type": "DDR4",
+        "total_size_in_mb": "range(524288-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 262144,
+        "type": "DDR4",
+        "total_size_in_mb": "range(524288-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      }
+    ],
+    "Network Interface": [
+      {
+        "vendor": "Mellanox",
+        "model": "ConnectX-5",
+        "ports_amount": "dual",
+        "speed_in_mb": 25600
+      },
+      {
+        "vendor": "Mellanox",
+        "model": "ConnectX-5",
+        "ports_amount": "dual",
+        "speed_in_mb": 25600
+      },
+      {
+        "vendor": "Mellanox",
+        "model": "ConnectX-5",
+        "ports_amount": "OCP Dual",
+        "speed_in_mb": 23552
+      }
+    ],
+    "Disk": [
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      }
+    ],
+    "Raid Controller": {
+      "product": "PERC H345 "
+    },
+    "Numa": [
+      {
+        "total_allocated_memory": 125,
+        "nic_per_numa": 2
+      },
+      {
+        "total_allocated_memory": 125,
+        "nic_per_numa": 2
+      }
+    ]
+  },
+  "controllers": {
+    "Processor": [
+      {
+        "type": "Intel Xenon Gold 6338N",
+        "frequency_in_mhz": "range(2200-unlimited)"
+      },
+      {
+        "type": "Intel Xenon Gold 6338N",
+        "frequency_in_mhz": "range(2200-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 262144,
+        "type": "DDR4",
+        "total_size_in_mb": "range(524288-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 262144,
+        "type": "DDR4",
+        "total_size_in_mb": "range(524288-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      }
+    ],
+    "Network Interface": [
+      {
+        "vendor": "Mellanox",
+        "model": "ConnectX-5",
+        "ports_amount": "dual",
+        "speed_in_mb": 25600
+      },
+      {
+        "vendor": "Mellanox",
+        "model": "ConnectX-5",
+        "ports_amount": "dual",
+        "speed_in_mb": 25600
+      },
+      {
+        "vendor": "Mellanox",
+        "model": "ConnectX-5",
+        "ports_amount": "OCP Dual",
+        "speed_in_mb": 23552
+      }
+    ],
+    "Disk": [
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      }
+    ],
+    "Raid Controller": {
+      "product": "PERC H345 "
+    }
+  },
+  "storages": {
+    "Processor": [
+      {
+        "type": "Intel Xenon Gold 6338N",
+        "frequency_in_mhz": "range(2200-unlimited)"
+      },
+      {
+        "type": "Intel Xenon Gold 6338N",
+        "frequency_in_mhz": "range(2200-unlimited)"
+      }
+    ],
+    "Memory": {
+      "size_in_mb": 524288,
+      "type": "DDR4",
+      "total_size_in_mb": "range(524288-unlimited)",
+      "speed_in_mhz": "range(3200-unlimited)"
+    },
+    "Network Interface": [
+      {
+        "model": "ConnectX-5",
+        "vendor": "Mellanox",
+        "ports_amount": 2,
+        "speed_in_mb": 25600
+      },
+      {
+        "model": "ConnectX-5",
+        "vendor": "Mellanox",
+        "ports_amount": "OCP Dual",
+        "speed_in_mb": 25600
+      }
+    ],
+    "Disk": [
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(491520-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(491520-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "",
+        "type": "NVMe",
+        "size_in_mb": "range(3355443-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "",
+        "type": "NVMe",
+        "size_in_mb": "range(3355443-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "",
+        "type": "NVMe",
+        "size_in_mb": "range(3355443-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "",
+        "type": "NVMe",
+        "size_in_mb": "range(3355443-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "",
+        "type": "NVMe",
+        "size_in_mb": "range(3355443-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "",
+        "type": "NVMe",
+        "size_in_mb": "range(3355443-unlimited)",
+        "vendor": "",
+        "model": ""
+      }
+    ],
+    "Raid Controller": {
+      "product": "BOSS-S2 for OS disks "
+    }
+  },
+  "all_k8s_master": {
+    "Processor": [
+      {
+        "type": "Intel Xenon Gold 6338N",
+        "frequency_in_mhz": "range(2200-unlimited)"
+      },
+      {
+        "type": "Intel Xenon Gold 6338N",
+        "frequency_in_mhz": "range(2200-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 262144,
+        "type": "DDR4",
+        "total_size_in_mb": "range(524288-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 262144,
+        "type": "DDR4",
+        "total_size_in_mb": "range(524288-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      }
+    ],
+    "Network Interface": [
+      {
+        "vendor": "Mellanox",
+        "model": "ConnectX-5",
+        "ports_amount": "dual",
+        "speed_in_mb": 25600
+      },
+      {
+        "vendor": "Mellanox",
+        "model": "ConnectX-5",
+        "ports_amount": "dual",
+        "speed_in_mb": 25600
+      },
+      {
+        "vendor": "Mellanox",
+        "model": "ConnectX-5",
+        "ports_amount": "OCP Dual",
+        "speed_in_mb": 23552
+      }
+    ],
+    "Disk": [
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      }
+    ],
+    "Raid Controller": {
+      "product": "PERC H345 "
+    }
+  },
+  "workers": {
+    "Processor": [
+      {
+        "type": "Intel Xenon Gold 6338N",
+        "frequency_in_mhz": "range(2200-unlimited)"
+      },
+      {
+        "type": "Intel Xenon Gold 6338N",
+        "frequency_in_mhz": "range(2200-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 262144,
+        "type": "DDR4",
+        "total_size_in_mb": "range(524288-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 262144,
+        "type": "DDR4",
+        "total_size_in_mb": "range(524288-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      }
+    ],
+    "Network Interface": [
+      {
+        "vendor": "Mellanox",
+        "model": "ConnectX-5",
+        "ports_amount": "dual",
+        "speed_in_mb": 25600
+      },
+      {
+        "vendor": "Mellanox",
+        "model": "ConnectX-5",
+        "ports_amount": "dual",
+        "speed_in_mb": 25600
+      },
+      {
+        "vendor": "Mellanox",
+        "model": "ConnectX-5",
+        "ports_amount": "OCP Dual",
+        "speed_in_mb": 23552
+      }
+    ],
+    "Disk": [
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      }
+    ],
+    "Raid Controller": {
+      "product": "PERC H345 "
+    },
+    "Numa": [
+      {
+        "total_allocated_memory": 125,
+        "nic_per_numa": 2
+      },
+      {
+        "total_allocated_memory": 125,
+        "nic_per_numa": 2
+      }
+    ]
+  },
+  "edges": {
+    "Processor": [
+      {
+        "type": "Intel Xenon Gold 6338N",
+        "frequency_in_mhz": "range(2200-unlimited)"
+      },
+      {
+        "type": "Intel Xenon Gold 6338N",
+        "frequency_in_mhz": "range(2200-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 262144,
+        "type": "DDR4",
+        "total_size_in_mb": "range(524288-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 262144,
+        "type": "DDR4",
+        "total_size_in_mb": "range(524288-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      }
+    ],
+    "Network Interface": [
+      {
+        "vendor": "Mellanox",
+        "model": "ConnectX-5",
+        "ports_amount": "dual",
+        "speed_in_mb": 25600
+      },
+      {
+        "vendor": "Mellanox",
+        "model": "ConnectX-5",
+        "ports_amount": "dual",
+        "speed_in_mb": 25600
+      },
+      {
+        "vendor": "Mellanox",
+        "model": "ConnectX-5",
+        "ports_amount": "OCP Dual",
+        "speed_in_mb": 23552
+      }
+    ],
+    "Disk": [
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      }
+    ],
+    "Raid Controller": {
+      "product": "PERC H345 "
+    },
+    "Numa": [
+      {
+        "total_allocated_memory": 125,
+        "nic_per_numa": 2
+      },
+      {
+        "total_allocated_memory": 125,
+        "nic_per_numa": 2
+      }
+    ]
+  },
+  "monitoring": {
+    "Processor": [
+      {
+        "type": "Intel Xenon Gold 6338N",
+        "frequency_in_mhz": "range(2200-unlimited)"
+      },
+      {
+        "type": "Intel Xenon Gold 6338N",
+        "frequency_in_mhz": "range(2200-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 262144,
+        "type": "DDR4",
+        "total_size_in_mb": "range(524288-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      },
+      {
+        "size_in_mb": 262144,
+        "type": "DDR4",
+        "total_size_in_mb": "range(524288-unlimited)",
+        "speed_in_mhz": "range(3200-unlimited)"
+      }
+    ],
+    "Network Interface": [
+      {
+        "vendor": "Mellanox",
+        "model": "ConnectX-5",
+        "ports_amount": "dual",
+        "speed_in_mb": 25600
+      },
+      {
+        "vendor": "Mellanox",
+        "model": "ConnectX-5",
+        "ports_amount": "dual",
+        "speed_in_mb": 25600
+      },
+      {
+        "vendor": "Mellanox",
+        "model": "ConnectX-5",
+        "ports_amount": "OCP Dual",
+        "speed_in_mb": 23552
+      }
+    ],
+    "Disk": [
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      }
+    ],
+    "Raid Controller": {
+      "product": "PERC H345 "
+    }
+  },
+  "general": {}
+}},
+  "hp_g10_CLK_cx5": {"ALL_VERSIONS":{
+  "computes": {
+    "Processor": [
+      {
+        "type": "Intel Xeon Gold 6230",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "type": "Intel Xeon Gold 6230",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 196608,
+        "type": "DDR4",
+        "total_size_in_mb": "range(393216-unlimited)",
+        "speed_in_mhz": "range(2933-unlimited)"
+      },
+      {
+        "size_in_mb": 196608,
+        "type": "DDR4",
+        "total_size_in_mb": "range(393216-unlimited)",
+        "speed_in_mhz": "range(2933-unlimited)"
+      }
+    ],
+    "Network Interface": [
+      {
+        "vendor": "",
+        "model": "ConnectX-5",
+        "ports_amount": 2,
+        "speed": ""
+      },
+      {
+        "vendor": "",
+        "model": "ConnectX-5",
+        "ports_amount": 2,
+        "speed": ""
+      }
+    ],
+    "Disk": [
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      }
+    ],
+    "Numa": [
+      {
+        "total_allocated_memory": 125,
+        "nic_per_numa": 2
+      },
+      {
+        "total_allocated_memory": 125,
+        "nic_per_numa": 2
+      }
+    ]
+  },
+  "controllers": {
+    "Processor": [
+      {
+        "type": "Intel Xeon Gold 6230",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "type": "Intel Xeon Gold 6230",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 196608,
+        "type": "DDR4",
+        "total_size_in_mb": "range(393216-unlimited)",
+        "speed_in_mhz": "range(2933-unlimited)"
+      },
+      {
+        "size_in_mb": 196608,
+        "type": "DDR4",
+        "total_size_in_mb": "range(393216-unlimited)",
+        "speed_in_mhz": "range(2933-unlimited)"
+      }
+    ],
+    "Network Interface": [
+      {
+        "vendor": "",
+        "model": "ConnectX-5",
+        "ports_amount": 2,
+        "speed": ""
+      },
+      {
+        "vendor": "",
+        "model": "ConnectX-5",
+        "ports_amount": 2,
+        "speed": ""
+      }
+    ],
+    "Disk": [
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      }
+    ]
+  },
+  "storages": {
+    "Raid Controller": {
+      "product": "HPE Smart Array P816i-a SR Gen10 (Ceph disks)"
+    },
+    "Processor": [
+      {
+        "type": "Inte Xeon Gold 6230",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "type": "Inte Xeon Gold 6230",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 196608,
+        "type": "DDR4",
+        "total_size_in_mb": "range(393216-unlimited)",
+        "speed_in_mhz": "range(2933-unlimited)"
+      },
+      {
+        "size_in_mb": 196608,
+        "type": "DDR4",
+        "total_size_in_mb": "range(393216-unlimited)",
+        "speed_in_mhz": "range(2933-unlimited)"
+      }
+    ],
+    "Network Interface": {
+      "model": "ConnectX-5",
+      "vendor": "",
+      "ports_amount": 2,
+      "speed_in_mhz": "range(2933-unlimited)"
+    },
+    "Disk": [
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(491520-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(491520-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(3984589-unlimited)",
+        "vendor": "",
+        "model": "PEYHD0DRHD50WX"
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(3984589-unlimited)",
+        "vendor": "",
+        "model": "PEYHD0DRHD50WX"
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(3984589-unlimited)",
+        "vendor": "",
+        "model": "PEYHD0DRHD50WX"
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(3984589-unlimited)",
+        "vendor": "",
+        "model": "PEYHD0DRHD50WX"
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(3984589-unlimited)",
+        "vendor": "",
+        "model": "PEYHD0DRHD50WX"
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(3984589-unlimited)",
+        "vendor": "",
+        "model": "PEYHD0DRHD50WX"
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(3984589-unlimited)",
+        "vendor": "",
+        "model": "PEYHD0DRHD50WX"
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(3984589-unlimited)",
+        "vendor": "",
+        "model": "PEYHD0DRHD50WX"
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(3984589-unlimited)",
+        "vendor": "",
+        "model": "PEYHD0DRHD50WX"
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(3984589-unlimited)",
+        "vendor": "",
+        "model": "PEYHD0DRHD50WX"
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(3984589-unlimited)",
+        "vendor": "",
+        "model": "PEYHD0DRHD50WX"
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(3984589-unlimited)",
+        "vendor": "",
+        "model": "PEYHD0DRHD50WX"
+      },
+      {
+        "interface_type": "",
+        "type": "NVMe",
+        "size_in_mb": "range(1677722-unlimited)",
+        "vendor": "",
+        "model": "MO001600KWVNB"
+      },
+      {
+        "interface_type": "",
+        "type": "NVMe",
+        "size_in_mb": "range(1677722-unlimited)",
+        "vendor": "",
+        "model": "MO001600KWVNB"
+      }
+    ]
+  },
+  "all_k8s_master": {
+    "Processor": [
+      {
+        "type": "Intel Xeon Gold 6230",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "type": "Intel Xeon Gold 6230",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 196608,
+        "type": "DDR4",
+        "total_size_in_mb": "range(393216-unlimited)",
+        "speed_in_mhz": "range(2933-unlimited)"
+      },
+      {
+        "size_in_mb": 196608,
+        "type": "DDR4",
+        "total_size_in_mb": "range(393216-unlimited)",
+        "speed_in_mhz": "range(2933-unlimited)"
+      }
+    ],
+    "Network Interface": [
+      {
+        "vendor": "",
+        "model": "ConnectX-5",
+        "ports_amount": 2,
+        "speed": ""
+      },
+      {
+        "vendor": "",
+        "model": "ConnectX-5",
+        "ports_amount": 2,
+        "speed": ""
+      }
+    ],
+    "Disk": [
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      }
+    ]
+  },
+  "workers": {
+    "Processor": [
+      {
+        "type": "Intel Xeon Gold 6230",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "type": "Intel Xeon Gold 6230",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 196608,
+        "type": "DDR4",
+        "total_size_in_mb": "range(393216-unlimited)",
+        "speed_in_mhz": "range(2933-unlimited)"
+      },
+      {
+        "size_in_mb": 196608,
+        "type": "DDR4",
+        "total_size_in_mb": "range(393216-unlimited)",
+        "speed_in_mhz": "range(2933-unlimited)"
+      }
+    ],
+    "Network Interface": [
+      {
+        "vendor": "",
+        "model": "ConnectX-5",
+        "ports_amount": 2,
+        "speed": ""
+      },
+      {
+        "vendor": "",
+        "model": "ConnectX-5",
+        "ports_amount": 2,
+        "speed": ""
+      }
+    ],
+    "Disk": [
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      }
+    ],
+    "Numa": [
+      {
+        "total_allocated_memory": 125,
+        "nic_per_numa": 2
+      },
+      {
+        "total_allocated_memory": 125,
+        "nic_per_numa": 2
+      }
+    ]
+  },
+  "edges": {
+    "Processor": [
+      {
+        "type": "Intel Xeon Gold 6230",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "type": "Intel Xeon Gold 6230",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 196608,
+        "type": "DDR4",
+        "total_size_in_mb": "range(393216-unlimited)",
+        "speed_in_mhz": "range(2933-unlimited)"
+      },
+      {
+        "size_in_mb": 196608,
+        "type": "DDR4",
+        "total_size_in_mb": "range(393216-unlimited)",
+        "speed_in_mhz": "range(2933-unlimited)"
+      }
+    ],
+    "Network Interface": [
+      {
+        "vendor": "",
+        "model": "ConnectX-5",
+        "ports_amount": 2,
+        "speed": ""
+      },
+      {
+        "vendor": "",
+        "model": "ConnectX-5",
+        "ports_amount": 2,
+        "speed": ""
+      }
+    ],
+    "Disk": [
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      }
+    ],
+    "Numa": [
+      {
+        "total_allocated_memory": 125,
+        "nic_per_numa": 2
+      },
+      {
+        "total_allocated_memory": 125,
+        "nic_per_numa": 2
+      }
+    ]
+  },
+  "monitoring": {
+    "Processor": [
+      {
+        "type": "Intel Xeon Gold 6230",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      },
+      {
+        "type": "Intel Xeon Gold 6230",
+        "frequency_in_mhz": "range(2100-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 196608,
+        "type": "DDR4",
+        "total_size_in_mb": "range(393216-unlimited)",
+        "speed_in_mhz": "range(2933-unlimited)"
+      },
+      {
+        "size_in_mb": 196608,
+        "type": "DDR4",
+        "total_size_in_mb": "range(393216-unlimited)",
+        "speed_in_mhz": "range(2933-unlimited)"
+      }
+    ],
+    "Network Interface": [
+      {
+        "vendor": "",
+        "model": "ConnectX-5",
+        "ports_amount": 2,
+        "speed": ""
+      },
+      {
+        "vendor": "",
+        "model": "ConnectX-5",
+        "ports_amount": 2,
+        "speed": ""
+      }
+    ],
+    "Disk": [
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      },
+      {
+        "interface_type": "SATA",
+        "type": "SSD",
+        "size_in_mb": "range(983040-unlimited)",
+        "vendor": "",
+        "model": ""
+      }
+    ]
+  },
+  "general": {}
+}}
+}

@@ -1,0 +1,2 @@
+{"20": "coredns csi-s3-nodeplugin kube-proxy local-volume-provisioner sriov-device-plugin bcmt-api  bcmt-fluentd-belk-fluentd-daemonset bcmt-ip-man-agent bcmt-kubesetting bcmt-operator csi-cephfs-nodeplugin csi-cephrbd-nodeplugin"
+}

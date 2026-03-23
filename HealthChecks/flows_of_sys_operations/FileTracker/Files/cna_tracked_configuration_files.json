@@ -1,0 +1,153 @@
+{
+  "10-calico.conflist": {
+    "/etc/kubernetes/cni/net.d/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "87-podman-bridge.conflist": {
+    "/etc/cni/net.d/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "87-podman.conflist": {
+    "/etc/cni/net.d/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "99-kubernetes-cri.conf": {
+    "/etc/sysctl.d/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "bcmt_api.conf": {
+    "/opt/bcmt/config/bcmt-api/": "[Objectives.MASTERS]"
+  },
+
+  "bcmt_config.json": {
+    "/opt/bcmt/": "[Objectives.DEPLOYER]"
+  },
+
+  "bcmt-egress.conf": {
+    "/etc/sysctl.d/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "bcmt-heartbeat.service": {
+    "/etc/systemd/system/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "bcmt_heartbeat.sh": {
+    "/opt/bcmt/bin/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "bcmt-heartbeat.yml": {
+    "/opt/bcmt/config/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "bcmt-nginx.service": {
+    "/etc/systemd/system/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "bcmt-registry.yml": {
+    "/opt/bcmt/config/": "[Objectives.MASTERS]"
+  },
+
+  "bridge-nf-call-iptables.conf": {
+    "/etc/sysctl.d/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "ca.pem": {
+    "/etc/etcd/ssl/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "calico.service": {
+    "/etc/systemd/system/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "config": {
+    "/etc/selinux/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "etcd.client.conf": {
+    "/etc/etcd/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "etcd-client.pem": {
+    "/etc/etcd/ssl/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "etcd-client-key.pem": {
+    "/etc/etcd/ssl/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "etcd_endpoints.yml": {
+    "/etc/etcd/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "etcd.service": {
+    "/etc/systemd/system/": "[Objectives.MASTERS]"
+  },
+
+  "exports": {
+    "/etc/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "fstab": {
+    "/etc/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "hostname": {
+    "/etc/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "hosts": {
+    "/etc/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "iptables": {
+    "/etc/sysconfig/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "ipv6_forwarding.conf": {
+    "/etc/sysctl.d/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "kube-apiserver.service": {
+    "/etc/systemd/system/": "[Objectives.MASTERS]"
+  },
+
+  "kube-controller-manager.service": {
+    "/etc/systemd/system/": "[Objectives.MASTERS]"
+  },
+
+  "kube-scheduler.service": {
+    "/etc/systemd/system/": "[Objectives.MASTERS]"
+  },
+
+  "kubelet.conf": {
+    "/etc/sysctl.d/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "kubelet.service": {
+    "/etc/systemd/system/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "may_detach_mounts.conf": {
+    "/etc/sysctl.d/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "sshd_config": {
+    "/etc/ssh/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "start-etcd.sh": {
+    "/opt/bcmt/bin/": "[Objectives.MASTERS]"
+  },
+
+  "targets_calico.json": {
+    "/etc/etcd/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "targets_etcd.json": {
+    "/etc/etcd/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "user_input.yml": {
+    "/opt/clcm/": "[Objectives.DEPLOYER]"
+  }
+}

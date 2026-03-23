@@ -1,0 +1,258 @@
+{
+  "app-api-ncms-app": {
+    "deployment": "ncms"
+  },
+
+  "bcmt-citm-ingress-default404": {
+    "deployment": "ncms"
+  },
+
+  "bcmt-citm-ingress-harbor-default404": {
+    "deployment": "ncms"
+  },
+
+  "bcmt-cmdb-admin": {
+    "deployment": "ncms",
+    "statefulset": "ncms"
+  },
+
+  "bcmt-ip-man-organizer": {
+    "deployment": "ncms"
+  },
+
+  "bcmt-mt-tenant": {
+    "deployment": "ncms"
+  },
+
+  "bcmt-yum-repo": {
+    "deployment": "ncms"
+  },
+
+  "cbur-master-cbur": {
+    "deployment": "ncms"
+  },
+
+  "cbur-master-cbur-k8swatcher": {
+    "deployment": "ncms"
+  },
+
+  "cbur-master-cbur-mycelery": {
+    "deployment": "ncms"
+  },
+
+  "cert-manager": {
+    "deployment": "ncms"
+  },
+
+  "cert-manager-cainjector": {
+    "deployment": "ncms"
+  },
+
+  "cert-manager-csf-cert-manager": {
+    "deployment": "ncms"
+  },
+
+  "cert-manager-csf-cert-manager-cainjector": {
+    "deployment": "ncms"
+  },
+
+  "cert-manager-csf-cert-manager-webhook": {
+    "deployment": "ncms"
+  },
+
+  "cert-manager-webhook": {
+    "deployment": "ncms"
+  },
+
+  "harbor-harbor-chartmuseum": {
+    "deployment": "ncms"
+  },
+
+  "harbor-harbor-core": {
+    "deployment": "ncms"
+  },
+
+  "harbor-harbor-exporter": {
+    "deployment": "ncms"
+  },
+
+  "harbor-harbor-jobservice": {
+    "deployment": "ncms"
+  },
+
+  "harbor-harbor-nginx": {
+    "deployment": "ncms"
+  },
+
+  "harbor-harbor-portal": {
+    "deployment": "ncms"
+  },
+
+  "harbor-harbor-registry": {
+    "deployment": "ncms"
+  },
+
+  "k8s-dashboard-gk-keycloak-gatekeeper": {
+    "deployment":"ncms"
+  },
+
+  "k8s-dashboard-oauth2-proxy": {
+    "deployment": "ncms"
+  },
+
+  "kube-state-metrics": {
+    "deployment": "ncms"
+  },
+
+  "bcmt-ckey-ckey": {
+    "statefulset": "ncms"
+  },
+
+  "bcmt-cmdb-mariadb": {
+    "statefulset": "ncms"
+  },
+
+  "bcmt-ip-man-master": {
+    "statefulset": "ncms"
+  },
+
+  "harbor-harbor-database": {
+    "statefulset": "ncms"
+  },
+
+  "harbor-harbor-redis": {
+    "statefulset": "ncms"
+  },
+
+  "harbor-harbor-trivy": {
+    "statefulset": "ncms"
+  },
+
+  "bcmt-api": {
+    "daemonset": "ncms"
+  },
+
+  "bcmt-citm-ingress": {
+    "daemonset": "ncms"
+  },
+
+  "bcmt-citm-ingress-harbor": {
+    "daemonset": "ncms"
+  },
+
+  "bcmt-fluentd-belk-fluentd-daemonset": {
+    "daemonset": "ncms"
+  },
+
+  "bcmt-fluentd-control-bssc-fluentd-daemonset": {
+    "daemonset": "ncms"
+  },
+
+  "bcmt-fluentd-worker-bssc-fluentd-daemonset": {
+    "daemonset": "ncms"
+  },
+
+  "bcmt-ip-man-agent": {
+    "daemonset": "ncms"
+  },
+
+  "bcmt-kubesetting": {
+    "daemonset": "ncms"
+  },
+
+  "bcmt-operator": {
+    "daemonset": "ncms"
+  },
+
+  "calico-kube-controllers": {
+    "deployment": "kube-system"
+  },
+
+  "danm-webhook": {
+    "deployment": "kube-system"
+  },
+
+  "dashboard-metrics-scraper": {
+    "deployment": "kube-system"
+  },
+
+  "default-net-generator": {
+    "deployment": "kube-system"
+  },
+
+  "kube-dashboard": {
+    "deployment": "kube-system"
+  },
+
+  "metrics-server": {
+    "deployment": "kube-system"
+  },
+
+  "net-attach-def-admission-controller-server": {
+    "deployment": "kube-system"
+  },
+
+  "snapshot-validation": {
+    "deployment": "kube-system"
+  },
+
+  "storage-controller": {
+    "deployment": "kube-system"
+  },
+
+  "tiller-deploy": {
+    "deployment": "kube-system"
+  },
+
+  "whereabouts-cleaner": {
+    "deployment": "kube-system"
+  },
+
+  "csi-s3-controllerplugin": {
+    "statefulset": "kube-system"
+  },
+
+  "snapshot-controller": {
+    "statefulset": "kube-system"
+  },
+
+  "coredns": {
+    "daemonset": "kube-system"
+  },
+
+  "danm-cleaner": {
+    "daemonset": "kube-system"
+  },
+
+  "ephemeral-webhook": {
+    "daemonset": "kube-system"
+  },
+
+  "kube-proxy": {
+    "daemonset": "kube-system"
+  },
+
+  "local-volume-provisioner": {
+    "daemonset": "kube-system"
+  },
+
+  "net-attach-def-netcontroller": {
+    "daemonset": "kube-system"
+  },
+
+  "netwatcher": {
+    "daemonset": "kube-system"
+  },
+
+  "sriov-device-plugin": {
+    "daemonset": "kube-system"
+  },
+
+  "svcwatcher": {
+    "daemonset": "kube-system"
+  },
+
+  "whereabouts": {
+    "daemonset": "kube-system"
+  }
+}

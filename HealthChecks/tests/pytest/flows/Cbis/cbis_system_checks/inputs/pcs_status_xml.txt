@@ -1,0 +1,471 @@
+<?xml version="1.0"?>
+<crm_mon version="1.1.21">
+    <summary>
+        <stack type="corosync" />
+        <current_dc present="true" version="1.1.21-4.el7-f14e36fd43" name="overcloud-controller-v20-819-lab1-2" id="3" with_quorum="true" />
+        <last_update time="Wed Apr  5 19:37:06 2023" />
+        <last_change time="Fri Mar 17 22:16:44 2023" user="root" client="crm_resource" origin="overcloud-controller-v20-819-lab1-1" />
+        <nodes_configured number="12" expected_votes="unknown" />
+        <resources_configured number="40" disabled="0" blocked="0" />
+        <cluster_options stonith-enabled="false" symmetric-cluster="true" no-quorum-policy="stop" maintenance-mode="false" />
+    </summary>
+    <nodes>
+        <node name="galera-bundle-0" id="galera-bundle-0" online="{online}" standby="false" standby_onfail="false" maintenance="false" pending="false" unclean="false" shutdown="false" expected_up="false" is_dc="false" resources_running="1" type="remote" id_as_resource="galera-bundle-docker-0" />
+        <node name="galera-bundle-1" id="galera-bundle-1" online="true" standby="false" standby_onfail="false" maintenance="false" pending="false" unclean="false" shutdown="false" expected_up="false" is_dc="false" resources_running="1" type="remote" id_as_resource="galera-bundle-docker-1" />
+        <node name="galera-bundle-2" id="galera-bundle-2" online="true" standby="false" standby_onfail="false" maintenance="false" pending="false" unclean="false" shutdown="false" expected_up="false" is_dc="false" resources_running="1" type="remote" id_as_resource="galera-bundle-docker-2" />
+        <node name="overcloud-controller-v20-819-lab1-1" id="2" online="{online}" standby="false" standby_onfail="false" maintenance="false" pending="false" unclean="false" shutdown="false" expected_up="true" is_dc="false" resources_running="7" type="member" />
+        <node name="overcloud-controller-v20-819-lab1-2" id="3" online="true" standby="false" standby_onfail="false" maintenance="false" pending="false" unclean="false" shutdown="false" expected_up="true" is_dc="true" resources_running="12" type="member" />
+        <node name="overcloud-controller-v20-819-lab1-3" id="1" online="true" standby="false" standby_onfail="false" maintenance="false" pending="false" unclean="false" shutdown="false" expected_up="true" is_dc="false" resources_running="12" type="member" />
+        <node name="rabbitmq-bundle-0" id="rabbitmq-bundle-0" online="{online}" standby="false" standby_onfail="false" maintenance="false" pending="false" unclean="false" shutdown="false" expected_up="false" is_dc="false" resources_running="1" type="remote" id_as_resource="rabbitmq-bundle-docker-0" />
+        <node name="rabbitmq-bundle-1" id="rabbitmq-bundle-1" online="true" standby="false" standby_onfail="false" maintenance="false" pending="false" unclean="false" shutdown="false" expected_up="false" is_dc="false" resources_running="1" type="remote" id_as_resource="rabbitmq-bundle-docker-1" />
+        <node name="rabbitmq-bundle-2" id="rabbitmq-bundle-2" online="true" standby="false" standby_onfail="false" maintenance="false" pending="false" unclean="false" shutdown="false" expected_up="false" is_dc="false" resources_running="1" type="remote" id_as_resource="rabbitmq-bundle-docker-2" />
+        <node name="redis-bundle-0" id="redis-bundle-0" online="{online}" standby="false" standby_onfail="false" maintenance="false" pending="false" unclean="false" shutdown="false" expected_up="false" is_dc="false" resources_running="1" type="remote" id_as_resource="redis-bundle-docker-0" />
+        <node name="redis-bundle-1" id="redis-bundle-1" online="true" standby="false" standby_onfail="false" maintenance="false" pending="false" unclean="false" shutdown="false" expected_up="false" is_dc="false" resources_running="1" type="remote" id_as_resource="redis-bundle-docker-1" />
+        <node name="redis-bundle-2" id="redis-bundle-2" online="true" standby="false" standby_onfail="false" maintenance="false" pending="false" unclean="false" shutdown="false" expected_up="false" is_dc="false" resources_running="1" type="remote" id_as_resource="redis-bundle-docker-2" />
+    </nodes>
+    <resources>
+        <bundle id="rabbitmq-bundle" type="docker" image="172.31.0.1:8787/cbis/centos-binary-rabbitmq:pcmklatest" unique="false" managed="true" failed="false" >
+            <replica id="0">
+                <resource id="rabbitmq" resource_agent="ocf::heartbeat:rabbitmq-cluster" role="{role_s}" active="true" orphaned="false" blocked="false" managed="true" failed="{failed}" failure_ignored="false" nodes_running_on="1" >
+                    <node name="rabbitmq-bundle-0" id="rabbitmq-bundle-0" cached="false"/>
+                </resource>
+                <resource id="rabbitmq-bundle-docker-0" resource_agent="ocf::heartbeat:docker" role="{role_m}" active="true" orphaned="false" blocked="false" managed="true" failed="{failed}" failure_ignored="false" nodes_running_on="1" >
+                    <node name="overcloud-controller-v20-819-lab1-3" id="1" cached="false"/>
+                </resource>
+                <resource id="rabbitmq-bundle-0" resource_agent="ocf::pacemaker:remote" role="Started" active="true" orphaned="false" blocked="false" managed="true" failed="false" failure_ignored="false" nodes_running_on="1" >
+                    <node name="overcloud-controller-v20-819-lab1-3" id="1" cached="false"/>
+                </resource>
+            </replica>
+            <replica id="1">
+                <resource id="rabbitmq" resource_agent="ocf::heartbeat:rabbitmq-cluster" role="Started" active="true" orphaned="false" blocked="false" managed="true" failed="false" failure_ignored="false" nodes_running_on="1" >
+                    <node name="rabbitmq-bundle-1" id="rabbitmq-bundle-1" cached="false"/>
+                </resource>
+                <resource id="rabbitmq-bundle-docker-1" resource_agent="ocf::heartbeat:docker" role="Started" active="true" orphaned="false" blocked="false" managed="true" failed="false" failure_ignored="false" nodes_running_on="1" >
+                    <node name="overcloud-controller-v20-819-lab1-1" id="2" cached="false"/>
+                </resource>
+                <resource id="rabbitmq-bundle-1" resource_agent="ocf::pacemaker:remote" role="Started" active="true" orphaned="false" blocked="false" managed="true" failed="false" failure_ignored="false" nodes_running_on="1" >
+                    <node name="overcloud-controller-v20-819-lab1-1" id="2" cached="false"/>
+                </resource>
+            </replica>
+            <replica id="2">
+                <resource id="rabbitmq" resource_agent="ocf::heartbeat:rabbitmq-cluster" role="Started" active="true" orphaned="false" blocked="false" managed="true" failed="false" failure_ignored="false" nodes_running_on="1" >
+                    <node name="rabbitmq-bundle-2" id="rabbitmq-bundle-2" cached="false"/>
+                </resource>
+                <resource id="rabbitmq-bundle-docker-2" resource_agent="ocf::heartbeat:docker" role="Started" active="true" orphaned="false" blocked="false" managed="true" failed="false" failure_ignored="false" nodes_running_on="1" >
+                    <node name="overcloud-controller-v20-819-lab1-2" id="3" cached="false"/>
+                </resource>
+                <resource id="rabbitmq-bundle-2" resource_agent="ocf::pacemaker:remote" role="Started" active="true" orphaned="false" blocked="false" managed="true" failed="false" failure_ignored="false" nodes_running_on="1" >
+                    <node name="overcloud-controller-v20-819-lab1-2" id="3" cached="false"/>
+                </resource>
+            </replica>
+        </bundle>
+        <bundle id="galera-bundle" type="docker" image="172.31.0.1:8787/cbis/centos-binary-mariadb:pcmklatest" unique="false" managed="true" failed="false" >
+            <replica id="0">
+                <resource id="galera" resource_agent="ocf::heartbeat:galera" role="Master" active="true" orphaned="false" blocked="false" managed="true" failed="false" failure_ignored="false" nodes_running_on="1" >
+                    <node name="galera-bundle-0" id="galera-bundle-0" cached="false"/>
+                </resource>
+                <resource id="galera-bundle-docker-0" resource_agent="ocf::heartbeat:docker" role="Started" active="true" orphaned="false" blocked="false" managed="true" failed="false" failure_ignored="false" nodes_running_on="1" >
+                    <node name="overcloud-controller-v20-819-lab1-1" id="2" cached="false"/>
+                </resource>
+                <resource id="galera-bundle-0" resource_agent="ocf::pacemaker:remote" role="Started" active="true" orphaned="false" blocked="false" managed="true" failed="false" failure_ignored="false" nodes_running_on="1" >
+                    <node name="overcloud-controller-v20-819-lab1-1" id="2" cached="false"/>
+                </resource>
+            </replica>
+            <replica id="1">
+                <resource id="galera" resource_agent="ocf::heartbeat:galera" role="Master" active="true" orphaned="false" blocked="false" managed="true" failed="false" failure_ignored="false" nodes_running_on="1" >
+                    <node name="galera-bundle-1" id="galera-bundle-1" cached="false"/>
+                </resource>
+                <resource id="galera-bundle-docker-1" resource_agent="ocf::heartbeat:docker" role="Started" active="true" orphaned="false" blocked="false" managed="true" failed="false" failure_ignored="false" nodes_running_on="1" >
+                    <node name="overcloud-controller-v20-819-lab1-2" id="3" cached="false"/>
+                </resource>
+                <resource id="galera-bundle-1" resource_agent="ocf::pacemaker:remote" role="Started" active="true" orphaned="false" blocked="false" managed="true" failed="false" failure_ignored="false" nodes_running_on="1" >
+                    <node name="overcloud-controller-v20-819-lab1-2" id="3" cached="false"/>
+                </resource>
+            </replica>
+            <replica id="2">
+                <resource id="galera" resource_agent="ocf::heartbeat:galera" role="Master" active="true" orphaned="false" blocked="false" managed="true" failed="false" failure_ignored="false" nodes_running_on="1" >
+                    <node name="galera-bundle-2" id="galera-bundle-2" cached="false"/>
+                </resource>
+                <resource id="galera-bundle-docker-2" resource_agent="ocf::heartbeat:docker" role="Started" active="true" orphaned="false" blocked="false" managed="true" failed="false" failure_ignored="false" nodes_running_on="1" >
+                    <node name="overcloud-controller-v20-819-lab1-3" id="1" cached="false"/>
+                </resource>
+                <resource id="galera-bundle-2" resource_agent="ocf::pacemaker:remote" role="Started" active="true" orphaned="false" blocked="false" managed="true" failed="false" failure_ignored="false" nodes_running_on="1" >
+                    <node name="overcloud-controller-v20-819-lab1-3" id="1" cached="false"/>
+                </resource>
+            </replica>
+        </bundle>
+        <bundle id="redis-bundle" type="docker" image="172.31.0.1:8787/cbis/centos-binary-redis:pcmklatest" unique="false" managed="true" failed="false" >
+            <replica id="0">
+                <resource id="redis" resource_agent="ocf::heartbeat:redis" role="Master" active="true" orphaned="false" blocked="false" managed="true" failed="false" failure_ignored="false" nodes_running_on="1" >
+                    <node name="redis-bundle-0" id="redis-bundle-0" cached="false"/>
+                </resource>
+                <resource id="redis-bundle-docker-0" resource_agent="ocf::heartbeat:docker" role="Started" active="true" orphaned="false" blocked="false" managed="true" failed="false" failure_ignored="false" nodes_running_on="1" >
+                    <node name="overcloud-controller-v20-819-lab1-3" id="1" cached="false"/>
+                </resource>
+                <resource id="redis-bundle-0" resource_agent="ocf::pacemaker:remote" role="{role_sl}" active="true" orphaned="false" blocked="false" managed="true" failed="{failed}" failure_ignored="false" nodes_running_on="1" >
+                    <node name="overcloud-controller-v20-819-lab1-3" id="1" cached="false"/>
+                </resource>
+            </replica>
+            <replica id="1">
+                <resource id="redis" resource_agent="ocf::heartbeat:redis" role="Slave" active="true" orphaned="false" blocked="false" managed="{managed}" failed="false" failure_ignored="false" nodes_running_on="1" >
+                    <node name="redis-bundle-1" id="redis-bundle-1" cached="false"/>
+                </resource>
+                <resource id="redis-bundle-docker-1" resource_agent="ocf::heartbeat:docker" role="Started" active="true" orphaned="false" blocked="false" managed="true" failed="false" failure_ignored="false" nodes_running_on="1" >
+                    <node name="overcloud-controller-v20-819-lab1-1" id="2" cached="false"/>
+                </resource>
+                <resource id="redis-bundle-1" resource_agent="ocf::pacemaker:remote" role="Started" active="true" orphaned="false" blocked="false" managed="true" failed="false" failure_ignored="false" nodes_running_on="1" >
+                    <node name="overcloud-controller-v20-819-lab1-1" id="2" cached="false"/>
+                </resource>
+            </replica>
+            <replica id="2">
+                <resource id="redis" resource_agent="ocf::heartbeat:redis" role="Slave" active="true" orphaned="false" blocked="false" managed="true" failed="false" failure_ignored="false" nodes_running_on="1" >
+                    <node name="redis-bundle-2" id="redis-bundle-2" cached="false"/>
+                </resource>
+                <resource id="redis-bundle-docker-2" resource_agent="ocf::heartbeat:docker" role="Started" active="true" orphaned="false" blocked="false" managed="true" failed="false" failure_ignored="false" nodes_running_on="1" >
+                    <node name="overcloud-controller-v20-819-lab1-2" id="3" cached="false"/>
+                </resource>
+                <resource id="redis-bundle-2" resource_agent="ocf::pacemaker:remote" role="Started" active="true" orphaned="false" blocked="false" managed="true" failed="false" failure_ignored="false" nodes_running_on="1" >
+                    <node name="overcloud-controller-v20-819-lab1-2" id="3" cached="false"/>
+                </resource>
+            </replica>
+        </bundle>
+        <resource id="ip-172.31.0.7" resource_agent="ocf::heartbeat:IPaddr2" role="Started" active="true" orphaned="false" blocked="false" managed="true" failed="false" failure_ignored="false" nodes_running_on="1" >
+            <node name="overcloud-controller-v20-819-lab1-3" id="1" cached="false"/>
+        </resource>
+        <resource id="ip-100.73.246.10" resource_agent="ocf::heartbeat:IPaddr2" role="Started" active="true" orphaned="false" blocked="false" managed="true" failed="false" failure_ignored="false" nodes_running_on="1" >
+            <node name="overcloud-controller-v20-819-lab1-3" id="1" cached="false"/>
+        </resource>
+        <resource id="ip-172.17.1.16" resource_agent="ocf::heartbeat:IPaddr2" role="Started" active="true" orphaned="false" blocked="false" managed="{managed}" failed="false" failure_ignored="false" nodes_running_on="1" >
+            <node name="overcloud-controller-v20-819-lab1-2" id="3" cached="false"/>
+        </resource>
+        <resource id="ip-172.17.1.10" resource_agent="ocf::heartbeat:IPaddr2" role="Started" active="true" orphaned="false" blocked="false" managed="true" failed="false" failure_ignored="false" nodes_running_on="1" >
+            <node name="overcloud-controller-v20-819-lab1-2" id="3" cached="false"/>
+        </resource>
+        <resource id="ip-172.17.3.23" resource_agent="ocf::heartbeat:IPaddr2" role="Started" active="true" orphaned="false" blocked="false" managed="true" failed="false" failure_ignored="false" nodes_running_on="1" >
+            <node name="overcloud-controller-v20-819-lab1-3" id="1" cached="false"/>
+        </resource>
+        <resource id="ip-172.17.4.19" resource_agent="ocf::heartbeat:IPaddr2" role="Started" active="true" orphaned="false" blocked="false" managed="true" failed="false" failure_ignored="false" nodes_running_on="1" >
+            <node name="overcloud-controller-v20-819-lab1-2" id="3" cached="false"/>
+        </resource>
+        <bundle id="haproxy-bundle" type="docker" image="172.31.0.1:8787/cbis/centos-binary-haproxy:pcmklatest" unique="false" managed="true" failed="false" >
+            <replica id="0">
+                <resource id="haproxy-bundle-docker-0" resource_agent="ocf::heartbeat:docker" role="Started" active="true" orphaned="false" blocked="false" managed="true" failed="false" failure_ignored="false" nodes_running_on="1" >
+                    <node name="overcloud-controller-v20-819-lab1-1" id="2" cached="false"/>
+                </resource>
+            </replica>
+            <replica id="1">
+                <resource id="haproxy-bundle-docker-1" resource_agent="ocf::heartbeat:docker" role="Started" active="true" orphaned="false" blocked="false" managed="true" failed="false" failure_ignored="false" nodes_running_on="1" >
+                    <node name="overcloud-controller-v20-819-lab1-2" id="3" cached="false"/>
+                </resource>
+            </replica>
+            <replica id="2">
+                <resource id="haproxy-bundle-docker-2" resource_agent="ocf::heartbeat:docker" role="Started" active="true" orphaned="false" blocked="false" managed="true" failed="false" failure_ignored="false" nodes_running_on="1" >
+                    <node name="overcloud-controller-v20-819-lab1-3" id="1" cached="false"/>
+                </resource>
+            </replica>
+        </bundle>
+        <bundle id="openstack-cinder-volume" type="docker" image="172.31.0.1:8787/cbis/centos-binary-cinder-volume:pcmklatest" unique="false" managed="true" failed="false" >
+            <replica id="0">
+                <resource id="openstack-cinder-volume-docker-0" resource_agent="ocf::heartbeat:docker" role="Started" active="true" orphaned="false" blocked="false" managed="true" failed="false" failure_ignored="false" nodes_running_on="1" >
+                    <node name="overcloud-controller-v20-819-lab1-2" id="3" cached="false"/>
+                </resource>
+            </replica>
+        </bundle>
+        <bundle id="openstack-manila-share" type="docker" image="172.31.0.1:8787/cbis/centos-binary-manila-share:pcmklatest" unique="false" managed="true" failed="false" >
+            <replica id="0">
+                <resource id="openstack-manila-share-docker-0" resource_agent="ocf::heartbeat:docker" role="Started" active="true" orphaned="false" blocked="false" managed="true" failed="false" failure_ignored="false" nodes_running_on="1" >
+                    <node name="overcloud-controller-v20-819-lab1-2" id="3" cached="false"/>
+                </resource>
+            </replica>
+        </bundle>
+        <resource id="alarm-manager" resource_agent="ocf::heartbeat:docker" role="Started" active="true" orphaned="false" blocked="false" managed="{managed}" failed="false" failure_ignored="false" nodes_running_on="1" >
+            <node name="overcloud-controller-v20-819-lab1-3" id="1" cached="false"/>
+        </resource>
+        <resource id="zabbix-server" resource_agent="ocf::heartbeat:docker" role="Started" active="true" orphaned="false" blocked="false" managed="true" failed="false" failure_ignored="false" nodes_running_on="1" >
+            <node name="overcloud-controller-v20-819-lab1-3" id="1" cached="false"/>
+        </resource>
+    </resources>
+    <node_attributes>
+        <node name="galera-bundle-0">
+        </node>
+        <node name="galera-bundle-1">
+        </node>
+        <node name="galera-bundle-2">
+        </node>
+        <node name="overcloud-controller-v20-819-lab1-1">
+            <attribute name="cinder-volume-role" value="true" />
+            <attribute name="galera-role" value="true" />
+            <attribute name="haproxy-role" value="true" />
+            <attribute name="manila-share-role" value="true" />
+            <attribute name="master-galera" value="100" />
+            <attribute name="master-redis" value="1" />
+            <attribute name="rabbitmq-role" value="true" />
+            <attribute name="redis-role" value="true" />
+            <attribute name="rmq-node-attr-last-known-rabbitmq" value="rabbit@overcloud-controller-v20-819-lab1-1" />
+            <attribute name="rmq-node-attr-rabbitmq" value="rabbit@overcloud-controller-v20-819-lab1-1" />
+        </node>
+        <node name="overcloud-controller-v20-819-lab1-2">
+            <attribute name="cinder-volume-role" value="true" />
+            <attribute name="galera-role" value="true" />
+            <attribute name="haproxy-role" value="true" />
+            <attribute name="maintenance-mode" value="false" />
+            <attribute name="manila-share-role" value="true" />
+            <attribute name="master-galera" value="100" />
+            <attribute name="master-redis" value="1" />
+            <attribute name="rabbitmq-role" value="true" />
+            <attribute name="redis-role" value="true" />
+            <attribute name="rmq-node-attr-last-known-rabbitmq" value="rabbit@overcloud-controller-v20-819-lab1-2" />
+            <attribute name="rmq-node-attr-rabbitmq" value="rabbit@overcloud-controller-v20-819-lab1-2" />
+        </node>
+        <node name="overcloud-controller-v20-819-lab1-3">
+            <attribute name="cinder-volume-role" value="true" />
+            <attribute name="galera-role" value="true" />
+            <attribute name="haproxy-role" value="true" />
+            <attribute name="manila-share-role" value="true" />
+            <attribute name="master-galera" value="100" />
+            <attribute name="master-redis" value="1" />
+            <attribute name="rabbitmq-role" value="true" />
+            <attribute name="redis-role" value="true" />
+            <attribute name="rmq-node-attr-last-known-rabbitmq" value="rabbit@overcloud-controller-v20-819-lab1-3" />
+            <attribute name="rmq-node-attr-rabbitmq" value="rabbit@overcloud-controller-v20-819-lab1-3" />
+        </node>
+        <node name="rabbitmq-bundle-0">
+        </node>
+        <node name="rabbitmq-bundle-1">
+        </node>
+        <node name="rabbitmq-bundle-2">
+        </node>
+        <node name="redis-bundle-0">
+        </node>
+        <node name="redis-bundle-1">
+        </node>
+        <node name="redis-bundle-2">
+        </node>
+    </node_attributes>
+    <node_history>
+        <node name="overcloud-controller-v20-819-lab1-2">
+            <resource_history id="galera-bundle-docker-2" orphan="false" migration-threshold="1000000">
+                <operation_history call="196" task="probe" last-rc-change="Wed Jul 27 18:54:56 2022" last-run="Wed Jul 27 18:54:56 2022" exec-time="348ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="378" task="stop" last-rc-change="Wed Mar  8 04:10:34 2023" last-run="Wed Mar  8 04:10:34 2023" exec-time="10464ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+            <resource_history id="rabbitmq-bundle-2" orphan="false" migration-threshold="1000000">
+                <operation_history call="49" task="probe" last-rc-change="Wed Mar  8 07:19:01 2023" last-run="Wed Mar  8 07:19:01 2023" exec-time="0ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="58" task="start" last-rc-change="Fri Mar 17 22:15:35 2023" last-run="Fri Mar 17 22:15:35 2023" exec-time="0ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="59" task="monitor" interval="60000ms" last-rc-change="Fri Mar 17 22:15:38 2023" exec-time="0ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+            <resource_history id="ip-172.17.4.19" orphan="false" migration-threshold="1000000">
+                <operation_history call="220" task="probe" last-rc-change="Wed Jul 27 18:54:56 2022" last-run="Wed Jul 27 18:54:56 2022" exec-time="89ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="397" task="start" last-rc-change="Wed Mar  8 04:19:32 2023" last-run="Wed Mar  8 04:19:32 2023" exec-time="86ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="464" task="monitor" interval="10000ms" last-rc-change="Wed Mar  8 07:33:07 2023" exec-time="67ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+            <resource_history id="zabbix-server" orphan="false" migration-threshold="1000000">
+                <operation_history call="384" task="stop" last-rc-change="Wed Mar  8 04:15:40 2023" last-run="Wed Mar  8 04:15:40 2023" exec-time="2508ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+            <resource_history id="redis-bundle-2" orphan="false" migration-threshold="1000000">
+                <operation_history call="32" task="start" last-rc-change="Wed Jul 27 19:47:22 2022" last-run="Wed Jul 27 19:47:22 2022" exec-time="0ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="53" task="monitor" interval="60000ms" last-rc-change="Wed Mar  8 07:33:07 2023" exec-time="0ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+            <resource_history id="haproxy-bundle-docker-1" orphan="false" migration-threshold="1000000">
+                <operation_history call="401" task="start" last-rc-change="Wed Mar  8 04:19:32 2023" last-run="Wed Mar  8 04:19:32 2023" exec-time="831ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="465" task="monitor" interval="60000ms" last-rc-change="Wed Mar  8 07:33:07 2023" exec-time="386ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+            <resource_history id="haproxy-bundle-docker-2" orphan="false" migration-threshold="1000000">
+                <operation_history call="224" task="probe" last-rc-change="Wed Jul 27 18:54:56 2022" last-run="Wed Jul 27 18:54:56 2022" exec-time="343ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="386" task="stop" last-rc-change="Wed Mar  8 04:15:40 2023" last-run="Wed Mar  8 04:15:40 2023" exec-time="81083ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+            <resource_history id="ip-172.31.0.7" orphan="false" migration-threshold="1000000">
+                <operation_history call="204" task="probe" last-rc-change="Wed Jul 27 18:54:56 2022" last-run="Wed Jul 27 18:54:56 2022" exec-time="93ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="388" task="stop" last-rc-change="Wed Mar  8 04:19:31 2023" last-run="Wed Mar  8 04:19:31 2023" exec-time="72ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+            <resource_history id="rabbitmq-bundle-docker-2" orphan="false" migration-threshold="1000000">
+                <operation_history call="446" task="probe" last-rc-change="Wed Mar  8 07:19:01 2023" last-run="Wed Mar  8 07:19:01 2023" exec-time="356ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="474" task="start" last-rc-change="Fri Mar 17 22:15:35 2023" last-run="Fri Mar 17 22:15:35 2023" exec-time="735ms" queue-time="1ms" rc="0" rc_text="ok" />
+                <operation_history call="475" task="monitor" interval="60000ms" last-rc-change="Fri Mar 17 22:15:35 2023" exec-time="205ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+            <resource_history id="openstack-cinder-volume-docker-0" orphan="false" migration-threshold="1000000">
+                <operation_history call="448" task="start" last-rc-change="Wed Mar  8 07:21:13 2023" last-run="Wed Mar  8 07:21:13 2023" exec-time="693ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="466" task="monitor" interval="60000ms" last-rc-change="Wed Mar  8 07:33:07 2023" exec-time="387ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+            <resource_history id="galera-bundle-1" orphan="false" migration-threshold="1000000">
+                <operation_history call="41" task="start" last-rc-change="Wed Mar  8 04:10:49 2023" last-run="Wed Mar  8 04:10:49 2023" exec-time="0ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="52" task="monitor" interval="60000ms" last-rc-change="Wed Mar  8 07:33:07 2023" exec-time="0ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+            <resource_history id="galera-bundle-2" orphan="false" migration-threshold="1000000">
+                <operation_history call="40" task="stop" last-rc-change="Wed Mar  8 04:10:34 2023" last-run="Wed Mar  8 04:10:34 2023" exec-time="0ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+            <resource_history id="ip-172.17.1.10" orphan="false" migration-threshold="1000000">
+                <operation_history call="216" task="probe" last-rc-change="Wed Jul 27 18:54:56 2022" last-run="Wed Jul 27 18:54:56 2022" exec-time="90ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="396" task="start" last-rc-change="Wed Mar  8 04:19:32 2023" last-run="Wed Mar  8 04:19:32 2023" exec-time="89ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="463" task="monitor" interval="10000ms" last-rc-change="Wed Mar  8 07:33:07 2023" exec-time="68ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+            <resource_history id="openstack-manila-share-docker-0" orphan="false" migration-threshold="1000000">
+                <operation_history call="403" task="start" last-rc-change="Wed Mar  8 04:44:08 2023" last-run="Wed Mar  8 04:44:08 2023" exec-time="647ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="467" task="monitor" interval="60000ms" last-rc-change="Wed Mar  8 07:33:07 2023" exec-time="386ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+            <resource_history id="redis-bundle-docker-2" orphan="false" migration-threshold="1000000">
+                <operation_history call="200" task="probe" last-rc-change="Wed Jul 27 18:54:56 2022" last-run="Wed Jul 27 18:54:56 2022" exec-time="348ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="295" task="start" last-rc-change="Wed Jul 27 19:47:21 2022" last-run="Wed Jul 27 19:47:21 2022" exec-time="797ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="461" task="monitor" interval="60000ms" last-rc-change="Wed Mar  8 07:33:07 2023" exec-time="388ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+            <resource_history id="ip-172.17.1.16" orphan="false" migration-threshold="1000000">
+                <operation_history call="212" task="probe" last-rc-change="Wed Jul 27 18:54:56 2022" last-run="Wed Jul 27 18:54:56 2022" exec-time="91ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="395" task="start" last-rc-change="Wed Mar  8 04:19:32 2023" last-run="Wed Mar  8 04:19:32 2023" exec-time="90ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="462" task="monitor" interval="10000ms" last-rc-change="Wed Mar  8 07:33:07 2023" exec-time="68ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+            <resource_history id="ip-100.73.246.10" orphan="false" migration-threshold="1000000">
+                <operation_history call="390" task="stop" last-rc-change="Wed Mar  8 04:19:31 2023" last-run="Wed Mar  8 04:19:31 2023" exec-time="93ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+            <resource_history id="galera-bundle-docker-1" orphan="false" migration-threshold="1000000">
+                <operation_history call="379" task="start" last-rc-change="Wed Mar  8 04:10:48 2023" last-run="Wed Mar  8 04:10:48 2023" exec-time="891ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="460" task="monitor" interval="60000ms" last-rc-change="Wed Mar  8 07:33:07 2023" exec-time="218ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+        </node>
+        <node name="overcloud-controller-v20-819-lab1-1">
+            <resource_history id="rabbitmq-bundle-docker-1" orphan="false" migration-threshold="1000000">
+                <operation_history call="113" task="start" last-rc-change="Fri Mar 17 22:16:20 2023" last-run="Fri Mar 17 22:16:20 2023" exec-time="751ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="114" task="monitor" interval="60000ms" last-rc-change="Fri Mar 17 22:16:21 2023" exec-time="191ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+            <resource_history id="galera-bundle-docker-0" orphan="false" migration-threshold="1000000">
+                <operation_history call="96" task="start" last-rc-change="Fri Mar 17 21:35:30 2023" last-run="Fri Mar 17 21:35:30 2023" exec-time="1438ms" queue-time="1ms" rc="0" rc_text="ok" />
+                <operation_history call="105" task="monitor" interval="60000ms" last-rc-change="Fri Mar 17 21:35:32 2023" exec-time="270ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+            <resource_history id="redis-bundle-docker-1" orphan="false" migration-threshold="1000000">
+                <operation_history call="98" task="start" last-rc-change="Fri Mar 17 21:35:30 2023" last-run="Fri Mar 17 21:35:30 2023" exec-time="1338ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="102" task="monitor" interval="60000ms" last-rc-change="Fri Mar 17 21:35:32 2023" exec-time="180ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+            <resource_history id="haproxy-bundle-docker-0" orphan="false" migration-threshold="1000000">
+                <operation_history call="99" task="start" last-rc-change="Fri Mar 17 21:35:30 2023" last-run="Fri Mar 17 21:35:30 2023" exec-time="1392ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="104" task="monitor" interval="60000ms" last-rc-change="Fri Mar 17 21:35:32 2023" exec-time="271ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+            <resource_history id="rabbitmq-bundle-1" orphan="false" migration-threshold="1000000">
+                <operation_history call="20" task="start" last-rc-change="Fri Mar 17 22:16:21 2023" last-run="Fri Mar 17 22:16:21 2023" exec-time="0ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="21" task="monitor" interval="60000ms" last-rc-change="Fri Mar 17 22:16:22 2023" exec-time="0ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+            <resource_history id="redis-bundle-1" orphan="false" migration-threshold="1000000">
+                <operation_history call="10" task="start" last-rc-change="Fri Mar 17 21:35:32 2023" last-run="Fri Mar 17 21:35:32 2023" exec-time="0ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="15" task="monitor" interval="60000ms" last-rc-change="Fri Mar 17 21:35:35 2023" exec-time="0ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+            <resource_history id="galera-bundle-0" orphan="false" migration-threshold="1000000">
+                <operation_history call="12" task="start" last-rc-change="Fri Mar 17 21:35:32 2023" last-run="Fri Mar 17 21:35:32 2023" exec-time="0ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="14" task="monitor" interval="60000ms" last-rc-change="Fri Mar 17 21:35:35 2023" exec-time="0ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+        </node>
+        <node name="rabbitmq-bundle-0">
+            <resource_history id="rabbitmq" orphan="false" migration-threshold="1000000">
+                <operation_history call="13" task="start" last-rc-change="Fri Mar 17 21:50:32 2023" last-run="Fri Mar 17 21:50:32 2023" exec-time="11166ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="32" task="monitor" interval="10000ms" last-rc-change="Fri Mar 17 21:50:57 2023" exec-time="3081ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+        </node>
+        <node name="galera-bundle-2">
+            <resource_history id="galera" orphan="false" migration-threshold="1000000">
+                <operation_history call="43" task="promote" last-rc-change="Wed Mar  8 07:33:28 2023" last-run="Wed Mar  8 07:33:28 2023" exec-time="21512ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="90" task="monitor" interval="10000ms" last-rc-change="Wed Mar  8 07:33:51 2023" exec-time="515ms" queue-time="0ms" rc="8" rc_text="master" />
+            </resource_history>
+        </node>
+        <node name="galera-bundle-1">
+            <resource_history id="galera" orphan="false" migration-threshold="1000000">
+                <operation_history call="508" task="probe" last-rc-change="Wed Mar  8 07:18:58 2023" last-run="Wed Mar  8 07:18:58 2023" exec-time="928ms" queue-time="0ms" rc="8" rc_text="master" />
+                <operation_history call="508" task="probe" last-rc-change="Wed Mar  8 07:18:58 2023" last-run="Wed Mar  8 07:18:58 2023" exec-time="928ms" queue-time="0ms" rc="8" rc_text="master" />
+                <operation_history call="519" task="monitor" interval="10000ms" last-rc-change="Wed Mar  8 07:33:08 2023" exec-time="689ms" queue-time="0ms" rc="8" rc_text="master" />
+            </resource_history>
+        </node>
+        <node name="galera-bundle-0">
+            <resource_history id="galera" orphan="false" migration-threshold="1000000">
+                <operation_history call="43" task="promote" last-rc-change="Fri Mar 17 21:35:51 2023" last-run="Fri Mar 17 21:35:51 2023" exec-time="22122ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="90" task="monitor" interval="10000ms" last-rc-change="Fri Mar 17 21:36:14 2023" exec-time="741ms" queue-time="0ms" rc="8" rc_text="master" />
+            </resource_history>
+        </node>
+        <node name="redis-bundle-1">
+            <resource_history id="redis" orphan="false" migration-threshold="1000000">
+                <operation_history call="8" task="start" last-rc-change="Fri Mar 17 21:35:36 2023" last-run="Fri Mar 17 21:35:36 2023" exec-time="5336ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="50" task="monitor" interval="60000ms" last-rc-change="Fri Mar 17 21:35:51 2023" exec-time="909ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="51" task="monitor" interval="45000ms" last-rc-change="Fri Mar 17 21:35:52 2023" exec-time="1025ms" queue-time="867ms" rc="0" rc_text="ok" />
+            </resource_history>
+        </node>
+        <node name="redis-bundle-2">
+            <resource_history id="redis" orphan="false" migration-threshold="1000000">
+                <operation_history call="8" task="start" last-rc-change="Wed Jul 27 19:47:36 2022" last-run="Wed Jul 27 19:47:36 2022" exec-time="5485ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="3272196" task="monitor" interval="60000ms" last-rc-change="Wed Mar  8 07:33:07 2023" exec-time="945ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="3272197" task="monitor" interval="45000ms" last-rc-change="Wed Mar  8 07:33:08 2023" exec-time="902ms" queue-time="905ms" rc="0" rc_text="ok" />
+            </resource_history>
+        </node>
+        <node name="redis-bundle-0">
+            <resource_history id="redis" orphan="false" migration-threshold="1000000">
+                <operation_history call="140815" task="promote" last-rc-change="Fri Mar 17 21:30:01 2023" last-run="Fri Mar 17 21:30:01 2023" exec-time="1291ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="140833" task="monitor" interval="20000ms" last-rc-change="Fri Mar 17 21:30:08 2023" exec-time="677ms" queue-time="0ms" rc="8" rc_text="master" />
+            </resource_history>
+        </node>
+        <node name="rabbitmq-bundle-1">
+            <resource_history id="rabbitmq" orphan="false" migration-threshold="1000000" fail-count="1" last-failure="Mon Apr  3 22:22:27 2023">
+                <operation_history call="32" task="monitor" interval="10000ms" last-rc-change="Mon Apr  3 22:22:27 2023" exec-time="0ms" queue-time="0ms" rc="7" rc_text="not running" />
+                <operation_history call="1369192" task="start" last-rc-change="Mon Apr  3 22:22:44 2023" last-run="Mon Apr  3 22:22:44 2023" exec-time="14272ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="1369211" task="monitor" interval="10000ms" last-rc-change="Mon Apr  3 22:22:59 2023" exec-time="3492ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+        </node>
+        <node name="rabbitmq-bundle-2">
+            <resource_history id="rabbitmq" orphan="false" migration-threshold="1000000">
+                <operation_history call="13" task="start" last-rc-change="Fri Mar 17 22:15:40 2023" last-run="Fri Mar 17 22:15:40 2023" exec-time="13920ms" queue-time="1ms" rc="0" rc_text="ok" />
+                <operation_history call="32" task="monitor" interval="10000ms" last-rc-change="Fri Mar 17 22:15:56 2023" exec-time="3425ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+        </node>
+        <node name="overcloud-controller-v20-819-lab1-3">
+            <resource_history id="rabbitmq-bundle-docker-0" orphan="false" migration-threshold="1000000">
+                <operation_history call="119" task="start" last-rc-change="Fri Mar 17 21:50:29 2023" last-run="Fri Mar 17 21:50:29 2023" exec-time="752ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="120" task="monitor" interval="60000ms" last-rc-change="Fri Mar 17 21:50:30 2023" exec-time="203ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+            <resource_history id="galera-bundle-docker-2" orphan="false" migration-threshold="1000000">
+                <operation_history call="97" task="start" last-rc-change="Wed Mar  8 07:33:10 2023" last-run="Wed Mar  8 07:33:10 2023" exec-time="1268ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="104" task="monitor" interval="60000ms" last-rc-change="Wed Mar  8 07:33:12 2023" exec-time="351ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+            <resource_history id="redis-bundle-docker-0" orphan="false" migration-threshold="1000000">
+                <operation_history call="98" task="start" last-rc-change="Wed Mar  8 07:33:10 2023" last-run="Wed Mar  8 07:33:10 2023" exec-time="1231ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="102" task="monitor" interval="60000ms" last-rc-change="Wed Mar  8 07:33:12 2023" exec-time="352ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+            <resource_history id="ip-172.31.0.7" orphan="false" migration-threshold="1000000">
+                <operation_history call="111" task="start" last-rc-change="Fri Mar 17 21:29:56 2023" last-run="Fri Mar 17 21:29:56 2023" exec-time="95ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="112" task="monitor" interval="10000ms" last-rc-change="Fri Mar 17 21:29:56 2023" exec-time="46ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+            <resource_history id="ip-100.73.246.10" orphan="false" migration-threshold="1000000">
+                <operation_history call="108" task="start" last-rc-change="Fri Mar 17 21:28:36 2023" last-run="Fri Mar 17 21:28:36 2023" exec-time="93ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="110" task="monitor" interval="10000ms" last-rc-change="Fri Mar 17 21:28:36 2023" exec-time="59ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+            <resource_history id="ip-172.17.3.23" orphan="false" migration-threshold="1000000">
+                <operation_history call="107" task="start" last-rc-change="Fri Mar 17 21:28:36 2023" last-run="Fri Mar 17 21:28:36 2023" exec-time="91ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="109" task="monitor" interval="10000ms" last-rc-change="Fri Mar 17 21:28:36 2023" exec-time="53ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+            <resource_history id="haproxy-bundle-docker-2" orphan="false" migration-threshold="1000000">
+                <operation_history call="99" task="start" last-rc-change="Wed Mar  8 07:33:10 2023" last-run="Wed Mar  8 07:33:10 2023" exec-time="1294ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="106" task="monitor" interval="60000ms" last-rc-change="Wed Mar  8 07:33:12 2023" exec-time="291ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+            <resource_history id="alarm-manager" orphan="false" migration-threshold="1000000">
+                <operation_history call="113" task="start" last-rc-change="Fri Mar 17 21:29:56 2023" last-run="Fri Mar 17 21:29:56 2023" exec-time="626ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="115" task="monitor" interval="30000ms" last-rc-change="Fri Mar 17 21:29:57 2023" exec-time="67ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+            <resource_history id="zabbix-server" orphan="false" migration-threshold="1000000">
+                <operation_history call="123" task="start" last-rc-change="Fri Mar 17 22:16:44 2023" last-run="Fri Mar 17 22:16:44 2023" exec-time="645ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="124" task="monitor" interval="30000ms" last-rc-change="Fri Mar 17 22:16:45 2023" exec-time="65ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+            <resource_history id="rabbitmq-bundle-0" orphan="false" migration-threshold="1000000">
+                <operation_history call="17" task="start" last-rc-change="Fri Mar 17 21:50:30 2023" last-run="Fri Mar 17 21:50:30 2023" exec-time="0ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="18" task="monitor" interval="60000ms" last-rc-change="Fri Mar 17 21:50:31 2023" exec-time="0ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+            <resource_history id="redis-bundle-0" orphan="false" migration-threshold="1000000">
+                <operation_history call="11" task="start" last-rc-change="Wed Mar  8 07:33:12 2023" last-run="Wed Mar  8 07:33:12 2023" exec-time="0ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="15" task="monitor" interval="60000ms" last-rc-change="Wed Mar  8 07:33:15 2023" exec-time="0ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+            <resource_history id="galera-bundle-2" orphan="false" migration-threshold="1000000">
+                <operation_history call="12" task="start" last-rc-change="Wed Mar  8 07:33:12 2023" last-run="Wed Mar  8 07:33:12 2023" exec-time="0ms" queue-time="0ms" rc="0" rc_text="ok" />
+                <operation_history call="14" task="monitor" interval="60000ms" last-rc-change="Wed Mar  8 07:33:15 2023" exec-time="0ms" queue-time="0ms" rc="0" rc_text="ok" />
+            </resource_history>
+        </node>
+    </node_history>
+    <failures>
+        {list_of_failures}
+    </failures>
+    <fence_history>
+    </fence_history>
+    <tickets>
+    </tickets>
+    <bans>
+    </bans>
+</crm_mon>

@@ -1,0 +1,16 @@
+debug = False
+run_validations = ''
+debug_validation_flag = False
+debug_validation_name = ''
+origin_hosts_list = []
+name_to_url_dict = None
+initialization_factory = None
+config_json_path = None
+vms_info_path = None
+sar_date = None
+sar_file = None
+path_to_cbis_hosts_file = None
+limited_output = False
+vm = None
+print_documentation_link = True
+additional_comments = None

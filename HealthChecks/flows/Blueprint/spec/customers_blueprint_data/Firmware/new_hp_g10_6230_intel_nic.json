@@ -1,0 +1,194 @@
+{
+  "workers": {
+    "Kernel": {
+      "version": "4.18.0-1.2007201736.el7_7.emrs.altmvl.x86_64"
+    }, 
+    "Operating System": {
+      "version": "CentOS Linux release 7.8.2003 (Core)"
+    }, 
+    "Bios": {
+      "firmware": "2.71", 
+      "version": "U32"
+    }, 
+    "IPMI": {
+      "controller_manager_firmware": "2.71", 
+      "controller_manager_version": "1.8.18"
+    }, 
+    "Network Interface": [
+      {
+        "firmware": "5719-v1.46 NCSI v1.5.12.0", 
+        "driver": "tg3", 
+        "version": "3.137"
+      }, 
+      {
+        "firmware": "16.23.8054 (HPE0000000039)", 
+        "driver": "mlx5_core", 
+        "version": "5.0-2.1.8"
+      }, 
+      {
+        "firmware": "16.23.8054 (HPE0000000039)", 
+        "driver": "mlx5_core", 
+        "version": "5.0-2.1.8"
+      }
+    ]
+  }, 
+  "all_k8s_master": {
+    "Kernel": {
+      "version": "4.18.0-1.2007201736.el7_7.emrs.altmvl.x86_64"
+    }, 
+    "Operating System": {
+      "version": "CentOS Linux release 7.8.2003 (Core)"
+    }, 
+    "Bios": {
+      "firmware": "2.71", 
+      "version": "U32"
+    }, 
+    "IPMI": {
+      "controller_manager_firmware": "2.71", 
+      "controller_manager_version": "1.8.18"
+    }, 
+    "Network Interface": [
+      {
+        "firmware": [
+          "5719-v1.46 NCSI v1.5.12.0"
+        ], 
+        "driver": "tg3", 
+        "version": "3.137"
+      }, 
+      {
+        "firmware": [
+          "16.28.1002 (HPE0000000039)", 
+          "16.23.8054 (HPE0000000039)"
+        ], 
+        "driver": "mlx5_core", 
+        "version": "5.0-2.1.8"
+      }, 
+      {
+        "firmware": [
+          "16.28.1002 (HPE0000000039)", 
+          "16.23.8054 (HPE0000000039)"
+        ], 
+        "driver": "mlx5_core", 
+        "version": "5.0-2.1.8"
+      }
+    ]
+  },
+  "monitoring": {
+    "Kernel": {
+      "version": "4.18.0-1.2007201736.el7_7.emrs.altmvl.x86_64"
+    },
+    "Operating System": {
+      "version": "CentOS Linux release 7.8.2003 (Core)"
+    },
+    "Bios": {
+      "firmware": [
+        "2.71",
+        "2.65"
+      ],
+      "version": "U32"
+    },
+    "IPMI": {
+      "controller_manager_firmware": "2.71",
+      "controller_manager_version": "1.8.18"
+    },
+    "Network Interface": [
+      {
+        "firmware": "5719-v1.46 NCSI v1.5.12.0",
+        "driver": "tg3",
+        "version": "3.137"
+      },
+      {
+        "firmware": "16.23.8054 (HPE0000000039)",
+        "driver": "mlx5_core",
+        "version": "5.0-2.1.8"
+      },
+      {
+        "firmware": "16.23.8054 (HPE0000000039)",
+        "driver": "mlx5_core",
+        "version": "5.0-2.1.8"
+      }
+    ]
+  },
+  "storages": {
+    "Kernel": {
+      "version": "4.18.0-1.2007201736.el7_7.emrs.altmvl.x86_64"
+    }, 
+    "Operating System": {
+      "version": "CentOS Linux release 7.8.2003 (Core)"
+    }, 
+    "Bios": {
+      "firmware": [
+        "2.71", 
+        "2.65"
+      ], 
+      "version": "U30"
+    }, 
+    "IPMI": {
+      "controller_manager_firmware": "2.71", 
+      "controller_manager_version": "1.8.18"
+    }, 
+    "Network Interface": [
+      {
+        "firmware": "5719-v1.46 NCSI v1.5.12.0", 
+        "driver": "tg3", 
+        "version": "3.137"
+      }, 
+      {
+        "firmware": "16.23.8054 (HPE0000000039)", 
+        "driver": "mlx5_core", 
+        "version": "5.0-2.1.8"
+      }, 
+      {
+        "firmware": "14.26.1040 (HP_2690110034)", 
+        "driver": "mlx5_core", 
+        "version": "5.0-2.1.8"
+      }, 
+      {
+        "firmware": "16.23.8054 (HPE0000000039)", 
+        "driver": "mlx5_core", 
+        "version": "5.0-2.1.8"
+      }
+    ]
+  }, 
+  "edges": {
+    "Kernel": {
+      "version": "4.18.0-1.2007201736.el7_7.emrs.altmvl.x86_64"
+    }, 
+    "Operating System": {
+      "version": "CentOS Linux release 7.8.2003 (Core)"
+    }, 
+    "Bios": {
+      "firmware": "2.71", 
+      "version": "U32"
+    }, 
+    "IPMI": {
+      "controller_manager_firmware": "2.71", 
+      "controller_manager_version": "1.8.18"
+    }, 
+    "Network Interface": [
+      {
+        "firmware": [
+          "5719-v1.46 NCSI v1.5.12.0"
+        ], 
+        "driver": "tg3", 
+        "version": "3.137"
+      }, 
+      {
+        "firmware": [
+          "16.29.2002 (HPE0000000039)", 
+          "16.23.8054 (HPE0000000039)"
+        ], 
+        "driver": "mlx5_core", 
+        "version": "5.0-2.1.8"
+      }, 
+      {
+        "firmware": [
+          "16.29.2002 (HPE0000000039)", 
+          "16.23.8054 (HPE0000000039)"
+        ], 
+        "driver": "mlx5_core", 
+        "version": "5.0-2.1.8"
+      }
+    ]
+  }
+}

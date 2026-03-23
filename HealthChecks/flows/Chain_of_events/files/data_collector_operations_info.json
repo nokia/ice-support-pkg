@@ -1,0 +1,35 @@
+[
+  {
+    "data_collector_name": "BcmtApiOperationsCNADataCollector",
+    "deployment_types_list": "[Deployment_type.NCS_OVER_OPENSTACK, Deployment_type.NCS_OVER_VSPHERE]",
+    "operations": [
+      {
+        "name": "scale_out_BCMT_API",
+        "role": {
+          "Deployment_type.NCS_OVER_OPENSTACK": "Objectives.ONE_MASTER",
+          "Deployment_type.NCS_OVER_VSPHERE": "Objectives.ONE_MASTER"
+        },
+        "searched_patterns": {
+          "start_time": "grep -i 'Start BCMT cluster scale-out'",
+          "end_time_by_task_id": true,
+          "success_search": "grep -i 'BCMT cluster scale-out done'"
+        }
+      },
+      {
+        "name": "scale_in_BCMT_API",
+        "role": {
+          "Deployment_type.NCS_OVER_OPENSTACK": "Objectives.ONE_MASTER",
+          "Deployment_type.NCS_OVER_VSPHERE": "Objectives.ONE_MASTER"
+        },
+        "searched_patterns": {
+          "start_time": "grep -i 'Start BCMT cluster scale-in'",
+          "end_time_by_task_id": true
+        }
+      }
+    ]
+  },
+  {
+    "data_collector_name": "RebootsDataCollector",
+    "deployment_types_list": "[Deployment_type.CBIS, Deployment_type.NCS_OVER_BM, Deployment_type.NCS_OVER_OPENSTACK, Deployment_type.NCS_OVER_VSPHERE]"
+  }
+]

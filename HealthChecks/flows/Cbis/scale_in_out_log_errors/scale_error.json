@@ -1,0 +1,189 @@
+
+{
+  "keystone": [
+    {
+      "id": "server_reached_MaxRequestWorkers",
+      "log_cmd": "/var/log/containers/httpd/keystone/error_log",
+      "log_cmd_type": "file",
+      "patterns": [
+        "[mpm_prefork:error] *.* AH00161: server reached MaxRequestWorkers setting *.* consider raising the MaxRequestWorkers setting"
+      ],
+      "issue": "Error: Exception KeyError\n\nThis error indicates that there aren't enough processes for keystone to handle the requests\n\nRecovery steps:\n\n1. Restore the UC backup taken before starting Scale In/Out\n2. Edit the following parameters processes=24 threads=8 in following files on UC:\n\n/var/lib/config-data/puppet-generated/keystone/etc/httpd/conf.d/10-keystone_wsgi_admin.conf\n/var/lib/config-data/puppet-generated/keystone/etc/httpd/conf.d/10-keystone_wsgi_main.conf\n\n5. Restart keystone and keystone_cron containers on the UC\n6. Retry scale In/Out",
+      "versions": [],
+      "host_roles": ["undercloud"],
+      "deployment_types": "cbis"
+    },
+    {
+      "id": "server_reached_MaxRequestWorkers",
+      "log_cmd": "/var/log/httpd/error_log",
+      "log_cmd_type": "file",
+      "patterns": [
+        "[mpm_prefork:error] *.* AH00161: server reached MaxRequestWorkers setting *.* consider raising the MaxRequestWorkers setting"
+      ],
+      "issue": "Error: Exception KeyError\n\nThis error indicates that there aren't enough processes for keystone to handle the requests",
+      "versions": [],
+      "host_roles": ["undercloud"],
+      "deployment_types": "cbis"
+    },
+    {
+      "id": "server_reached_MaxRequestWorkers_indication_2",
+      "log_cmd": "/var/log/containers/httpd/keystone/keystone_wsgi_main_error.log",
+      "log_cmd_type": "file",
+      "patterns": ["Exception KeyError *.* in <function remove at"
+      ],
+      "issue": "Error: Exception KeyError\n\nThis error indicates that there aren't enough processes for keystone to handle the requests\n\nRecovery steps:\n\n1. Restore the UC backup taken before starting Scale In/Out\n2. Edit the following parameters processes=24 threads=8 in following files on UC:\n\n/var/lib/config-data/puppet-generated/keystone/etc/httpd/conf.d/10-keystone_wsgi_admin.conf\n/var/lib/config-data/puppet-generated/keystone/etc/httpd/conf.d/10-keystone_wsgi_main.conf\n\n5. Restart keystone and keystone_cron containers on the UC\n6. Retry scale In/Out",
+      "versions": [],
+      "host_roles": ["undercloud"],
+      "deployment_types": "cbis"
+    },
+    {
+      "id": "server_reached_MaxRequestWorkers_indication_2",
+      "log_cmd": "/var/log/httpd/keystone_wsgi_main_error.log",
+      "log_cmd_type": "file",
+      "patterns": ["Exception KeyError *.* in <function remove at"
+      ],
+      "issue": "Error: Exception KeyError\n\nThis error indicates that there aren't enough processes for keystone to handle the requests",
+      "versions": [],
+      "host_roles": ["undercloud"],
+      "deployment_types": "cbis"
+    }
+  ],
+  "mistral": [
+    {
+      "id": "password_expired",
+      "log_cmd":"/var/log/containers/mistral/engine.log",
+      "log_cmd_type": "file",
+      "patterns": ["Your password has expired"
+      ],
+      "issue": "tripleo-admin user password has expired.\n\n1. Verify whether password for user tripleo-admin has expired or not:\n\nsalt \"*\" cmd.run \"sudo chage -l tripleo-admin\" \n\n2. The password shall never expire. \n\nSet it like this:\n\nsalt \"*\" cmd.run \"sudo chage -M -1 tripleo-admin\"",
+      "versions": ["19A"],
+      "host_roles": ["undercloud"],
+      "deployment_types": "cbis"
+    },
+    {
+      "id": "password_expired",
+      "log_cmd":"/var/log/mistral/engine.log",
+      "log_cmd_type": "file",
+      "patterns": ["Your password has expired"
+      ],
+      "issue": "tripleo-admin user password has expired.\n\n1. Verify whether password for user tripleo-admin has expired or not:\n\nsalt \"*\" cmd.run \"sudo chage -l tripleo-admin\" \n\n2. The password shall never expire. \n\nSet it like this:\n\nsalt \"*\" cmd.run \"sudo chage -M -1 tripleo-admin\"",
+      "versions": ["19"],
+      "host_roles": ["undercloud"],
+      "deployment_types": "cbis"
+    },
+    {
+      "id": "wait_for_all_osd_to_be_up",
+      "log_cmd":"/var/log/mistral/engine.log",
+      "log_cmd_type": "file",
+      "patterns": ["FAILED - RETRYING: wait for all osd to be up"],
+      "issue": "The Disk might failing causing osd to be down, please check for disk health",
+      "versions": ["18.5"],
+      "host_roles": ["undercloud"],
+      "deployment_types": "cbis"
+    }
+  ],
+  "ironic": [
+    {
+      "id": "failure_with_multipool",
+      "log_cmd": "/var/log/ironic/ironic-conductor.log",
+      "log_cmd_type": "file",
+      "patterns": ["Stderr: u'Error: Unable to establish IPMI v2 / RMCP+ session\\n'.: ProcessExecutionError: Unexpected error while running command."],
+      "issue": "\n\nIn a case where a compute/storage node has failed and cant be repaired(server is dead and ipmi unreachable) please use the following procedure:\n\n1.steps:\n1.\tSet the node to maintenance mode:\n\nopenstack baremetal node maintenance set storage --reason \"dead\"\n\n2.\tDelete the node from ironic:\n\n*To get the uuid run openstack baremetal node list and identify the desired node id\n \n      openstack baremetal node delete <NODE UUID>\n\n3.\tRun the following command to continue the scale in operation:\n\n*To get the uuid run openstack server list and identify the desired node id\n\nopenstack cbis node remove <Nova node ID>\n\n",
+      "versions": ["18.5, 19"],
+      "host_roles": ["undercloud"],
+      "deployment_types": "cbis"
+    },
+    {
+      "id": "unreachable_ipmi",
+      "log_cmd": "/var/log/containers/ironic/ironic-conductor.log",
+      "log_cmd_type": "file",
+      "patterns": ["Stderr: u'Error: Unable to establish IPMI v2 / RMCP+ session\\n'.: ProcessExecutionError: Unexpected error while running command."],
+      "issue": "\n\nIn a case where a compute/storage node has failed and cant be repaired(server is dead and ipmi unreachable) please use the following procedure:\n\n1.steps:\n1.\tSet the node to maintenance mode:\n\nopenstack baremetal node maintenance set storage --reason \"dead\"\n\n2.\tDelete the node from ironic:\n\n*To get the uuid run openstack baremetal node list and identify the desired node id\n \n      openstack baremetal node delete <NODE UUID>\n\n3.\tRun the following command to continue the scale in operation:\n\n*To get the uuid run openstack server list and identify the desired node id\n\nopenstack cbis node remove <Nova node ID>\n\n",
+      "versions": ["19A"],
+      "host_roles": ["undercloud"],
+      "deployment_types": "cbis"
+    }
+  ],
+  "scale-in/out": [
+    {
+      "id": "failed_connect_hypervisor",
+      "log_cmd": "/var/log/cbis/add_node.log",
+      "log_cmd_type": "file",
+      "patterns": ["failed to connect *.* to the hypervisor"],
+      "issue": "The error is mentioned in this bugzilla https://bugzilla.redhat.com/show_bug.cgi?id=1684286\n\nIt says: Deploy fails when node has wrong clock\n\n\nSolution:\n\nSet date and time in BIOS as close as possible to the current one,\n\nthen do sudo sgdisk -Z /dev/sda",
+      "versions": ["19", "19A"],
+      "host_roles": ["hypervisor"],
+      "deployment_types": "cbis"
+    },
+    {
+      "id": "barbican_API_containers_restarting",
+      "log_cmd": "/var/log/cbis/add_node.log",
+      "log_cmd_type": "file",
+      "patterns":["docker exec barbican_worker id -g barbican *.* Error response from daemon: Container *.* is not running"],
+      "issue": "Error response from daemon: Container is not running\n\nThe error caused by barbican API containers which are in restarting state.\n\nRecovery Steps:\n\n1.Delete barbican_api container:\n\ndocker rm -f barbican_api\n\n2.Recreate barbican API and rerun post install:\n\npaunch apply --file /var/lib/tripleo-config/hashed-docker-container-startup-config-step_3.json --config-id tripleo_step3\n\n",
+      "versions": ["19", "19A"],
+      "host_roles": ["hypervisor"],
+      "deployment_types": "cbis"
+    },
+    {
+      "id": "error_rabbitmq_init_bundle",
+      "log_cmd": "/var/log/cbis/add_node.log",
+      "log_cmd_type": "file",
+      "patterns": ["Error running \\['docker', 'run', '--name', 'rabbitmq_init_bundle', '--label', 'config_id=tripleo_step2', '--label', 'container_name=rabbitmq_init_bundle .*?'"],
+      "issue": "Please check Rabbitmq cluster status using the following command on each controller:\n\nsudo docker exec -it `sudo docker ps | grep rabbit | awk '{print $1}'` rabbitmqctl cluster_status\n\nIf rabbitmq is down or out of cluster on one of the controllers, reboot the controller",
+      "versions": ["19", "19A"],
+      "host_roles": ["hypervisor"],
+      "deployment_types": "cbis"
+    },
+    {
+      "id": "certificate_verify_failed",
+      "log_cmd": "/var/log/cbis/add_node.log",
+      "log_cmd_type": "file",
+      "patterns": ["[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:618)"],
+      "issue": "Error: Scale out/upgrade failed due to external signed cert\n\nScale in/out or upgrade fails in case the customer utilizing External Key.(also known as \"User provided TLS Certificates and Key\")\n\nRecovery steps:\n\nBefore any scale in/out or Upgrade,\n user must revert his external key by running again \"Update of TLS certificates\" without turning on the option \"User provided TLS Certificates and Key\" on CBIS manager.\n(section \"Platform Secrets Update\")\n\nThis will revert back to self-sign in option and will allow you to do the upgrade/stack update without any issue.",
+      "versions": ["19", "19A"],
+      "host_roles": ["hypervisor"],
+      "deployment_types": "cbis"
+    },
+    {
+      "id": "argument_list_too_long",
+      "log_cmd": "/var/log/cbis/add_node.log",
+      "log_cmd_type": "file",
+      "patterns": ["[Errno 7] Argument list too long"],
+      "issue": "ansible hosts execution has failed\nplease run the following:\n\n1. python /usr/share/cbis/undercloud/tools/configure_etc_hosts.py -e \nto get /etc/hosts file to apply to new compute hosts.\npython /usr/share/cbis/undercloud/tools/configure_etc_hosts.py -s\nto get /etc/ssh/ssh_known_hosts to new compute hosts.",
+      "versions": ["19", "19A"],
+      "host_roles": ["hypervisor"],
+      "deployment_types": "cbis"
+    },
+    {
+      "id": "too_many_open_files",
+      "log_cmd": "/var/log/cbis/add_node.log",
+      "log_cmd_type": "file",
+      "patterns": ["Too many open files"],
+      "issue": "Error caused due to lack of resources\n\nTroubleshooting steps:\n\n1. Verify the Undercloud resources requirement is fulfilled as stated in CBIS Operation manual:\"When scaling out, please assign the following memory / vCPU according to the number of computes: 60+ computes: 20 vCPUs and 90% of the Undercloud Physical Server memory\".\n2. Monitoring Undercloud heat engine is consuming a lot of memory, if heat engine consume large amount of memory, the processes may be blocked and cause this problem. If this is the case, decrease number of heat engine workers (num_engine_workers=32 in /etc/heat/heat.conf) from 32 to 24.\n3. If the problem still exist, decrease forks from 50 to 15 or to 5 /etc/ansible/ansible.cfg.\n\n",
+      "versions": ["18.5"],
+      "host_roles": ["hypervisor"],
+      "deployment_types": "cbis"
+    },
+    {
+      "id": "failure_with_multipool",
+      "log_cmd": "/var/log/cbis/overcloud_template_generate.log",
+      "log_cmd_type": "file",
+      "patterns": ["The vm pool didn't configure on OvsCompute"],
+      "issue": "\n\n1. Please make sure that each \"Zone\" was configured with one of the multiple pools before clicking \"Deploy\"\n2.This is a known issue which has been fixed in CBIS19A SP2 PP1",
+      "versions": ["19", "19A"],
+      "host_roles": ["undercloud"],
+      "deployment_types": "cbis"
+    },
+    {
+      "id": "haproxy_missing_lines",
+      "log_cmd": "/var/log/cbis/add_node.log",
+      "log_cmd_type": "file",
+      "patterns": ["Exception caught during deployment: Unable to establish connection to *.* HTTPConnectionPool(*.*, port=*.*): Max retries exceeded with url"],
+      "issue": "Please verify that haproxy file has no missing endpoints,\n\nExample:\n\nsalt \"*ontrol*\" cmd.run \"sudo grep -A4 'listen keystone_admin' /var/lib/config-data/puppet-generated/haproxy/etc/haproxy/haproxy.cfg \"\ncontroller-1:\n listen keystone_admin\n bind 10.7.111.8:13357 transparent ssl crt /etc/pki/tls/private/overcloud_endpoint.pem    <===== line that disappears\n bind 172.31.0.14:35357 transparent\n mode http ",
+      "versions": ["19", "19A"],
+      "host_roles": ["hypervisor"],
+      "deployment_types": "cbis"
+    }
+  ]
+}

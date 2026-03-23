@@ -1,0 +1,25 @@
+{
+  "clcm-api-deployment": {
+    "deployment": "ncms"
+  },
+
+  "csi-nfs-controller": {
+    "deployment": "ncms"
+  },
+
+  "csi-nfs-node": {
+    "daemonset": "ncms"
+  },
+
+  "csi-cinder-controllerplugin": {
+    "deployment": "kube-system"
+  },
+
+  "cloud-controller-manager": {
+    "daemonset": "kube-system"
+  },
+
+  "csi-cinder-nodeplugin": {
+    "daemonset": "kube-system"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "resolv.conf": {
+    "/usr/share/ice/file_tracker_test/configuration_files/": "[Objectives.CONTROLLERS]"
+  },
+
+  "user_config.yaml": {
+    "/usr/share/ice/file_tracker_test/configuration_files/": "[Objectives.HYP, Objectives.UC]"
+  }
+}

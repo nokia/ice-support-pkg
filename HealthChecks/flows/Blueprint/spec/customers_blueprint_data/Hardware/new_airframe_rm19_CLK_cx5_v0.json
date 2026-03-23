@@ -1,0 +1,881 @@
+{"ALL_VERSIONS": {
+  "workers": {
+    "Raid Controller": {},
+    "numa": [
+      {
+        "nic_per_numa": [
+          "ens5f0",
+          "ens5f1"
+        ],
+        "total_allocated_memory_in_mb": "range(95000-unlimited)"
+      },
+      {
+        "nic_per_numa": [
+          "ens25f0",
+          "ens25f1"
+        ],
+        "total_allocated_memory_in_mb": "range(95000-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(196608-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "INTEL SSDSC2KG96",
+        "size_in_mb": 915715
+      },
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "INTEL SSDSC2KG96",
+        "size_in_mb": 915715
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens25f0",
+          "ens25f1"
+        ],
+        "ports_amount": 2
+      },
+      {},
+      {},
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens5f0",
+          "ens5f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "all_k8s_master": {
+    "Raid Controller": {},
+    "numa": {},
+    "Memory": [
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(196608-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": [
+          "ATA"
+        ],
+        "interface_type": [
+          "ATA Disk"
+        ],
+        "type": [
+          "SSD"
+        ],
+        "model": [
+          "INTEL SSDSC2KG96"
+        ],
+        "size_in_mb": [
+          "915715"
+        ]
+      },
+      {
+        "vendor": [
+          "ATA"
+        ],
+        "interface_type": [
+          "ATA Disk"
+        ],
+        "type": [
+          "SSD"
+        ],
+        "model": [
+          "INTEL SSDSC2KG96"
+        ],
+        "size_in_mb": [
+          "915715"
+        ]
+      },
+      {
+        "vendor": [
+          ""
+        ],
+        "interface_type": [
+          "----"
+        ],
+        "type": [
+          "SSD"
+        ],
+        "model": [
+          ""
+        ],
+        "size_in_mb": [
+          "102400"
+        ]
+      },
+      {
+        "vendor": [
+          ""
+        ],
+        "interface_type": [
+          "----"
+        ],
+        "type": [
+          "SSD"
+        ],
+        "model": [
+          ""
+        ],
+        "size_in_mb": [
+          "5120"
+        ]
+      },
+      {
+        "vendor": [
+          ""
+        ],
+        "interface_type": [
+          "----"
+        ],
+        "type": [
+          "SSD"
+        ],
+        "model": [
+          ""
+        ],
+        "size_in_mb": [
+          "1024",
+          "100"
+        ]
+      },
+      {
+        "vendor": [
+          ""
+        ],
+        "interface_type": [
+          "----"
+        ],
+        "type": [
+          "SSD"
+        ],
+        "model": [
+          ""
+        ],
+        "size_in_mb": [
+          "1024",
+          "100"
+        ]
+      },
+      {
+        "vendor": [
+          ""
+        ],
+        "interface_type": [
+          "----"
+        ],
+        "type": [
+          "SSD"
+        ],
+        "model": [
+          ""
+        ],
+        "size_in_mb": [
+          "5120"
+        ]
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens25f0",
+          "ens25f1"
+        ],
+        "ports_amount": 2
+      },
+      {},
+      {},
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens5f0",
+          "ens5f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "monitoring": {
+    "Raid Controller": {},
+    "numa": {},
+    "Memory": [
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(196608-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": [
+          ""
+        ],
+        "interface_type": [
+          "----"
+        ],
+        "type": [
+          "SSD"
+        ],
+        "model": [
+          ""
+        ],
+        "size_in_mb": [
+          "31519"
+        ]
+      },
+      {
+        "vendor": [
+          "ATA"
+        ],
+        "interface_type": [
+          "ATA Disk"
+        ],
+        "type": [
+          "SSD"
+        ],
+        "model": [
+          "INTEL SSDSC2KG96"
+        ],
+        "size_in_mb": [
+          "915715"
+        ]
+      },
+      {
+        "vendor": [
+          "ATA"
+        ],
+        "interface_type": [
+          "ATA Disk"
+        ],
+        "type": [
+          "SSD"
+        ],
+        "model": [
+          "INTEL SSDSC2KG96"
+        ],
+        "size_in_mb": [
+          "915715"
+        ]
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens25f0",
+          "ens25f1"
+        ],
+        "ports_amount": 2
+      },
+      {},
+      {},
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens5f0",
+          "ens5f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "storages": {
+    "Raid Controller": {
+      "product": "AVAGO MegaRAID SAS PCI Express ROMB-QS-3516B"
+    },
+    "numa": {},
+    "Memory": [
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(196608-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "ATA",
+        "interface_type": "SCSI Disk",
+        "type": "SSD",
+        "model": "INTEL SSDSCKKB48",
+        "size_in_mb": 457862
+      },
+      {
+        "vendor": "",
+        "interface_type": "----",
+        "type": "NVMe",
+        "model": "INTEL SSDPE2KE016T8",
+        "size_in_mb": 1526185
+      },
+      {
+        "vendor": "AVAGO",
+        "interface_type": "SCSI Disk",
+        "type": "HDD",
+        "model": "MRROMB",
+        "size_in_mb": 1830880
+      },
+      {
+        "vendor": "AVAGO",
+        "interface_type": "SCSI Disk",
+        "type": "HDD",
+        "model": "MRROMB",
+        "size_in_mb": 1830880
+      },
+      {
+        "vendor": "AVAGO",
+        "interface_type": "SCSI Disk",
+        "type": "HDD",
+        "model": "MRROMB",
+        "size_in_mb": 1830880
+      },
+      {
+        "vendor": "AVAGO",
+        "interface_type": "SCSI Disk",
+        "type": "HDD",
+        "model": "MRROMB",
+        "size_in_mb": 1830880
+      },
+      {
+        "vendor": "ATA",
+        "interface_type": "SCSI Disk",
+        "type": "SSD",
+        "model": "INTEL SSDSCKKB48",
+        "size_in_mb": 457862
+      },
+      {
+        "vendor": "",
+        "interface_type": "----",
+        "type": "NVMe",
+        "model": "INTEL SSDPE2KE016T8",
+        "size_in_mb": 1526185
+      },
+      {
+        "vendor": "AVAGO",
+        "interface_type": "SCSI Disk",
+        "type": "HDD",
+        "model": "MRROMB",
+        "size_in_mb": 1830880
+      },
+      {
+        "vendor": "AVAGO",
+        "interface_type": "SCSI Disk",
+        "type": "HDD",
+        "model": "MRROMB",
+        "size_in_mb": 1830880
+      },
+      {
+        "vendor": "AVAGO",
+        "interface_type": "SCSI Disk",
+        "type": "HDD",
+        "model": "MRROMB",
+        "size_in_mb": 1830880
+      },
+      {
+        "vendor": "AVAGO",
+        "interface_type": "SCSI Disk",
+        "type": "HDD",
+        "model": "MRROMB",
+        "size_in_mb": 1830880
+      },
+      {
+        "vendor": "AVAGO",
+        "interface_type": "SCSI Disk",
+        "type": "HDD",
+        "model": "MRROMB",
+        "size_in_mb": 1830880
+      },
+      {
+        "vendor": "AVAGO",
+        "interface_type": "SCSI Disk",
+        "type": "HDD",
+        "model": "MRROMB",
+        "size_in_mb": 1830880
+      },
+      {
+        "vendor": "AVAGO",
+        "interface_type": "SCSI Disk",
+        "type": "HDD",
+        "model": "MRROMB",
+        "size_in_mb": 1830880
+      },
+      {
+        "vendor": "AVAGO",
+        "interface_type": "SCSI Disk",
+        "type": "HDD",
+        "model": "MRROMB",
+        "size_in_mb": 1830880
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens25f0",
+          "ens25f1"
+        ],
+        "ports_amount": 2
+      },
+      {},
+      {},
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens5f0",
+          "ens5f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "edges": {
+    "Raid Controller": {},
+    "numa": [
+      {
+        "nic_per_numa": [
+          "ens5f0",
+          "ens5f1"
+        ],
+        "total_allocated_memory_in_mb": "range(95000-unlimited)"
+      },
+      {
+        "nic_per_numa": [
+          "ens25f0",
+          "ens25f1"
+        ],
+        "total_allocated_memory_in_mb": "range(95000-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(196608-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "INTEL SSDSC2KG96",
+        "size_in_mb": 915715
+      },
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "INTEL SSDSC2KG96",
+        "size_in_mb": 915715
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens25f0",
+          "ens25f1"
+        ],
+        "ports_amount": 2
+      },
+      {},
+      {},
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens5f0",
+          "ens5f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  }
+}}

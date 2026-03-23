@@ -1,0 +1,21 @@
+
+
+                          ++++++++++++++++++++++++++++++++
+                          ABOUT ICE HEALTH CHECK FRAMEWORK
+                          ++++++++++++++++++++++++++++++++
+
+
+    The health check framework is being developed by the ICE SRE group.
+
+    The Site Reliability Engineering (SRE) group is focused on solving critical problems in Nokia CBIS and NCS products and
+    developing tools for creating an efficient and automatic troubleshooting process.
+
+    The health check framework aims to reduce the investigation time of the root cause by detection of known issues in the system,
+    wrong configurations, lack of resources and much more information that can help in the problem resolution.
+
+    At the end of the health check running, output files are generated in several formats, for providing the result in the preferred way.
+
+    More infomation can be found at https://nokia.sharepoint.com/sites/CloudBand-ICE/SitePages/SRE-Support-Package-%26-Tools.aspx#ice-health-check-support-tools
+
+    Copyright (C) 2021 Nokia All rights reserved
+

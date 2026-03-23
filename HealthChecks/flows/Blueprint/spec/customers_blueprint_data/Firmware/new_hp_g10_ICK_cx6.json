@@ -1,0 +1,142 @@
+{
+  "workers": {
+    "Kernel": {
+      "version": "4.18.0-372.26.1.2210101416.el7_9.emrs.ulnx.x86_64"
+    }, 
+    "Operating System": {
+      "version": "CentOS Linux release 7.9.2009 (Core)"
+    }, 
+    "Bios": {
+      "firmware": "2.72", 
+      "version": "U46"
+    }, 
+    "IPMI": {
+      "controller_manager_firmware": "2.72", 
+      "controller_manager_version": "1.8.18"
+    }, 
+    "Network Interface": [
+      {
+        "firmware": "26.34.1002 (MT_0000000551)", 
+        "driver": "mlx5_core", 
+        "version": "5.7-1.0.2"
+      }, 
+      {
+        "firmware": "26.34.1002 (MT_0000000575)", 
+        "driver": "mlx5_core", 
+        "version": "5.7-1.0.2"
+      }
+    ]
+  }, 
+  "all_k8s_master": {
+    "Kernel": {
+      "version": "4.18.0-372.26.1.2210101416.el7_9.emrs.ulnx.x86_64"
+    }, 
+    "Operating System": {
+      "version": "CentOS Linux release 7.9.2009 (Core)"
+    }, 
+    "Bios": {
+      "firmware": "2.72", 
+      "version": "U46"
+    }, 
+    "IPMI": {
+      "controller_manager_firmware": "2.72", 
+      "controller_manager_version": "1.8.18"
+    }, 
+    "Network Interface": [
+      {
+        "firmware": "26.34.1002 (MT_0000000551)", 
+        "driver": "mlx5_core", 
+        "version": "5.7-1.0.2"
+      }, 
+      {
+        "firmware": "26.34.1002 (MT_0000000575)", 
+        "driver": "mlx5_core", 
+        "version": "5.7-1.0.2"
+      }
+    ]
+  }, 
+  "monitoring": {
+    "Kernel": {
+      "version": "4.18.0-372.26.1.2210101416.el7_9.emrs.ulnx.x86_64"
+    }, 
+    "Operating System": {
+      "version": "CentOS Linux release 7.9.2009 (Core)"
+    }, 
+    "Bios": {
+      "firmware": "2.72", 
+      "version": "U46"
+    }, 
+    "IPMI": {
+      "controller_manager_firmware": "2.72", 
+      "controller_manager_version": "1.8.18"
+    }, 
+    "Network Interface": [
+      {
+        "firmware": "26.34.1002 (MT_0000000551)", 
+        "driver": "mlx5_core", 
+        "version": "5.7-1.0.2"
+      }, 
+      {
+        "firmware": "26.34.1002 (MT_0000000575)", 
+        "driver": "mlx5_core", 
+        "version": "5.7-1.0.2"
+      }
+    ]
+  }, 
+  "storages": {
+    "Kernel": {
+      "version": "4.18.0-372.26.1.2210101416.el7_9.emrs.ulnx.x86_64"
+    }, 
+    "Operating System": {
+      "version": "CentOS Linux release 7.9.2009 (Core)"
+    }, 
+    "Bios": {
+      "firmware": "2.72", 
+      "version": "U46"
+    }, 
+    "IPMI": {
+      "controller_manager_firmware": "2.72", 
+      "controller_manager_version": "1.8.18"
+    }, 
+    "Network Interface": [
+      {
+        "firmware": "26.34.1002 (MT_0000000551)", 
+        "driver": "mlx5_core", 
+        "version": "5.7-1.0.2"
+      }, 
+      {
+        "firmware": "26.34.1002 (MT_0000000575)", 
+        "driver": "mlx5_core", 
+        "version": "5.7-1.0.2"
+      }
+    ]
+  }, 
+  "edges": {
+    "Kernel": {
+      "version": "4.18.0-372.26.1.2210101416.el7_9.emrs.ulnx.x86_64"
+    }, 
+    "Operating System": {
+      "version": "CentOS Linux release 7.9.2009 (Core)"
+    }, 
+    "Bios": {
+      "firmware": "2.72", 
+      "version": "U46"
+    }, 
+    "IPMI": {
+      "controller_manager_firmware": "2.72", 
+      "controller_manager_version": "1.8.18"
+    }, 
+    "Network Interface": [
+      {
+        "firmware": "26.34.1002 (MT_0000000551)", 
+        "driver": "mlx5_core", 
+        "version": "5.7-1.0.2"
+      }, 
+      {
+        "firmware": "26.34.1002 (MT_0000000575)", 
+        "driver": "mlx5_core", 
+        "version": "5.7-1.0.2"
+      }
+    ]
+  }
+}

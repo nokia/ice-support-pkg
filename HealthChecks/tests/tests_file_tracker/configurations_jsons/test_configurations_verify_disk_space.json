@@ -1,0 +1,18 @@
+{
+  "shared": {
+    "BASE_PATH_ON_HOST": "/usr/share/ice/",
+    "FILE_TRACKER_DIRECTORY": "file_tracker_test/file_tracker/",
+    "SNAPSHOTS_DIRECTORY": "snapshots/",
+    "DYNAMIC_SNAPSHOTS_DIRECTORY": "",
+    "DIFFERENCES_SUMMARY_FILE": "diff.json",
+    "FILE_TRACKER_LOG_NAME": "file_tracker.log",
+    "VERSION_DETAILS": "version_details",
+    "FILE_TRACKER_LOCKER": "file_tracker_locker",
+    "CONF_FILES_JSON": "/ice/lib/HealthChecks/tests/tests_file_tracker/test_configuration_files.json",
+    "DYNAMIC_RESOURCES_JSON": "",
+    "CURRENT_ICE_VERSION_FILE": "/ice/lib/HealthChecks/flows_of_sys_operations/FileTracker/Files/current_ice_version",
+    "LAST_ICE_VERSION_PATH": "/usr/share/ice/backup/ice/ice_version",
+    "TMP_YAML_DIR": "",
+    "DISK_SPACE_THRESHOLD": 500000000000
+  }
+}

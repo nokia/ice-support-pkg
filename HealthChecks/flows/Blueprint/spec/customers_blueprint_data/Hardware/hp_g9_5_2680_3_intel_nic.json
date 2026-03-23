@@ -1,0 +1,877 @@
+{"ALL_VERSIONS": {
+  "controllers": {
+    "Raid Controller": {
+      "product": "Smart Array Gen9 Controllers"
+    },
+    "Numa": {},
+    "Memory": [
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(131072-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "HP",
+        "interface_type": "SCSI Disk",
+        "type": "HDD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": 858451
+      },
+      {
+        "vendor": "HP",
+        "interface_type": "SCSI Disk",
+        "type": "HDD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": 858451
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon CPU E5-2680 v3"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon CPU E5-2680 v3"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": "10000 or 25000",
+        "vendor": "Intel Corporation",
+        "model": "82599 10 Gigabit Dual Port Backplane Connection",
+        "ports_names": [
+          "eno49",
+          "eno50"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": "10000 or 25000",
+        "vendor": "Intel Corporation",
+        "model": "82599 10 Gigabit Dual Port Backplane Connection",
+        "ports_names": [
+          "ens1f0",
+          "ens1f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "computes": {
+    "Raid Controller": {
+      "product": "Smart Array Gen9 Controllers"
+    },
+    "Numa": [
+      {
+        "nic_per_numa": [
+          "eno49",
+          "eno50",
+          "ens1f0",
+          "ens1f1"
+        ],
+        "total_allocated_memory_in_mb": "range(65410-unlimited)"
+      },
+      {
+        "nic_per_numa": [],
+        "total_allocated_memory_in_mb": "range(65410-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(131072-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "HP",
+        "interface_type": "SCSI Disk",
+        "type": "HDD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": 858451
+      },
+      {
+        "vendor": "HP",
+        "interface_type": "SCSI Disk",
+        "type": "HDD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": 858451
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon CPU E5-2680 v3"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon CPU E5-2680 v3"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": "10000 or 25000",
+        "vendor": [
+          "Intel Corporation"
+        ],
+        "model": [
+          "82599 10 Gigabit Dual Port Backplane Connection"
+        ],
+        "ports_names": [
+          "ens1f0",
+          "ens1f1"
+        ],
+        "ports_amount": [
+          "2"
+        ]
+      },
+      {
+        "speed_in_mb": "10000 or 25000",
+        "vendor": [
+          "Intel Corporation"
+        ],
+        "model": [
+          "82599 10 Gigabit Dual Port Backplane Connection"
+        ],
+        "ports_names": [
+          "eno49",
+          "eno50"
+        ],
+        "ports_amount": [
+          "2"
+        ]
+      },
+      {
+        "speed_in_mb": "10000 or 25000",
+        "vendor": [
+          "Intel Corporation"
+        ],
+        "model": [
+          "82599 10 Gigabit Dual Port Backplane Connection"
+        ],
+        "ports_names": [
+          "ens1f0",
+          "ens1f1"
+        ],
+        "ports_amount": [
+          "2"
+        ]
+      }
+    ]
+  },
+  "storages": {
+    "Raid Controller": {
+      "product": "Smart Array Gen9 Controllers"
+    },
+    "Numa": [
+      {
+        "nic_per_numa": [
+          "eno49",
+          "eno50",
+          "ens1f0",
+          "ens1f1"
+        ],
+        "total_allocated_memory_in_mb": "range(65410-unlimited)"
+      },
+      {
+        "nic_per_numa": [],
+        "total_allocated_memory_in_mb": "range(65410-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(131072-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "HP",
+        "interface_type": "SCSI Disk",
+        "type": "HDD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": 858451
+      },
+      {
+        "vendor": "HP",
+        "interface_type": "SCSI Disk",
+        "type": "HDD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": 858451
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon CPU E5-2680 v3"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon CPU E5-2680 v3"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": "10000 or 25000",
+        "vendor": [
+          "Intel Corporation"
+        ],
+        "model": [
+          "82599 10 Gigabit Dual Port Backplane Connection"
+        ],
+        "ports_names": [
+          "ens1f0",
+          "ens1f1"
+        ],
+        "ports_amount": [
+          "2"
+        ]
+      },
+      {
+        "speed_in_mb": "10000 or 25000",
+        "vendor": [
+          "Intel Corporation"
+        ],
+        "model": [
+          "82599 10 Gigabit Dual Port Backplane Connection"
+        ],
+        "ports_names": [
+          "eno49",
+          "eno50"
+        ],
+        "ports_amount": [
+          "2"
+        ]
+      },
+      {
+        "speed_in_mb": "10000 or 25000",
+        "vendor": [
+          "Intel Corporation"
+        ],
+        "model": [
+          "82599 10 Gigabit Dual Port Backplane Connection"
+        ],
+        "ports_names": [
+          "ens1f0",
+          "ens1f1"
+        ],
+        "ports_amount": [
+          "2"
+        ]
+      }
+    ]
+  },
+  "all_k8s_master": {
+    "Raid Controller": {
+      "product": "Smart Array Gen9 Controllers"
+    },
+    "Numa": {},
+    "Memory": [
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(131072-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "HP",
+        "interface_type": "SCSI Disk",
+        "type": "HDD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": 858451
+      },
+      {
+        "vendor": "HP",
+        "interface_type": "SCSI Disk",
+        "type": "HDD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": 858451
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon CPU E5-2680 v3"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon CPU E5-2680 v3"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": "10000 or 25000",
+        "vendor": "Intel Corporation",
+        "model": "82599 10 Gigabit Dual Port Backplane Connection",
+        "ports_names": [
+          "eno49",
+          "eno50"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": "10000 or 25000",
+        "vendor": "Intel Corporation",
+        "model": "82599 10 Gigabit Dual Port Backplane Connection",
+        "ports_names": [
+          "ens1f0",
+          "ens1f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "monitoring": {
+    "Raid Controller": {
+      "product": "Smart Array Gen9 Controllers"
+    },
+    "Numa": {},
+    "Memory": [
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(131072-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "HP",
+        "interface_type": "SCSI Disk",
+        "type": "HDD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": 858451
+      },
+      {
+        "vendor": "HP",
+        "interface_type": "SCSI Disk",
+        "type": "HDD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": 858451
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon CPU E5-2680 v3"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon CPU E5-2680 v3"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": "10000 or 25000",
+        "vendor": "Intel Corporation",
+        "model": "82599 10 Gigabit Dual Port Backplane Connection",
+        "ports_names": [
+          "eno49",
+          "eno50"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": "10000 or 25000",
+        "vendor": "Intel Corporation",
+        "model": "82599 10 Gigabit Dual Port Backplane Connection",
+        "ports_names": [
+          "ens1f0",
+          "ens1f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "workers": {
+    "Raid Controller": {
+      "product": "Smart Array Gen9 Controllers"
+    },
+    "Numa": [
+      {
+        "nic_per_numa": [
+          "eno49",
+          "eno50",
+          "ens1f0",
+          "ens1f1"
+        ],
+        "total_allocated_memory_in_mb": "range(65410-unlimited)"
+      },
+      {
+        "nic_per_numa": [],
+        "total_allocated_memory_in_mb": "range(65410-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(131072-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "HP",
+        "interface_type": "SCSI Disk",
+        "type": "HDD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": 858451
+      },
+      {
+        "vendor": "HP",
+        "interface_type": "SCSI Disk",
+        "type": "HDD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": 858451
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon CPU E5-2680 v3"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon CPU E5-2680 v3"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": "10000 or 25000",
+        "vendor": [
+          "Intel Corporation"
+        ],
+        "model": [
+          "82599 10 Gigabit Dual Port Backplane Connection"
+        ],
+        "ports_names": [
+          "ens1f0",
+          "ens1f1"
+        ],
+        "ports_amount": [
+          "2"
+        ]
+      },
+      {
+        "speed_in_mb": "10000 or 25000",
+        "vendor": [
+          "Intel Corporation"
+        ],
+        "model": [
+          "82599 10 Gigabit Dual Port Backplane Connection"
+        ],
+        "ports_names": [
+          "eno49",
+          "eno50"
+        ],
+        "ports_amount": [
+          "2"
+        ]
+      },
+      {
+        "speed_in_mb": "10000 or 25000",
+        "vendor": [
+          "Intel Corporation"
+        ],
+        "model": [
+          "82599 10 Gigabit Dual Port Backplane Connection"
+        ],
+        "ports_names": [
+          "ens1f0",
+          "ens1f1"
+        ],
+        "ports_amount": [
+          "2"
+        ]
+      }
+    ]
+  },
+  "edges": {
+    "Raid Controller": {
+      "product": "Smart Array Gen9 Controllers"
+    },
+    "Numa": [
+      {
+        "nic_per_numa": [
+          "eno49",
+          "eno50",
+          "ens1f0",
+          "ens1f1"
+        ],
+        "total_allocated_memory_in_mb": "range(65410-unlimited)"
+      },
+      {
+        "nic_per_numa": [],
+        "total_allocated_memory_in_mb": "range(65410-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2133
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(131072-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "HP",
+        "interface_type": "SCSI Disk",
+        "type": "HDD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": 858451
+      },
+      {
+        "vendor": "HP",
+        "interface_type": "SCSI Disk",
+        "type": "HDD",
+        "model": "LOGICAL VOLUME",
+        "size_in_mb": 858451
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon CPU E5-2680 v3"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon CPU E5-2680 v3"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": "10000 or 25000",
+        "vendor": [
+          "Intel Corporation"
+        ],
+        "model": [
+          "82599 10 Gigabit Dual Port Backplane Connection"
+        ],
+        "ports_names": [
+          "ens1f0",
+          "ens1f1"
+        ],
+        "ports_amount": [
+          "2"
+        ]
+      },
+      {
+        "speed_in_mb": "10000 or 25000",
+        "vendor": [
+          "Intel Corporation"
+        ],
+        "model": [
+          "82599 10 Gigabit Dual Port Backplane Connection"
+        ],
+        "ports_names": [
+          "eno49",
+          "eno50"
+        ],
+        "ports_amount": [
+          "2"
+        ]
+      },
+      {
+        "speed_in_mb": "10000 or 25000",
+        "vendor": [
+          "Intel Corporation"
+        ],
+        "model": [
+          "82599 10 Gigabit Dual Port Backplane Connection"
+        ],
+        "ports_names": [
+          "ens1f0",
+          "ens1f1"
+        ],
+        "ports_amount": [
+          "2"
+        ]
+      }
+    ]
+  }
+}}

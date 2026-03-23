@@ -1,0 +1,39 @@
+{
+  "shared": {
+    "BASE_PATH_ON_HOST": "/usr/share/ice/",
+    "FILE_TRACKER_DIRECTORY": "file_tracker/",
+    "SNAPSHOTS_DIRECTORY": "snapshots/",
+    "FOLDERS_SNAPSHOTS_DIRECTORY": "folders_snapshots/",
+    "DYNAMIC_SNAPSHOTS_DIRECTORY": "dynamic_snapshots/",
+    "COMMANDS_SNAPSHOTS_DIRECTORY": "commands_snapshots/",
+    "DIFFERENCES_SUMMARY_FILE": "diff.json",
+    "FILE_TRACKER_LOG_NAME": "file_tracker.log",
+    "VERSION_DETAILS": "version_details",
+    "FILE_TRACKER_LOCKER": "file_tracker_locker",
+    "TRACKED_FOLDERS_JSON": "Files/tracked_folders.json",
+    "TRACKED_COMMANDS_JSON": "Files/tracked_commands.json",
+    "CURRENT_ICE_VERSION_FILE": "Files/current_ice_version",
+    "LAST_ICE_VERSION_PATH": "/usr/share/ice/backup/ice/ice_version",
+    "TMP_YAML_DIR": "tmp_yaml/",
+    "TMP_CMD_OUT_DIR": "tmp_cmd_output/",
+    "DISK_SPACE_THRESHOLD": 10485760
+  },
+  "cbis": {
+    "MAIN_ICE_BASE_PATH": "/usr/share/ice/",
+    "CONF_FILES_JSON": "Files/cbis_tracked_configuration_files.json"
+  },
+  "shared_ncs": {
+    "NCS_CONF_FILES_JSON": "Files/ncs_tracked_configuration_files.json",
+    "NCS_DYNAMIC_RESOURCES_JSON": "Files/ncs_dynamic_resources.json"
+  },
+  "cna": {
+    "MAIN_ICE_BASE_PATH": "/usr/share/ice/",
+    "CONF_FILES_JSON": "Files/cna_tracked_configuration_files.json",
+    "DYNAMIC_RESOURCES": "Files/cna_dynamic_resources.json"
+  },
+  "cnb": {
+    "CONF_FILES_JSON": "Files/cnb_tracked_configuration_files.json",
+    "DYNAMIC_RESOURCES": "Files/cnb_dynamic_resources.json",
+    "MAIN_ICE_BASE_PATH": "/opt/management/ice/"
+  }
+}

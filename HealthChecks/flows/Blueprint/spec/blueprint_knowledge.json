@@ -1,0 +1,52 @@
+{
+  "Network Interface": {
+    "ports_names": [
+      {
+        "remark": "NIC designation is determined by the physical location of the NIC on the motherboard.\nPlease disregard if it differs from what was anticipated accrording the blue printed documentation",
+        "roles": [
+          ".*"
+        ],
+        "blueprint_sub_names": [
+          ".*"
+        ]
+      }
+    ]
+  },
+  "Numa": {
+    "nic_per_numa": [
+      {
+        "remark": "NIC designation is determined by the physical location of the NIC on the motherboard.\nPlease disregard if it differs from what was anticipated accrording the blue printed documentation",
+        "roles": [
+          ".*"
+        ],
+        "blueprint_sub_names": [
+          ".*"
+        ]
+      }
+    ]
+  },
+  "Disk": {
+    "vendor": [
+      {
+        "remark": "Similar spec having different vendor might have performance differences",
+        "roles": [
+          ".*"
+        ],
+        "blueprint_sub_names": [
+          ".*"
+        ]
+      }
+    ],
+    "model": [
+      {
+        "remark": "Similar spec having different model might have performance differences",
+        "roles": [
+          ".*"
+        ],
+        "blueprint_sub_names": [
+          ".*"
+        ]
+      }
+    ]
+  }
+}

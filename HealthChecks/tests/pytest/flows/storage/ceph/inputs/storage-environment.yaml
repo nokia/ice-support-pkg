@@ -1,0 +1,59 @@
+parameter_defaults:
+
+  #### BACKEND SELECTION ####
+  #Will be taken from new file environment/enable-ceph
+  GlanceBackend: rbd
+  CinderDefaultVolumeType: tripleo
+
+  #### CEPH SETTINGS ####
+  CephPoolDefaultSize: 2
+  CephPoolDefaultPgNum: 8
+  CephJournalSize: 10240
+  CinderRbdExtraPools: []
+
+  ## When deploying Ceph Nodes through the oscplugin CLI, the following
+  ## parameters are set automatically by the CLI. When deploying via
+  ## heat stack-create or ceph on the controller nodes only,
+  ## they need to be provided manually.
+  ## Number of Ceph storage nodes to deploy
+  # CephStorageCount: 0
+  ## Ceph FSID, e.g. '4b5c8c0a-ff60-454b-a1b4-9747aa737d19'
+  CephClusterFSID: '6ae21dfe-dd69-472b-bdff-1532d8bce82a'
+  ## Ceph monitor key, e.g. 'AQC+Ox1VmEr3BxAALZejqeHj50Nj6wJDvs96OQ=='
+  CephMonKey: 'AQC+a49isCADERAAI5KS8ekuYCGrYzty8wAc+A=='
+  ## Ceph mds key, e.g. 'AQD/7YVa5gGUExAATZ8aQCXOsZ6/C//Udd18BQ=='
+  CephMdsKey: 'AQC+a49iOoM2GBAA88TRWQBuX9ZA9xj9T2iURg=='
+  ## Ceph mds key, e.g. 'AQDw7YVaZ4uOChAADwFGGar0O357GUZ8L/AL9A=='
+  CephMgrKey: 'AQC+a49iNEGbFBAAzyfVBAmZu7xpQdAVGWZOFw=='
+  ## Ceph admin key, e.g. 'AQDLOh1VgEp6FRAAFzT7Zw+Y9V6JJExQAsRnRQ=='
+  CephAdminKey: 'AQC+a49iJPCcGxAA5Y3Dfd9RDj6shpc0ZaphYw=='
+  ## Ceph client key, e.g 'AQC+vYNXgDAgAhAAc8UoYt+OTz5uhV7ItLdwUw=='
+  CephClientKey: 'AQC+a49iTFD0HhAA/Umd1Cb18lNCbogO7imaeA=='
+
+  CephConfigOverrides:
+    bluestore_cache_size_ssd: 2147483648
+    bluestore_block_db_size: 1024
+
+  CephAnsibleDisksConfig:
+    devices:
+      - /dev/sdb
+      - /dev/sdc
+      - /dev/sdd
+      - /dev/sde
+      - /dev/sdf
+      - /dev/sdg
+      - /dev/sdh
+      - /dev/sdi
+      - /dev/sdj
+    dedicated_devices:
+      - /dev/sdb
+      - /dev/sdc
+      - /dev/sdd
+      - /dev/sde
+      - /dev/sdf
+      - /dev/sdg
+      - /dev/sdh
+      - /dev/sdi
+      - /dev/sdj
+    osd_scenario: non-collocated
+    osd_objectstore: bluestore

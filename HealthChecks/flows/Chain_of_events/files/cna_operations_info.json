@@ -1,0 +1,107 @@
+{
+  "operations": [
+    {
+      "name": "ncm_installation",
+      "role": {
+        "Deployment_type.NCS_OVER_OPENSTACK": "Objectives.DEPLOYER",
+        "Deployment_type.NCS_OVER_VSPHERE": "Objectives.DEPLOYER"
+      },
+      "is_required": true,
+      "file_per_attempt_operation": false,
+      "log_path": [
+        "/opt/bcmt/log/bcmt*.log"
+      ],
+      "searched_patterns": {
+        "start_time": "sudo grep -i '[0-9a-zA-Z]\\+-Request: [0-9a-zA-Z]\\+ POST https://[0-9]\\+\\.[0-9]\\+\\.[0-9]\\+\\.[0-9]\\+:[0-9]\\+/ncms/api/v1/cluster?install_type=.\\+'",
+        "end_time_by_task_id": true,
+        "success_search": "sudo grep -i 'NCM INSTALL SUCCESSFULLY!'"
+      }
+    },
+    {
+      "name": "cluster_installation",
+      "role": {
+        "Deployment_type.NCS_OVER_OPENSTACK": "Objectives.DEPLOYER",
+        "Deployment_type.NCS_OVER_VSPHERE": "Objectives.DEPLOYER"
+      },
+      "is_required": false,
+      "file_per_attempt_operation": true,
+      "log_path": [
+        "/opt/clcm/log/clcm*.log"
+      ],
+      "searched_patterns": {
+        "operation_search": "sudo grep -i -- '- OPENSTACK CLUSTER CREATE -'",
+        "success_search": "sudo grep -i ' OPENSTACK CLUSTER CREATE SUCCESSFULLY!'"
+      }
+    },
+    {
+      "name": "cluster_heal",
+      "role": {
+        "Deployment_type.NCS_OVER_OPENSTACK": "Objectives.DEPLOYER",
+        "Deployment_type.NCS_OVER_VSPHERE": "Objectives.DEPLOYER"
+      },
+      "is_required": false,
+      "file_per_attempt_operation": true,
+      "log_path": [
+        "/opt/clcm/log/clcm*.log"
+      ],
+      "searched_patterns": {
+        "operation_search": "sudo grep -i -- '- OPENSTACK CLUSTER HEALING -'",
+        "success_search": "sudo grep -i ' OPENSTACK CLUSTER HEALING!\\|OPENSTACK CLUSTER HEALING SUCCESSFULLY!'",
+        "operation_host_name": "sudo grep -i 'openstack --insecure server rebuild'",
+        "pattern_for_extracting_host_name": "--insecure server rebuild \"([^\".]+)"
+      }
+    },
+    {
+      "name": "update_image",
+      "role": {
+        "Deployment_type.NCS_OVER_OPENSTACK": "Objectives.DEPLOYER",
+        "Deployment_type.NCS_OVER_VSPHERE": "Objectives.DEPLOYER"
+      },
+      "is_required": false,
+      "file_per_attempt_operation": true,
+      "log_path": [
+        "/opt/clcm/log/clcm*.log"
+      ],
+      "searched_patterns": {
+        "operation_search": "sudo grep -i -- '- OPENSTACK UPDATE IMAGE -'",
+        "success_search": "sudo grep -i ' OPENSTACK UPDATE IMAGE SUCCESSFULLY!'"
+      }
+    },
+    {
+      "name": "scale_out",
+      "role": {
+        "Deployment_type.NCS_OVER_OPENSTACK": "Objectives.DEPLOYER",
+        "Deployment_type.NCS_OVER_VSPHERE": "Objectives.DEPLOYER"
+      },
+      "is_required": false,
+      "file_per_attempt_operation": true,
+      "log_path": [
+        "/opt/clcm/log/clcm*.log"
+      ],
+      "searched_patterns": {
+        "operation_search": "sudo grep -i 'OPENSTACK SCALE-OUT'",
+        "success_search": "sudo grep -i 'OPENSTACK SCALE-OUT DONE'",
+        "operation_host_name": "sudo grep -i -A 1 'The following nodes will be scaled out'",
+        "pattern_for_extracting_host_name": "INFO:\\s+([^\\s]+)"
+      }
+    },
+    {
+      "name": "scale_in",
+      "role": {
+        "Deployment_type.NCS_OVER_OPENSTACK": "Objectives.DEPLOYER",
+        "Deployment_type.NCS_OVER_VSPHERE": "Objectives.DEPLOYER"
+      },
+      "is_required": false,
+      "file_per_attempt_operation": true,
+      "log_path": [
+        "/opt/clcm/log/clcm*.log"
+      ],
+      "searched_patterns": {
+        "operation_search": "sudo grep -i 'OPENSTACK SCALE-IN'",
+        "success_search": "sudo grep -i 'OPENSTACK SCALE-IN DONE'",
+        "operation_host_name": "sudo grep -i 'node_names:'",
+        "pattern_for_extracting_host_name": "node_names:\\s+([^\\s]+)"
+      }
+    }
+  ]
+}

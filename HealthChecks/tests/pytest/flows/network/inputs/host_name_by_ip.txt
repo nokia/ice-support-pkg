@@ -1,0 +1,9 @@
++-------------+------------------------------------------------+
+| ip_address  | host                                           |
++-------------+------------------------------------------------+
+| 172.17.2.21 | overcloud-controller-pl-8004-i14-0.localdomain |
+| 172.17.2.13 | overcloud-controller-pl-8004-i14-1.localdomain |
+| 172.17.2.15 | overcloud-controller-pl-8004-i14-2.localdomain |
+| 172.17.2.11 | overcloud-ovscompute-pl-8004-i14-0.localdomain |
+| 172.17.2.17 | overcloud-ovscompute-pl-8004-i14-1.localdomain |
++-------------+------------------------------------------------+

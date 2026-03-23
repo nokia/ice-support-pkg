@@ -1,0 +1,17 @@
+{
+    "application_name": "NCD",
+    "fqdn_list": [
+    ],
+    "ncom_url": "",
+    "pre_installed_applications": [
+        "cert-manager-v0.15.2"
+    ],
+    "rwx_sc": [
+        "azurefile",
+        "cephfs",
+        "glusterfs",
+        "quobyte",
+        "nfs",
+        "portworxvolume"
+    ]
+}

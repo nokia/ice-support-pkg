@@ -1,0 +1,12 @@
+- Instance UUID: 283317b1-2c46-4f3a-a38b-48b780bea81e
+  Maintenance: false
+  Name: server-1
+  Power State: power on
+  Provisioning State: active
+  UUID: 7d1f8717-0f0a-46f1-8db7-264865e0af43
+- Instance UUID: 469c7709-2c35-48c2-9530-1296ce8cd2d6
+  Maintenance: {Maintenance}
+  Name: server-2
+  Power State: power {Power}
+  Provisioning State: {State}
+  UUID: {UUID}

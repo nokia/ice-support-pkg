@@ -1,0 +1,81 @@
+{
+  "BCMT_VARS.yml": {
+    "/opt/nokia/images/bcmt_images/": "[Objectives.MANAGERS]"
+  },
+
+  "ceph.client.admin.keyring": {
+    "/etc/ceph/": "[Objectives.MANAGERS, Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "ceph.client.baremetal.cephfs.keyring": {
+    "/etc/ceph/": "[Objectives.MANAGERS, Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "ceph.client.cephfs.keyring": {
+    "/etc/ceph/": "[Objectives.MANAGERS, Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "ceph.client.cephrbd.keyring": {
+    "/etc/ceph/": "[Objectives.MANAGERS, Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "ceph.client.crash.keyring": {
+    "/etc/ceph/": "[Objectives.MANAGERS, Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "ceph.client.management.cephfs.keyring": {
+    "/etc/ceph/": "[Objectives.MANAGERS, Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "ceph.client.radosgw.keyring": {
+    "/etc/ceph/": "[Objectives.MANAGERS, Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "ceph.conf": {
+    "/etc/ceph/": "[Objectives.MANAGERS, Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES]"
+  },
+
+  "ceph.mon.keyring": {
+    "/etc/ceph/": "[Objectives.MANAGERS, Objectives.MASTERS]"
+  },
+
+  "cbis_manager.conf": {
+    "/data0/podman/storage/volumes/nginx_etc_vol/_data/sites-enabled/": "[Objectives.MANAGERS]"
+  },
+
+  "danm-cni.kubeconfig": {
+    "/etc/kubernetes/": "[Objectives.WORKERS]"
+  },
+
+  "docker-compose.yaml": {
+    "/root/cbis/": "[Objectives.MANAGERS]"
+  },
+
+  "ironic.conf": {
+    "/etc/ironic/": "[Objectives.MANAGERS, Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES, Objectives.MONITOR]"
+  },
+
+  "td-agent.conf": {
+    "/usr/share/openstack-puppet/modules/fluentd/files/": "[Objectives.MASTERS, Objectives.WORKERS, Objectives.STORAGE, Objectives.EDGES, Objectives.MONITOR]"
+  },
+
+  "zabbix_agentd.conf": {
+    "/etc/zabbix/": "[Objectives.MASTERS]"
+  },
+
+  "kube-apiserver.yml": {
+    "/etc/kubernetes/manifests/": "[Objectives.MASTERS]"
+  },
+
+  "kube-controller-manager.yml": {
+    "/etc/kubernetes/manifests/": "[Objectives.MASTERS]"
+  },
+
+  "kube-scheduler.yml": {
+    "/etc/kubernetes/manifests/": "[Objectives.MASTERS]"
+  },
+
+  "nginx.conf": {
+    "/data0/podman/storage/volumes/nginx_etc_vol/_data/": "[Objectives.MANAGERS]"
+  }
+}

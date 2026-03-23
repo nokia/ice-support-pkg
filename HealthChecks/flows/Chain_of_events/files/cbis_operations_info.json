@@ -1,0 +1,180 @@
+{
+  "operations": [
+    {
+      "name": "undercloud_installation",
+      "role": {"Deployment_type.CBIS": "Objectives.HYP"},
+      "is_required": true,
+      "file_per_attempt_operation": true,
+      "log_path": ["/var/log/cbis/deployment.log*"],
+      "searched_patterns":
+      {
+        "success_search": "sudo grep 'undercloud installation finished'"
+      }
+    },
+    {
+      "name": "overcloud_installation",
+      "role": {"Deployment_type.CBIS": "Objectives.UC"},
+      "is_required": true,
+      "log_path": ["/var/log/cbis/overcloud_installation.log | grep -v update"],
+      "searched_patterns":
+      {
+        "start_time": "sudo grep -sr \"openstack cbis overcloud deploy\""
+      }
+    },
+    {
+      "name": "stack_update",
+      "role": {"Deployment_type.CBIS": "Objectives.UC"},
+      "is_required": false,
+      "log_path": ["/var/log/cbis/overcloud_installation.log | grep update"],
+      "searched_patterns":
+      {
+        "start_time": "sudo grep -sr \"openstack cbis overcloud deploy\""
+      }
+    },
+    {
+      "name": "stack_update_v25_onwards",
+      "role": {"Deployment_type.CBIS": "Objectives.UC"},
+      "is_required": false,
+      "file_per_attempt_operation": true,
+      "log_path": ["/home/stack/overcloud-deploy/overcloud/heat-launcher/log/heat-*"],
+      "searched_patterns":
+      {
+        "success_search": "grep -i \"Stack CREATE COMPLETE (overcloud): Stack CREATE completed successfully\"",
+        "end_time": "grep -i \"Stack CREATE COMPLETE (overcloud)\""
+      }
+    },
+    {
+      "name": "post_install",
+      "role": {"Deployment_type.CBIS": "Objectives.UC"},
+      "is_required": false,
+      "log_path": ["/var/log/cbis/overcloud_installation.log"],
+      "searched_patterns":
+      {
+        "start_time": "sudo grep -sr \"Executing playbooks: \\['/usr/share/cbis/cbis-ansible/post-install/post-install.yml'\\]\"",
+        "end_time": "grep -i 'deployment ended'",
+        "success_search": "sudo grep 'END return value: 0'"
+      }
+    },
+    {
+      "name": "undercloud_backup",
+      "role": {"Deployment_type.CBIS": "Objectives.HYP"},
+      "is_required": false,
+      "file_per_attempt_operation": true,
+      "log_path": ["/var/log/cbis/undercloud_backup.log*"],
+      "searched_patterns":
+      {
+        "operation_search": "grep -i 'Undercloud backup/restore operation started (operation=Backup'",
+        "end_time": "grep -i 'Undercloud Backup Finished'",
+        "success_search": "grep -i 'Undercloud Backup Finished Successfully'"
+      }
+    },
+    {
+      "name": "undercloud_restore",
+      "role": {"Deployment_type.CBIS": "Objectives.HYP"},
+      "is_required": false,
+      "file_per_attempt_operation": true,
+      "log_path": ["/var/log/cbis/undercloud_backup.log*"],
+      "searched_patterns":
+      {
+        "operation_search": "grep -i 'Undercloud backup/restore operation started (operation=Restore'",
+        "end_time": "grep -i 'Undercloud Restore Finished'",
+        "success_search": "grep -i 'Undercloud Restore Finished Successfully'"
+      }
+    },
+    {
+      "name": "upgrade",
+      "role": {"Deployment_type.CBIS": "Objectives.HYP"},
+      "is_required": false,
+      "file_per_attempt_operation": true,
+      "log_path": ["/var/log/cbis/cbis_upgrade.log*"],
+      "searched_patterns":
+      {
+        "start_time": "grep -i  \"**Starting Upgrade**\"",
+        "end_time": "grep -i \"**Upgrade Finished **\"",
+        "success_search": "grep -i 'Upgrade successfully completed'"
+      }
+    },
+    {
+      "name": "post_install_sanity_tests",
+      "role": {"Deployment_type.CBIS": "Objectives.HYP"},
+      "is_required": false,
+      "file_per_attempt_operation": true,
+      "log_path": ["/var/log/cbis/deployment*"],
+      "searched_patterns":
+      {
+        "success_search": "sudo grep 'Running Post install Sanity tests'"
+      }
+    },
+    {
+      "name": "scale_out",
+      "role": {"Deployment_type.CBIS": "Objectives.HYP"},
+      "is_required": false,
+      "file_per_attempt_operation": true,
+      "log_path": ["/var/log/cbis/add_node*"],
+      "searched_patterns":
+      {
+        "success_search": "sudo grep -i \"*\\*add.*finished successfully\""
+      }
+    },
+    {
+      "name": "scale_in",
+      "role": {"Deployment_type.CBIS": "Objectives.HYP"},
+      "is_required": false,
+      "file_per_attempt_operation": true,
+      "log_path": ["/var/log/cbis/remove_node*"],
+      "searched_patterns":
+      {
+        "success_search": "sudo grep -i 'remove node.*completed successfully\\|remove node.*finished successfully'",
+        "operation_host_name": "sudo grep -im 1 \"'node_names':\"",
+        "pattern_for_extracting_host_name": "'node_names':\\s*\\[([^[\\]]+)\\]"
+      }
+    },
+    {
+      "name": "hotfix",
+      "role": {"Deployment_type.CBIS": "Objectives.UC"},
+      "is_required": false,
+      "file_per_attempt_operation": true,
+      "log_path": ["/var/log/cbis/hotfix_*"],
+      "searched_patterns":
+      {
+        "success_search": "sudo grep 'install finished successfully'"
+      }
+    },
+    {
+      "name": "security_hardening",
+      "role": {"Deployment_type.CBIS": "Objectives.HYP"},
+      "is_required": false,
+      "file_per_attempt_operation": true,
+      "log_path": ["/var/log/cbis/security_hardening.log*"],
+      "searched_patterns":
+      {
+        "success_search": "sudo grep -i 'Finished security hardening\\|Security Hardening:.*Finished Successfully\\|hardening_state:*0'"
+      }
+    },
+    {
+      "name": "replace_controller",
+      "role": {"Deployment_type.CBIS": "Objectives.HYP"},
+      "is_required": false,
+      "file_per_attempt_operation": true,
+      "log_path": ["/var/log/cbis/replace_controller.log*"],
+      "searched_patterns":
+      {
+        "success_search": "sudo grep -i 'Controller replacement.*finished successfully'"
+      }
+    },
+    {
+      "name": "gracefull_reboot",
+      "role": {"Deployment_type.CBIS": "Objectives.UC"},
+      "is_required": false,
+      "file_per_attempt_operation": true,
+      "operation_on_multuple_nodes": true,
+      "log_path": ["/mnt/log/cbis/reboot_node.log*"],
+      "searched_patterns":
+      {
+        "success_search": "sudo grep \"{host_name} rebooted successfully\"",
+        "operation_host_name": "sudo grep -i 'Reboot procedure started for servers'",
+        "pattern_for_extracting_host_name": "\\[([^[\\]]+)\\]"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1004 @@
+{"ALL_VERSIONS": {
+  "workers": {
+    "Numa": [
+      {
+        "nic_per_numa": [
+          "ens5f0",
+          "ens5f1"
+        ],
+        "total_allocated_memory_in_mb": "range(191767-unlimited)"
+      },
+      {
+        "nic_per_numa": [
+          "ens25f0",
+          "ens25f1"
+        ],
+        "total_allocated_memory_in_mb": "range(191767-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(393216-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "TOSHIBA KHK61VSE",
+        "size_in_mb": 915715
+      },
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "TOSHIBA KHK61VSE",
+        "size_in_mb": 915715
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens25f0",
+          "ens25f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens5f0",
+          "ens5f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "all_k8s_master": {
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(393216-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "TOSHIBA KHK61VSE",
+        "size_in_mb": "range(915715-unlimited)"
+      },
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "TOSHIBA KHK61VSE",
+        "size_in_mb": "range(915715-unlimited)"
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens25f0",
+          "ens25f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens5f0",
+          "ens5f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "monitoring": {
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(393216-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "TOSHIBA KHK61VSE",
+        "size_in_mb": 915715
+      },
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "TOSHIBA KHK61VSE",
+        "size_in_mb": 915715
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens25f0",
+          "ens25f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens5f0",
+          "ens5f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "storages": {
+    "Raid Controller": {
+      "product": "AVAGO MegaRAID SAS PCI Express ROMB-QS-3516B"
+    },
+    "Memory": [
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 16384,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(196608-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "Micron_5300_MTFD",
+        "size_in_mb": 457862
+      },
+      {
+        "vendor": "",
+        "type": "NVMe",
+        "model": "INTEL SSDPE2KE016T8",
+        "size_in_mb": 1526185
+      },
+      {
+        "vendor": "AVAGO",
+        "interface_type": "SCSI Disk",
+        "type": [
+          "HDD",
+          "SSD"
+        ],
+        "model": "MRROMB",
+        "size_in_mb": 1830880
+      },
+      {
+        "vendor": "AVAGO",
+        "interface_type": "SCSI Disk",
+        "type": [
+          "HDD",
+          "SSD"
+        ],
+        "model": "MRROMB",
+        "size_in_mb": 1830880
+      },
+      {
+        "vendor": "AVAGO",
+        "interface_type": "SCSI Disk",
+        "type": [
+          "HDD",
+          "SSD"
+        ],
+        "model": "MRROMB",
+        "size_in_mb": 1830880
+      },
+      {
+        "vendor": "AVAGO",
+        "interface_type": "SCSI Disk",
+        "type": [
+          "HDD",
+          "SSD"
+        ],
+        "model": "MRROMB",
+        "size_in_mb": 1830880
+      },
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "Micron_5300_MTFD",
+        "size_in_mb": 457862
+      },
+      {
+        "vendor": "",
+        "type": "NVMe",
+        "model": "INTEL SSDPE2KE016T8",
+        "size_in_mb": 1526185
+      },
+      {
+        "vendor": "AVAGO",
+        "interface_type": "SCSI Disk",
+        "type": [
+          "HDD",
+          "SSD"
+        ],
+        "model": "MRROMB",
+        "size_in_mb": 1830880
+      },
+      {
+        "vendor": "AVAGO",
+        "interface_type": "SCSI Disk",
+        "type": [
+          "HDD",
+          "SSD"
+        ],
+        "model": "MRROMB",
+        "size_in_mb": 1830880
+      },
+      {
+        "vendor": "AVAGO",
+        "interface_type": "SCSI Disk",
+        "type": [
+          "HDD",
+          "SSD"
+        ],
+        "model": "MRROMB",
+        "size_in_mb": 1830880
+      },
+      {
+        "vendor": "AVAGO",
+        "interface_type": "SCSI Disk",
+        "type": [
+          "HDD",
+          "SSD"
+        ],
+        "model": "MRROMB",
+        "size_in_mb": 1830880
+      },
+      {
+        "vendor": "AVAGO",
+        "interface_type": "SCSI Disk",
+        "type": [
+          "HDD",
+          "SSD"
+        ],
+        "model": "MRROMB",
+        "size_in_mb": 1830880
+      },
+      {
+        "vendor": "AVAGO",
+        "interface_type": "SCSI Disk",
+        "type": [
+          "HDD",
+          "SSD"
+        ],
+        "model": "MRROMB",
+        "size_in_mb": 1830880
+      },
+      {
+        "vendor": "AVAGO",
+        "interface_type": "SCSI Disk",
+        "type": [
+          "HDD",
+          "SSD"
+        ],
+        "model": "MRROMB",
+        "size_in_mb": 1830880
+      },
+      {
+        "vendor": "AVAGO",
+        "interface_type": "SCSI Disk",
+        "type": [
+          "HDD",
+          "SSD"
+        ],
+        "model": "MRROMB",
+        "size_in_mb": 1830880
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens25f0",
+          "ens25f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens5f0",
+          "ens5f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "edges": {
+    "Numa": [
+      {
+        "nic_per_numa": [
+          "ens5f0",
+          "ens5f1"
+        ],
+        "total_allocated_memory_in_mb": "range(191767-unlimited)"
+      },
+      {
+        "nic_per_numa": [
+          "ens25f0",
+          "ens25f1"
+        ],
+        "total_allocated_memory_in_mb": "range(191767-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(393216-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "TOSHIBA KHK61VSE",
+        "size_in_mb": 915715
+      },
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "TOSHIBA KHK61VSE",
+        "size_in_mb": 915715
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens25f0",
+          "ens25f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens5f0",
+          "ens5f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "computes": {
+    "Numa": [
+      {
+        "nic_per_numa": [
+          "ens5f0",
+          "ens5f1"
+        ],
+        "total_allocated_memory_in_mb": "range(191767-unlimited)"
+      },
+      {
+        "nic_per_numa": [
+          "ens25f0",
+          "ens25f1"
+        ],
+        "total_allocated_memory_in_mb": "range(191767-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(393216-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "TOSHIBA KHK61VSE",
+        "size_in_mb": 915715
+      },
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "TOSHIBA KHK61VSE",
+        "size_in_mb": 915715
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens25f0",
+          "ens25f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens5f0",
+          "ens5f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "controllers": {
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 2933
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(393216-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "TOSHIBA KHK61VSE",
+        "size_in_mb": 915715
+      },
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "TOSHIBA KHK61VSE",
+        "size_in_mb": 915715
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 5218R CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens25f0",
+          "ens25f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT27800 Family [ConnectX-5]",
+        "ports_names": [
+          "ens5f0",
+          "ens5f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  }
+}}

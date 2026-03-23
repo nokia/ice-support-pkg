@@ -1,0 +1,1402 @@
+{"ALL_VERSIONS": {
+  "workers": {
+    "Numa": [
+      {
+        "nic_per_numa": [
+          "ens10f0",
+          "ens10f1"
+        ],
+        "total_allocated_memory_in_mb": "range(386129-unlimited)"
+      },
+      {
+        "nic_per_numa": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "total_allocated_memory_in_mb": "range(386129-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(524288-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH",
+        "size_in_mb": 915715
+      },
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH",
+        "size_in_mb": 915715
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 6338N CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 6338N CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT2894 Family [ConnectX-6 Lx]",
+        "ports_names": [
+          "ens10f0",
+          "ens10f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT2894 Family [ConnectX-6 Lx]",
+        "ports_names": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "all_k8s_master": {
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(524288-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH",
+        "size_in_mb": 915715
+      },
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH",
+        "size_in_mb": 915715
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 6338N CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 6338N CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT2894 Family [ConnectX-6 Lx]",
+        "ports_names": [
+          "ens10f0",
+          "ens10f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT2894 Family [ConnectX-6 Lx]",
+        "ports_names": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "monitoring": {
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(524288-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH",
+        "size_in_mb": 915715
+      },
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH",
+        "size_in_mb": 915715
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 6338N CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 6338N CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT2894 Family [ConnectX-6 Lx]",
+        "ports_names": [
+          "ens10f0",
+          "ens10f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT2894 Family [ConnectX-6 Lx]",
+        "ports_names": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "storages": {
+    "Raid Controller": {
+      "product": "MegaRAID 12GSAS/PCIe Secure SAS39xx"
+    },
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(524288-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "type": "NVMe",
+        "model": "MO006400KXAVV",
+        "size_in_mb": 6104710
+      },
+      {
+        "type": "NVMe",
+        "model": "MO006400KXAVV",
+        "size_in_mb": 6104710
+      },
+      {
+        "type": "NVMe",
+        "model": "MO006400KXAVV",
+        "size_in_mb": 6104710
+      },
+      {
+        "type": "NVMe",
+        "model": "MO006400KXAVV",
+        "size_in_mb": 6104710
+      },
+      {
+        "vendor": "HPE",
+        "interface_type": "SCSI Disk",
+        "type": "SSD",
+        "model": "MR216i-a Gen10+",
+        "size_in_mb": 915200
+      },
+      {
+        "type": "NVMe",
+        "model": "MO006400KXAVV",
+        "size_in_mb": 6104710
+      },
+      {
+        "type": "NVMe",
+        "model": "MO006400KXAVV",
+        "size_in_mb": 6104710
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 6338N CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 6338N CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT2894 Family [ConnectX-6 Lx]",
+        "ports_names": [
+          "ens10f0",
+          "ens10f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT2894 Family [ConnectX-6 Lx]",
+        "ports_names": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "edges": {
+    "Numa": [
+      {
+        "nic_per_numa": [
+          "ens10f0",
+          "ens10f1"
+        ],
+        "total_allocated_memory_in_mb": "range(386129-unlimited)"
+      },
+      {
+        "nic_per_numa": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "total_allocated_memory_in_mb": "range(386129-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(524288-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "type": "SSD",
+        "size_in_mb": 2048
+      },
+      {
+        "type": "SSD",
+        "size_in_mb": 287
+      },
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH",
+        "size_in_mb": 915715
+      },
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH",
+        "size_in_mb": 915715
+      },
+      {
+        "type": "SSD",
+        "size_in_mb": 32768
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 6338N CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 6338N CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT2894 Family [ConnectX-6 Lx]",
+        "ports_names": [
+          "ens10f0",
+          "ens10f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT2894 Family [ConnectX-6 Lx]",
+        "ports_names": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "computes": {
+    "Numa": [
+      {
+        "nic_per_numa": [
+          "ens10f0",
+          "ens10f1"
+        ],
+        "total_allocated_memory_in_mb": "range(386129-unlimited)"
+      },
+      {
+        "nic_per_numa": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "total_allocated_memory_in_mb": "range(386129-unlimited)"
+      }
+    ],
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(524288-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "type": [
+          "SSD"
+        ],
+        "size_in_mb": [
+          400,
+          6144
+        ]
+      },
+      {
+        "type": [
+          "SSD"
+        ],
+        "size_in_mb": [
+          100,
+          2048
+        ]
+      },
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH",
+        "size_in_mb": 915715
+      },
+      {
+        "type": "SSD",
+        "size_in_mb": [
+          1024,
+          10240,
+          4096,
+          2048
+        ]
+      },
+      {
+        "type": "SSD",
+        "size_in_mb": [
+          1024,
+          10240
+        ]
+      },
+      {
+        "type": "SSD",
+        "size_in_mb": [
+          1024,
+          10240,
+          2048
+        ]
+      },
+      {
+        "type": "SSD",
+        "size_in_mb": [
+          1024,
+          10240,
+          4096,
+          2048
+        ]
+      },
+      {
+        "type": "SSD",
+        "size_in_mb": [
+          1024,
+          2048
+        ]
+      },
+      {
+        "type": "SSD",
+        "size_in_mb": [
+          1024,
+          10240,
+          2048
+        ]
+      },
+      {
+        "type": "SSD",
+        "size_in_mb": [
+          1024,
+          5120
+        ]
+      },
+      {
+        "type": [
+          "SSD"
+        ],
+        "size_in_mb": [
+          1024,
+          5120,
+          2048,
+          400
+        ]
+      },
+      {
+        "type": "SSD",
+        "size_in_mb": [
+          1024,
+          778240,
+          6144,
+          2048,
+          400,
+          10240
+        ]
+      },
+      {
+        "type": [
+          "SSD"
+        ],
+        "size_in_mb": [
+          1024,
+          4096,
+          6144,
+          2048,
+          400,
+          10240
+        ]
+      },
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH",
+        "size_in_mb": 915715
+      },
+      {
+        "type": "SSD",
+        "size_in_mb": [
+          1024,
+          10240,
+          20480,
+          2048,
+          6144
+        ]
+      },
+      {
+        "type": "SSD",
+        "size_in_mb": [
+          1024,
+          10240,
+          5120,
+          2048,
+          6144
+        ]
+      },
+      {
+        "type": "SSD",
+        "size_in_mb": [
+          1024,
+          10240,
+          2048,
+          6144
+        ]
+      },
+      {
+        "type": "SSD",
+        "size_in_mb": [
+          1024,
+          778240,
+          4096,
+          2048,
+          6144,
+          10240
+        ]
+      },
+      {
+        "type": "SSD",
+        "size_in_mb": [
+          1024,
+          4096,
+          6144,
+          2048,
+          400,
+          10240
+        ]
+      },
+      {
+        "type": "SSD",
+        "size_in_mb": [
+          8192,
+          1024,
+          6144,
+          2048,
+          400,
+          10240,
+          100
+        ]
+      },
+      {
+        "type": "SSD",
+        "size_in_mb": [
+          8192,
+          1024,
+          2048,
+          6144
+        ]
+      },
+      {
+        "type": "SSD",
+        "size_in_mb": [
+          1024,
+          10240,
+          400,
+          2048,
+          6144
+        ]
+      },
+      {
+        "type": "SSD",
+        "size_in_mb": 2048
+      },
+      {
+        "type": [
+          "SSD"
+        ],
+        "size_in_mb": 6144
+      },
+      {
+        "type": "SSD",
+        "size_in_mb": [
+          20480,
+          6144
+        ]
+      },
+      {
+        "type": "SSD",
+        "size_in_mb": 10240
+      },
+      {
+        "type": "SSD",
+        "size_in_mb": 10240
+      },
+      {
+        "type": "SSD",
+        "size_in_mb": [
+          1024,
+          6144,
+          2048,
+          239616,
+          10240,
+          500
+        ]
+      },
+      {
+        "type": [
+          "SSD"
+        ],
+        "size_in_mb": [
+          1024,
+          2048,
+          6144
+        ]
+      },
+      {
+        "type": [
+          "SSD"
+        ],
+        "size_in_mb": [
+          4096,
+          400,
+          20480,
+          2048,
+          6144,
+          10240,
+          153600,
+          5120
+        ]
+      },
+      {
+        "type": [
+          "SSD"
+        ],
+        "size_in_mb": [
+          1024,
+          100,
+          2048,
+          6144
+        ]
+      },
+      {
+        "type": "SSD",
+        "size_in_mb": [
+          1024,
+          10240,
+          2048,
+          400
+        ]
+      },
+      {
+        "type": "SSD",
+        "size_in_mb": [
+          1024,
+          10240,
+          400,
+          2048,
+          6144
+        ]
+      },
+      {
+        "type": [
+          "SSD"
+        ],
+        "size_in_mb": [
+          "8192",
+          "1024",
+          "6144",
+          "2048",
+          "400",
+          "10240",
+          "153600"
+        ]
+      },
+      {
+        "type": [
+          "SSD"
+        ],
+        "size_in_mb": [
+          8192,
+          1024,
+          6144,
+          2048,
+          400,
+          100,
+          153600
+        ]
+      },
+      {
+        "type": "SSD",
+        "size_in_mb": [
+          1024,
+          153600,
+          2048,
+          6144
+        ]
+      },
+      {
+        "type": [
+          "SSD"
+        ],
+        "size_in_mb": [
+          "1024",
+          "10240",
+          "5120",
+          "2048",
+          "6144"
+        ]
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 6338N CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 6338N CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT2894 Family [ConnectX-6 Lx]",
+        "ports_names": [
+          "ens10f0",
+          "ens10f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT2894 Family [ConnectX-6 Lx]",
+        "ports_names": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  },
+  "controllers": {
+    "Memory": [
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      },
+      {
+        "size_in_mb": 32768,
+        "type": "DDR4",
+        "speed_in_mhz": 3200
+      }
+    ],
+    "Total memory": [
+      {
+        "total_size_in_mb": "range(524288-unlimited)"
+      }
+    ],
+    "Disk": [
+      {
+        "type": [
+          "SSD"
+        ],
+        "size_in_mb": [
+          5120,
+          512000
+        ]
+      },
+      {
+        "type": [
+          "SSD"
+        ],
+        "size_in_mb": [
+          1024,
+          5120
+        ]
+      },
+      {
+        "type": "SSD",
+        "size_in_mb": [
+          1024,
+          5120
+        ]
+      },
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH",
+        "size_in_mb": 915715
+      },
+      {
+        "vendor": "ATA",
+        "interface_type": "ATA Disk",
+        "type": "SSD",
+        "model": "MK000960GWXFH",
+        "size_in_mb": 915715
+      }
+    ],
+    "Processor": [
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 6338N CPU"
+      },
+      {
+        "frequency_in_mhz": "range(2100-unlimited)",
+        "type": "Intel Xeon Gold 6338N CPU"
+      }
+    ],
+    "Network Interface": [
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT2894 Family [ConnectX-6 Lx]",
+        "ports_names": [
+          "ens10f0",
+          "ens10f1"
+        ],
+        "ports_amount": 2
+      },
+      {
+        "speed_in_mb": 25000,
+        "vendor": "Mellanox Technologies",
+        "model": "MT2894 Family [ConnectX-6 Lx]",
+        "ports_names": [
+          "ens3f0",
+          "ens3f1"
+        ],
+        "ports_amount": 2
+      }
+    ]
+  }
+}}

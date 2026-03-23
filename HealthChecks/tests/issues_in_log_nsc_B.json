@@ -1,0 +1,79 @@
+{
+      "etcd": [
+        {
+          "id": "connection_to_address_failure",
+          "log_cmd": "docker logs etcd",
+          "log_cmd_type": "cmd",
+          "patterns": [
+            "health check for peer .* could not connect:.*"
+          ],
+          "issue": "A connection to the address shown on the port cannot be established. Check if the etcd container is running on the host with the address shown.",
+          "rem": "based on https://rancher.com/docs/rancher/v2.x/en/troubleshooting/kubernetes-components/etcd/",
+          "versions" : ["20"],
+          "deployment_types": ["ncs_open-stack","ncs_bare-metal","ncs_vsphere"],
+          "severty":"Critical",
+          "host_roles": "single_k8s_master"
+        },
+         {
+          "id": "new_elections",
+          "log_cmd": "docker logs etcd",
+          "log_cmd_type": "cmd",
+          "patterns": ["is starting a new election at term"],
+          "issue": "The etcd cluster has lost its quorum and is trying to establish a new leader. This can happen when the majority of the nodes running etcd go down/unreachable.",
+          "rem": "based on https://rancher.com/docs/rancher/v2.x/en/troubleshooting/kubernetes-components/etcd/",
+          "severty":"Critical",
+          "versions" : ["20"],
+          "deployment_types": ["ncs_open-stack","ncs_bare-metal","ncs_vsphere"],
+           "host_roles": "single_k8s_master"
+         },
+         {
+          "id": "connection_error",
+          "log_cmd": "docker logs etcd",
+          "log_cmd_type": "cmd",
+          "patterns": ["connection error: desc = transport: Error while dialing dial tcp .*: i/o timeout; Reconnecting to {.* 0 <nil>}"],
+          "issue": "The host firewall is preventing network communication.",
+          "rem": "based on https://rancher.com/docs/rancher/v2.x/en/troubleshooting/kubernetes-components/etcd/",
+          "severty":"Critical",
+          "versions" : ["20"],
+          "deployment_types": ["ncs_open-stack","ncs_bare-metal","ncs_vsphere"],
+           "host_roles": "single_k8s_master"
+         },
+         {
+          "id": "cluster_ID_mismatch",
+          "log_cmd": "docker logs etcd",
+          "log_cmd_type": "cmd",
+          "patterns": ["rafthttp: request cluster ID mismatch"],
+          "issue": "he node with the etcd instance logging rafthttp: request cluster ID mismatch is trying to join a cluster that has already been formed with another peer. The node should be removed from the cluster, and re-added.",
+          "rem": "based on https://rancher.com/docs/rancher/v2.x/en/troubleshooting/kubernetes-components/etcd/",
+           "severty":"Critical",
+           "versions" : ["20"],
+           "deployment_types": ["ncs_open-stack","ncs_bare-metal","ncs_vsphere"],
+           "host_roles": "single_k8s_master"
+         },
+        {
+          "id": "failed_to_find_member",
+          "log_cmd": "docker logs etcd",
+          "log_cmd_type": "cmd",
+          "patterns": ["rafthttp: failed to find member"],
+          "issue": "The cluster state (/var/lib/etcd) contains wrong information to join the cluster. The node should be removed from the cluster, the state directory should be cleaned and the node should be re-added",
+          "rem": "based on https://rancher.com/docs/rancher/v2.x/en/troubleshooting/kubernetes-components/etcd/",
+          "severty":"Critical",
+          "versions" : ["20"],
+          "deployment_types": ["ncs_open-stack","ncs_bare-metal","ncs_vsphere"],
+          "host_roles": "single_k8s_master"
+        },
+         {
+          "id": "Space Errors",
+          "log_cmd": "docker logs etcd",
+          "log_cmd_type": "cmd",
+          "patterns": ["database space exceeded","applying raft message exceeded backend quota"],
+          "issue": "etcd not enoth space issue",
+          "rem": "based on https://rancher.com/docs/rancher/v2.x/en/troubleshooting/kubernetes-components/etcd/",
+          "severty":"Critical",
+          "versions" : ["20"],
+          "deployment_types": ["ncs_open-stack","ncs_bare-metal","ncs_vsphere"],
+           "host_roles": "single_k8s_master"
+         }
+      ]
+}
+
